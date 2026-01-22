@@ -1,2 +1,2 @@
 # repac-ontology
-Formal ontology for the REPAC Framework
+GitHub Pages root for the REPAC Ontology.
