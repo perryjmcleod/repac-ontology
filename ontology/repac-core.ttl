@@ -12,6 +12,7 @@
     dcterms:description "Formal ontology for the REPAC Framework."@en ;
     vann:preferredNamespacePrefix "repac" ;
     vann:preferredNamespaceUri "https://repac.org/ontology#" ;
+    owl:versionIRI <https://repac.org/ontology/0.1.0> ;
     owl:versionInfo "0.1.0"^^xsd:string .
 
 repac:Superset
