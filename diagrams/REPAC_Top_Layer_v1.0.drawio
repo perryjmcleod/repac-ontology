@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.2 Safari/605.1.15" version="29.3.4">
+  <diagram name="REPAC Top Layer v1.0" id="m2lPy3nH1495rbtj4GJI">
+    <mxGraphModel dx="946" dy="708" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="eCS1uIo47kJ9C-hcwOKE-1" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#E7F3FF;strokeColor=#000000" value="REPAC-TL-S1&#xa;Purpose" vertex="1">
+          <mxGeometry height="100" width="240" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eCS1uIo47kJ9C-hcwOKE-2" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#E7F3FF;strokeColor=#000000" value="REPAC-TL-S2&#xa;Source" vertex="1">
+          <mxGeometry height="100" width="240" x="380" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eCS1uIo47kJ9C-hcwOKE-3" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#E7F3FF;strokeColor=#000000" value="REPAC-TL-S3&#xa;Communication" vertex="1">
+          <mxGeometry height="100" width="240" x="720" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eCS1uIo47kJ9C-hcwOKE-4" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#E7F3FF;strokeColor=#000000" value="REPAC-TL-S4&#xa;Collaboration" vertex="1">
+          <mxGeometry height="100" width="240" x="40" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="eCS1uIo47kJ9C-hcwOKE-5" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#E7F3FF;strokeColor=#000000" value="REPAC-TL-S5&#xa;Imperative" vertex="1">
+          <mxGeometry height="100" width="240" x="380" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="eCS1uIo47kJ9C-hcwOKE-6" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#E7F3FF;strokeColor=#000000" value="REPAC-TL-S6&#xa;Scope" vertex="1">
+          <mxGeometry height="100" width="240" x="720" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="eCS1uIo47kJ9C-hcwOKE-7" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#E7F3FF;strokeColor=#000000" value="REPAC-TL-S7&#xa;Work" vertex="1">
+          <mxGeometry height="100" width="240" x="40" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="eCS1uIo47kJ9C-hcwOKE-8" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#E7F3FF;strokeColor=#000000" value="REPAC-TL-S8&#xa;Value" vertex="1">
+          <mxGeometry height="100" width="240" x="380" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="eCS1uIo47kJ9C-hcwOKE-9" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#E7F3FF;strokeColor=#000000" value="REPAC-TL-S9&#xa;Governance" vertex="1">
+          <mxGeometry height="100" width="240" x="720" y="360" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
