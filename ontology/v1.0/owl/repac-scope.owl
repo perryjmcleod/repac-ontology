@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://repac.org/ontology#"
+     xml:base="https://repac.org/ontology/repac-scope"
+     xmlns:repac="https://repac.org/ontology#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dcterms="http://purl.org/dc/terms/">
+
+    <!-- ############################################################ -->
+    <!-- Ontology                                                     -->
+    <!-- ############################################################ -->
+
+    <owl:Ontology rdf:about="https://repac.org/ontology/repac-scope">
+        <owl:versionIRI rdf:resource="https://repac.org/ontology/v1.0/repac-scope"/>
+        <owl:imports rdf:resource="https://repac.org/ontology/v1.0/repac-core"/>
+        <dcterms:title xml:lang="en">REPAC Ontology — Scope (module)</dcterms:title>
+        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-01-26</dcterms:issued>
+        <dcterms:license rdf:resource="https://opensource.org/license/mit/"/>
+        <rdfs:comment xml:lang="en">REPAC Ontology v1.0 module. This file is part of a modular import set rooted in repac-core.owl.</rdfs:comment>
+    </owl:Ontology>
+
+
+<!-- ############################################################ -->
+<!-- Module: Scope                                                -->
+<!-- ############################################################ -->
+
+<!-- Superset individual -->
+<owl:NamedIndividual rdf:about="https://repac.org/ontology#REPAC-TL-S6">
+    <rdf:type rdf:resource="https://repac.org/ontology#Superset"/>
+    <repac:repacId>REPAC-TL-S6</repac:repacId>
+    <repac:name>Scope</repac:name>
+    <repac:description>Defines the boundary of analysis and action: what is included, excluded, and how the boundary is interpreted through lenses.</repac:description>
+    <repac:status>locked-v1.0</repac:status>
+</owl:NamedIndividual>
+
+<!-- Scope lenses (locked classification rule)
+     Internal Source and External Source are Scope lenses, not Source subsets. -->
+
+<owl:NamedIndividual rdf:about="https://repac.org/ontology#ScopeLens_InternalSource">
+    <rdf:type rdf:resource="https://repac.org/ontology#ScopeLens"/>
+    <repac:repacId>REPAC-SCOPE-LENS-INTSRC</repac:repacId>
+    <repac:name>Internal Source</repac:name>
+    <repac:description>A Scope lens that constrains or interprets scope relative to internal origin (inside the system/organization boundary).</repac:description>
+    <repac:longDescription>This lens is modeled under Scope (not Source). It is used to frame scope decisions and interpretations by whether inputs, constraints, or evidence are internal to the target system or organization.</repac:longDescription>
+    <repac:partOf rdf:resource="https://repac.org/ontology#REPAC-TL-S6"/>
+    <repac:sourceNote>Locked rule: Internal Source is a Scope lens, not a Source subset.</repac:sourceNote>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="https://repac.org/ontology#ScopeLens_ExternalSource">
+    <rdf:type rdf:resource="https://repac.org/ontology#ScopeLens"/>
+    <repac:repacId>REPAC-SCOPE-LENS-EXTSRC</repac:repacId>
+    <repac:name>External Source</repac:name>
+    <repac:description>A Scope lens that constrains or interprets scope relative to external origin (outside the system/organization boundary).</repac:description>
+    <repac:longDescription>This lens is modeled under Scope (not Source). It is used to frame scope decisions and interpretations by whether inputs, constraints, or evidence are external to the target system or organization.</repac:longDescription>
+    <repac:partOf rdf:resource="https://repac.org/ontology#REPAC-TL-S6"/>
+    <repac:sourceNote>Locked rule: External Source is a Scope lens, not a Source subset.</repac:sourceNote>
+</owl:NamedIndividual>
+
+<!-- Link the Scope superset to its lenses -->
+<rdf:Description rdf:about="https://repac.org/ontology#REPAC-TL-S6">
+    <repac:usesLens rdf:resource="https://repac.org/ontology#ScopeLens_InternalSource"/>
+    <repac:usesLens rdf:resource="https://repac.org/ontology#ScopeLens_ExternalSource"/>
+</rdf:Description>
+
+<!-- Placeholder sections for Scope internal structure (to be populated in subsequent phases)
+     Subsets, Sets, Elements, and any scoped constraints will be added here. -->
+
+
+</rdf:RDF>

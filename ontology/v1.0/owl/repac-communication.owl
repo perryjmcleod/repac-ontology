@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://repac.org/ontology#"
+     xml:base="https://repac.org/ontology/repac-communication"
+     xmlns:repac="https://repac.org/ontology#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dcterms="http://purl.org/dc/terms/">
+
+    <!-- ############################################################ -->
+    <!-- Ontology                                                     -->
+    <!-- ############################################################ -->
+
+    <owl:Ontology rdf:about="https://repac.org/ontology/repac-communication">
+        <owl:versionIRI rdf:resource="https://repac.org/ontology/v1.0/repac-communication"/>
+        <owl:imports rdf:resource="https://repac.org/ontology/v1.0/repac-core"/>
+        <dcterms:title xml:lang="en">REPAC Ontology — Communication (module)</dcterms:title>
+        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-01-26</dcterms:issued>
+        <dcterms:license rdf:resource="https://opensource.org/license/mit/"/>
+        <rdfs:comment xml:lang="en">REPAC Ontology v1.0 module. This file is part of a modular import set rooted in repac-core.owl.</rdfs:comment>
+    </owl:Ontology>
+
+
+<!-- ############################################################ -->
+<!-- Module: Communication (module)                                            -->
+<!-- ############################################################ -->
+
+<!-- TODO (v1.0 build): Populate this module with the Superset individual, its Subsets/Sets/Elements,
+     and any module-local axioms. Keep cross-superset properties in repac-core.owl. -->
+
+
+</rdf:RDF>
