@@ -1,33 +1,79 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://repac.org/ontology#"
-     xml:base="https://repac.org/ontology/repac-collaboration"
-     xmlns:repac="https://repac.org/ontology#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:dcterms="http://purl.org/dc/terms/">
+<rdf:RDF
+    xmlns="https://perryjmcleod.github.io/repac-ontology/ontology#"
+    xml:base="https://perryjmcleod.github.io/repac-ontology/ontology"
+    xmlns:repac="https://perryjmcleod.github.io/repac-ontology/ontology#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
 
-    <!-- ############################################################ -->
-    <!-- Ontology                                                     -->
-    <!-- ############################################################ -->
+    <!-- ===================================================== -->
+    <!-- Ontology declaration                                  -->
+    <!-- ===================================================== -->
 
-    <owl:Ontology rdf:about="https://repac.org/ontology/repac-collaboration">
-        <owl:versionIRI rdf:resource="https://repac.org/ontology/v1.0/repac-collaboration"/>
-        <owl:imports rdf:resource="https://repac.org/ontology/v1.0/repac-core"/>
-        <dcterms:title xml:lang="en">REPAC Ontology — Collaboration (module)</dcterms:title>
-        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-01-26</dcterms:issued>
-        <dcterms:license rdf:resource="https://opensource.org/license/mit/"/>
-        <rdfs:comment xml:lang="en">REPAC Ontology v1.0 module. This file is part of a modular import set rooted in repac-core.owl.</rdfs:comment>
+    <owl:Ontology rdf:about="https://perryjmcleod.github.io/repac-ontology/ontology/repac-collaboration">
+        <owl:versionIRI rdf:resource="https://perryjmcleod.github.io/repac-ontology/ontology/v1.0/repac-collaboration"/>
+        <owl:imports rdf:resource="https://perryjmcleod.github.io/repac-ontology/ontology/repac-core"/>
+        <rdfs:label>REPAC Ontology – Collaboration Superset</rdfs:label>
+        <rdfs:comment>
+            Defines the Collaboration superset within the REPAC ontology.
+            Collaboration models how actors coordinate and work together
+            toward shared or interdependent outcomes.
+        </rdfs:comment>
     </owl:Ontology>
 
+    <!-- ===================================================== -->
+    <!-- Superset: Collaboration                               -->
+    <!-- ===================================================== -->
 
-<!-- ############################################################ -->
-<!-- Module: Collaboration (module)                                            -->
-<!-- ############################################################ -->
+    <repac:Superset rdf:about="#Collaboration">
+        <repac:repacId>REPAC-TL-S11</repac:repacId>
+        <repac:name>Collaboration</repac:name>
+        <repac:description>
+            The way in which actors coordinate effort and responsibility.
+        </repac:description>
+        <repac:longDescription>
+            Collaboration characterizes patterns of coordination,
+            interdependence, and joint effort among actors.
+            It does not specify communication mechanisms or
+            decision authority.
+        </repac:longDescription>
+    </repac:Superset>
 
-<!-- TODO (v1.0 build): Populate this module with the Superset individual, its Subsets/Sets/Elements,
-     and any module-local axioms. Keep cross-superset properties in repac-core.owl. -->
+    <!-- ===================================================== -->
+    <!-- Subset: Coordinated Collaboration                     -->
+    <!-- ===================================================== -->
 
+    <repac:Subset rdf:about="#CoordinatedCollaboration">
+        <repac:repacId>REPAC-COL-SS1</repac:repacId>
+        <repac:name>Coordinated Collaboration</repac:name>
+        <repac:description>
+            Collaboration based on defined roles and planned coordination.
+        </repac:description>
+        <repac:longDescription>
+            Coordinated Collaboration includes structured interaction
+            where responsibilities, dependencies, and coordination
+            mechanisms are explicitly defined.
+        </repac:longDescription>
+        <repac:partOf rdf:resource="#Collaboration"/>
+    </repac:Subset>
+
+    <!-- ===================================================== -->
+    <!-- Subset: Emergent Collaboration                        -->
+    <!-- ===================================================== -->
+
+    <repac:Subset rdf:about="#EmergentCollaboration">
+        <repac:repacId>REPAC-COL-SS2</repac:repacId>
+        <repac:name>Emergent Collaboration</repac:name>
+        <repac:description>
+            Collaboration that arises dynamically without formal structure.
+        </repac:description>
+        <repac:longDescription>
+            Emergent Collaboration includes adaptive, informal, or
+            self-organizing interaction that develops in response
+            to situational needs.
+        </repac:longDescription>
+        <repac:partOf rdf:resource="#Collaboration"/>
+    </repac:Subset>
 
 </rdf:RDF>
