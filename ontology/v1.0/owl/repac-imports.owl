@@ -23,6 +23,8 @@
         <owl:imports rdf:resource="https://perryjmcleod.github.io/repac-ontology/ontology/repac-value"/>
         <owl:imports rdf:resource="https://perryjmcleod.github.io/repac-ontology/ontology/repac-governance"/>
         <owl:imports rdf:resource="https://perryjmcleod.github.io/repac-ontology/ontology/repac-collaboration"/>
+        <owl:imports rdf:resource="https://perryjmcleod.github.io/repac-ontology/ontology/repac-imperative"/>
+
 
 
 

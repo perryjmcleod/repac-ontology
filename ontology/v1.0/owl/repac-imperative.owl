@@ -1,33 +1,78 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://repac.org/ontology#"
-     xml:base="https://repac.org/ontology/repac-imperative"
-     xmlns:repac="https://repac.org/ontology#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:dcterms="http://purl.org/dc/terms/">
+<rdf:RDF
+    xmlns="https://perryjmcleod.github.io/repac-ontology/ontology#"
+    xml:base="https://perryjmcleod.github.io/repac-ontology/ontology"
+    xmlns:repac="https://perryjmcleod.github.io/repac-ontology/ontology#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
 
-    <!-- ############################################################ -->
-    <!-- Ontology                                                     -->
-    <!-- ############################################################ -->
+    <!-- ===================================================== -->
+    <!-- Ontology declaration                                  -->
+    <!-- ===================================================== -->
 
-    <owl:Ontology rdf:about="https://repac.org/ontology/repac-imperative">
-        <owl:versionIRI rdf:resource="https://repac.org/ontology/v1.0/repac-imperative"/>
-        <owl:imports rdf:resource="https://repac.org/ontology/v1.0/repac-core"/>
-        <dcterms:title xml:lang="en">REPAC Ontology — Imperative (module)</dcterms:title>
-        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-01-26</dcterms:issued>
-        <dcterms:license rdf:resource="https://opensource.org/license/mit/"/>
-        <rdfs:comment xml:lang="en">REPAC Ontology v1.0 module. This file is part of a modular import set rooted in repac-core.owl.</rdfs:comment>
+    <owl:Ontology rdf:about="https://perryjmcleod.github.io/repac-ontology/ontology/repac-imperative">
+        <owl:versionIRI rdf:resource="https://perryjmcleod.github.io/repac-ontology/ontology/v1.0/repac-imperative"/>
+        <owl:imports rdf:resource="https://perryjmcleod.github.io/repac-ontology/ontology/repac-core"/>
+        <rdfs:label>REPAC Ontology – Imperative Superset</rdfs:label>
+        <rdfs:comment>
+            Defines the Imperative superset within the REPAC ontology.
+            Imperative models the degree of obligation or necessity
+            applied to work or decisions.
+        </rdfs:comment>
     </owl:Ontology>
 
+    <!-- ===================================================== -->
+    <!-- Superset: Imperative                                  -->
+    <!-- ===================================================== -->
 
-<!-- ############################################################ -->
-<!-- Module: Imperative (module)                                            -->
-<!-- ############################################################ -->
+    <repac:Superset rdf:about="#Imperative">
+        <repac:repacId>REPAC-TL-S12</repac:repacId>
+        <repac:name>Imperative</repac:name>
+        <repac:description>
+            The level of obligation or necessity that compels action.
+        </repac:description>
+        <repac:longDescription>
+            Imperative characterizes how strongly an action or decision
+            is required. It captures obligation force without asserting
+            origin, authority, or value.
+        </repac:longDescription>
+    </repac:Superset>
 
-<!-- TODO (v1.0 build): Populate this module with the Superset individual, its Subsets/Sets/Elements,
-     and any module-local axioms. Keep cross-superset properties in repac-core.owl. -->
+    <!-- ===================================================== -->
+    <!-- Subset: Mandatory Imperative                          -->
+    <!-- ===================================================== -->
 
+    <repac:Subset rdf:about="#MandatoryImperative">
+        <repac:repacId>REPAC-IMP-SS1</repac:repacId>
+        <repac:name>Mandatory Imperative</repac:name>
+        <repac:description>
+            An imperative that requires compliance.
+        </repac:description>
+        <repac:longDescription>
+            Mandatory Imperative applies where action is required
+            without discretion, such as legal, regulatory, or
+            safety-critical obligations.
+        </repac:longDescription>
+        <repac:partOf rdf:resource="#Imperative"/>
+    </repac:Subset>
+
+    <!-- ===================================================== -->
+    <!-- Subset: Discretionary Imperative                      -->
+    <!-- ===================================================== -->
+
+    <repac:Subset rdf:about="#DiscretionaryImperative">
+        <repac:repacId>REPAC-IMP-SS2</repac:repacId>
+        <repac:name>Discretionary Imperative</repac:name>
+        <repac:description>
+            An imperative that allows judgment or choice.
+        </repac:description>
+        <repac:longDescription>
+            Discretionary Imperative applies where action is
+            recommended, preferred, or conditionally applied,
+            allowing contextual judgment.
+        </repac:longDescription>
+        <repac:partOf rdf:resource="#Imperative"/>
+    </repac:Subset>
 
 </rdf:RDF>
