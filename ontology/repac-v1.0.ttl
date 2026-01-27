@@ -1,0 +1,165 @@
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix repac: <https://perryjmcleod.github.io/repac-ontology/ontology#> .
+
+############################################################
+# ONTOLOGY HEADER
+############################################################
+
+repac:REPAC_Ontology_v1_0
+    a owl:Ontology ;
+    rdfs:label "REPAC Ontology v1.0" ;
+    rdfs:comment "REPAC is a formal, domain-agnostic ontology for analyzing organizational alignment and failure. It models conceptual dimensions required for coherent work, governance, and value realization without prescribing process, sequence, or implementation." ;
+    owl:versionIRI <https://perryjmcleod.github.io/repac-ontology/ontology/v1.0> ;
+    owl:versionInfo "v1.0" ;
+    rdfs:isDefinedBy <https://github.com/perryjmcleod/repac-ontology> .
+
+############################################################
+# CORE META-CLASSES
+############################################################
+
+repac:Superset
+    a owl:Class ;
+    rdfs:label "Superset" ;
+    rdfs:comment "A top-level conceptual domain representing a fundamental analytical dimension within REPAC." .
+
+repac:Subset
+    a owl:Class ;
+    rdfs:label "Subset" ;
+    rdfs:comment "A primary subdivision of a Superset that refines its conceptual scope." .
+
+repac:Set
+    a owl:Class ;
+    rdfs:label "Set" ;
+    rdfs:comment "A coherent grouping of Elements within a Subset." .
+
+repac:Element
+    a owl:Class ;
+    rdfs:label "Element" ;
+    rdfs:comment "An atomic conceptual construct used for analysis and reasoning." .
+
+############################################################
+# CORE OBJECT PROPERTIES
+############################################################
+
+repac:hasSubset
+    a owl:ObjectProperty ;
+    rdfs:label "has subset" ;
+    rdfs:domain repac:Superset ;
+    rdfs:range repac:Subset .
+
+repac:hasSet
+    a owl:ObjectProperty ;
+    rdfs:label "has set" ;
+    rdfs:domain repac:Subset ;
+    rdfs:range repac:Set .
+
+repac:hasElement
+    a owl:ObjectProperty ;
+    rdfs:label "has element" ;
+    rdfs:domain repac:Set ;
+    rdfs:range repac:Element .
+
+repac:constrains
+    a owl:ObjectProperty ;
+    rdfs:label "constrains" ;
+    rdfs:comment "Indicates that one construct limits or bounds another conceptually." .
+
+repac:enables
+    a owl:ObjectProperty ;
+    rdfs:label "enables" ;
+    rdfs:comment "Indicates that one construct makes another possible without guaranteeing outcome." .
+
+repac:governs
+    a owl:ObjectProperty ;
+    rdfs:label "governs" ;
+    rdfs:comment "Indicates formal authority or decision control." .
+
+repac:influences
+    a owl:ObjectProperty ;
+    rdfs:label "influences" ;
+    rdfs:comment "Indicates non-deterministic conceptual influence." .
+
+############################################################
+# SUPERSETS
+############################################################
+
+repac:Purpose
+    a owl:Class ;
+    rdfs:subClassOf repac:Superset ;
+    rdfs:label "Purpose" ;
+    rdfs:comment "Purpose defines the fundamental reason why work exists and why value is pursued." ;
+    repac:longDescription "Purpose establishes intent and direction. It answers why effort is undertaken without defining how that effort is executed or governed." .
+
+repac:Scope
+    a owl:Class ;
+    rdfs:subClassOf repac:Superset ;
+    rdfs:label "Scope" ;
+    rdfs:comment "Scope defines the boundaries within which work is considered valid." ;
+    repac:longDescription "Scope constrains analysis by defining what is included and excluded. It does not explain origin, causality, or authority." .
+
+repac:Source
+    a owl:Class ;
+    rdfs:subClassOf repac:Superset ;
+    rdfs:label "Source" ;
+    rdfs:comment "Source identifies the origin of inputs, signals, or constraints that inform work." ;
+    repac:longDescription "Source represents where information, requirements, or stimuli originate. In REPAC v1.0, source is treated as a lens applied to scope rather than a scope subset." .
+
+repac:Imperative
+    a owl:Class ;
+    rdfs:subClassOf repac:Superset ;
+    rdfs:label "Imperative" ;
+    rdfs:comment "Imperative represents necessity or obligation that demands response." ;
+    repac:longDescription "Imperative captures forces that compel action, such as risk, urgency, or mandate, without prescribing solution or structure." .
+
+repac:Work
+    a owl:Class ;
+    rdfs:subClassOf repac:Superset ;
+    rdfs:label "Work" ;
+    rdfs:comment "Work represents the transformation of inputs into outcomes." ;
+    repac:longDescription "Work encompasses all effort that transforms scope into results. It is not synonymous with activity, process, or task lists." .
+
+repac:Value
+    a owl:Class ;
+    rdfs:subClassOf repac:Superset ;
+    rdfs:label "Value" ;
+    rdfs:comment "Value represents realized benefit or loss resulting from work." ;
+    repac:longDescription "Value is assessed after work occurs. It is not intent, effort, or output, but evaluated consequence." .
+
+repac:Governance
+    a owl:Class ;
+    rdfs:subClassOf repac:Superset ;
+    rdfs:label "Governance" ;
+    rdfs:comment "Governance defines how authority, accountability, and decision rights are exercised." ;
+    repac:longDescription "Governance constrains and legitimizes work and value realization. It is distinct from management and execution." .
+
+repac:Communication
+    a owl:Class ;
+    rdfs:subClassOf repac:Superset ;
+    rdfs:label "Communication" ;
+    rdfs:comment "Communication represents the transmission of meaning between actors." ;
+    repac:longDescription "Communication focuses on clarity, interpretation, and signal integrity, not collaboration or coordination." .
+
+repac:Collaboration
+    a owl:Class ;
+    rdfs:subClassOf repac:Superset ;
+    rdfs:label "Collaboration" ;
+    rdfs:comment "Collaboration represents coordinated effort among multiple actors." ;
+    repac:longDescription "Collaboration depends on communication but adds shared intent, interdependence, and joint accountability." .
+
+############################################################
+# EXEMPLAR RELATIONSHIPS (NON-NORMATIVE)
+############################################################
+
+repac:Purpose      repac:influences repac:Scope .
+repac:Scope        repac:constrains repac:Work .
+repac:Governance   repac:governs    repac:Work .
+repac:Work         repac:enables    repac:Value .
+repac:Communication repac:influences repac:Collaboration .
+
+############################################################
+# END OF REPAC ONTOLOGY v1.0
+############################################################
