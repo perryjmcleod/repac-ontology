@@ -1,33 +1,79 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://repac.org/ontology#"
-     xml:base="https://repac.org/ontology/repac-governance"
-     xmlns:repac="https://repac.org/ontology#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:dcterms="http://purl.org/dc/terms/">
+<rdf:RDF
+    xmlns="https://perryjmcleod.github.io/repac-ontology/ontology#"
+    xml:base="https://perryjmcleod.github.io/repac-ontology/ontology"
+    xmlns:repac="https://perryjmcleod.github.io/repac-ontology/ontology#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
 
-    <!-- ############################################################ -->
-    <!-- Ontology                                                     -->
-    <!-- ############################################################ -->
+    <!-- ===================================================== -->
+    <!-- Ontology declaration                                  -->
+    <!-- ===================================================== -->
 
-    <owl:Ontology rdf:about="https://repac.org/ontology/repac-governance">
-        <owl:versionIRI rdf:resource="https://repac.org/ontology/v1.0/repac-governance"/>
-        <owl:imports rdf:resource="https://repac.org/ontology/v1.0/repac-core"/>
-        <dcterms:title xml:lang="en">REPAC Ontology — Governance (module)</dcterms:title>
-        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-01-26</dcterms:issued>
-        <dcterms:license rdf:resource="https://opensource.org/license/mit/"/>
-        <rdfs:comment xml:lang="en">REPAC Ontology v1.0 module. This file is part of a modular import set rooted in repac-core.owl.</rdfs:comment>
+    <owl:Ontology rdf:about="https://perryjmcleod.github.io/repac-ontology/ontology/repac-governance">
+        <owl:versionIRI rdf:resource="https://perryjmcleod.github.io/repac-ontology/ontology/v1.0/repac-governance"/>
+        <owl:imports rdf:resource="https://perryjmcleod.github.io/repac-ontology/ontology/repac-core"/>
+        <rdfs:label>REPAC Ontology – Governance Superset</rdfs:label>
+        <rdfs:comment>
+            Defines the Governance superset within the REPAC ontology.
+            Governance models authority, oversight, and decision control
+            applied to work and value realization.
+        </rdfs:comment>
     </owl:Ontology>
 
+    <!-- ===================================================== -->
+    <!-- Superset: Governance                                  -->
+    <!-- ===================================================== -->
 
-<!-- ############################################################ -->
-<!-- Module: Governance (module)                                            -->
-<!-- ############################################################ -->
+    <repac:Superset rdf:about="#Governance">
+        <repac:repacId>REPAC-TL-S10</repac:repacId>
+        <repac:name>Governance</repac:name>
+        <repac:description>
+            The structures and authorities that direct and control work.
+        </repac:description>
+        <repac:longDescription>
+            Governance establishes who has the authority to decide,
+            approve, constrain, or halt work, and how accountability
+            is enforced. It does not perform work; it constrains and
+            oversees it.
+        </repac:longDescription>
+    </repac:Superset>
 
-<!-- TODO (v1.0 build): Populate this module with the Superset individual, its Subsets/Sets/Elements,
-     and any module-local axioms. Keep cross-superset properties in repac-core.owl. -->
+    <!-- ===================================================== -->
+    <!-- Subset: Strategic Governance                          -->
+    <!-- ===================================================== -->
 
+    <repac:Subset rdf:about="#StrategicGovernance">
+        <repac:repacId>REPAC-GOV-SS1</repac:repacId>
+        <repac:name>Strategic Governance</repac:name>
+        <repac:description>
+            Governance that sets direction and long-term constraints.
+        </repac:description>
+        <repac:longDescription>
+            Strategic Governance includes decision authority related
+            to purpose alignment, prioritization, funding boundaries,
+            and long-term oversight.
+        </repac:longDescription>
+        <repac:partOf rdf:resource="#Governance"/>
+    </repac:Subset>
+
+    <!-- ===================================================== -->
+    <!-- Subset: Operational Governance                        -->
+    <!-- ===================================================== -->
+
+    <repac:Subset rdf:about="#OperationalGovernance">
+        <repac:repacId>REPAC-GOV-SS2</repac:repacId>
+        <repac:name>Operational Governance</repac:name>
+        <repac:description>
+            Governance that controls execution and compliance.
+        </repac:description>
+        <repac:longDescription>
+            Operational Governance includes approval gates,
+            standards enforcement, risk controls, and escalation
+            mechanisms applied during execution.
+        </repac:longDescription>
+        <repac:partOf rdf:resource="#Governance"/>
+    </repac:Subset>
 
 </rdf:RDF>

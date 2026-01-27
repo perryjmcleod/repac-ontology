@@ -21,6 +21,8 @@
         <owl:imports rdf:resource="https://perryjmcleod.github.io/repac-ontology/ontology/repac-purpose"/>
         <owl:imports rdf:resource="https://perryjmcleod.github.io/repac-ontology/ontology/repac-work"/>
         <owl:imports rdf:resource="https://perryjmcleod.github.io/repac-ontology/ontology/repac-value"/>
+        <owl:imports rdf:resource="https://perryjmcleod.github.io/repac-ontology/ontology/repac-governance"/>
+
 
 
         <!-- NOTE:
