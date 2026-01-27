@@ -5,12 +5,26 @@
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 
+    <!-- ===================================================== -->
+    <!-- REPAC Ontology – Import Aggregator (v1.0)             -->
+    <!-- ===================================================== -->
+
     <owl:Ontology rdf:about="https://perryjmcleod.github.io/repac-ontology/ontology/repac-imports">
         <owl:versionIRI rdf:resource="https://perryjmcleod.github.io/repac-ontology/ontology/v1.0/repac-imports"/>
 
+        <!-- Core -->
         <owl:imports rdf:resource="https://perryjmcleod.github.io/repac-ontology/ontology/repac-core"/>
+
+        <!-- Supersets (v1.0, populated so far) -->
         <owl:imports rdf:resource="https://perryjmcleod.github.io/repac-ontology/ontology/repac-scope"/>
         <owl:imports rdf:resource="https://perryjmcleod.github.io/repac-ontology/ontology/repac-source"/>
+        <owl:imports rdf:resource="https://perryjmcleod.github.io/repac-ontology/ontology/repac-purpose"/>
+        <owl:imports rdf:resource="https://perryjmcleod.github.io/repac-ontology/ontology/repac-work"/>
+
+        <!-- NOTE:
+             Future supersets (Value, Governance, Collaboration, Imperative, etc.)
+             will be added here incrementally as Phase-4 proceeds.
+        -->
     </owl:Ontology>
 
 </rdf:RDF>
