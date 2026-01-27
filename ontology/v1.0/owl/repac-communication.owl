@@ -1,33 +1,76 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://repac.org/ontology#"
-     xml:base="https://repac.org/ontology/repac-communication"
-     xmlns:repac="https://repac.org/ontology#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:dcterms="http://purl.org/dc/terms/">
+<rdf:RDF
+    xmlns="https://perryjmcleod.github.io/repac-ontology/ontology#"
+    xml:base="https://perryjmcleod.github.io/repac-ontology/ontology"
+    xmlns:repac="https://perryjmcleod.github.io/repac-ontology/ontology#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
 
-    <!-- ############################################################ -->
-    <!-- Ontology                                                     -->
-    <!-- ############################################################ -->
+    <!-- ===================================================== -->
+    <!-- Ontology declaration                                  -->
+    <!-- ===================================================== -->
 
-    <owl:Ontology rdf:about="https://repac.org/ontology/repac-communication">
-        <owl:versionIRI rdf:resource="https://repac.org/ontology/v1.0/repac-communication"/>
-        <owl:imports rdf:resource="https://repac.org/ontology/v1.0/repac-core"/>
-        <dcterms:title xml:lang="en">REPAC Ontology — Communication (module)</dcterms:title>
-        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-01-26</dcterms:issued>
-        <dcterms:license rdf:resource="https://opensource.org/license/mit/"/>
-        <rdfs:comment xml:lang="en">REPAC Ontology v1.0 module. This file is part of a modular import set rooted in repac-core.owl.</rdfs:comment>
+    <owl:Ontology rdf:about="https://perryjmcleod.github.io/repac-ontology/ontology/repac-communication">
+        <owl:versionIRI rdf:resource="https://perryjmcleod.github.io/repac-ontology/ontology/v1.0/repac-communication"/>
+        <owl:imports rdf:resource="https://perryjmcleod.github.io/repac-ontology/ontology/repac-core"/>
+        <rdfs:label>REPAC Ontology – Communication Superset</rdfs:label>
+        <rdfs:comment>
+            Defines the Communication superset within the REPAC ontology.
+            Communication models how information is transmitted, shared,
+            or exchanged among actors and systems.
+        </rdfs:comment>
     </owl:Ontology>
 
+    <!-- ===================================================== -->
+    <!-- Superset: Communication                               -->
+    <!-- ===================================================== -->
 
-<!-- ############################################################ -->
-<!-- Module: Communication (module)                                            -->
-<!-- ############################################################ -->
+    <repac:Superset rdf:about="#Communication">
+        <repac:repacId>REPAC-TL-S13</repac:repacId>
+        <repac:name>Communication</repac:name>
+        <repac:description>
+            The mechanisms and patterns used to exchange information.
+        </repac:description>
+        <repac:longDescription>
+            Communication characterizes channels, formality, and direction
+            of information exchange. It does not imply coordination,
+            authority, or obligation.
+        </repac:longDescription>
+    </repac:Superset>
 
-<!-- TODO (v1.0 build): Populate this module with the Superset individual, its Subsets/Sets/Elements,
-     and any module-local axioms. Keep cross-superset properties in repac-core.owl. -->
+    <!-- ===================================================== -->
+    <!-- Subset: Formal Communication                          -->
+    <!-- ===================================================== -->
 
+    <repac:Subset rdf:about="#FormalCommunication">
+        <repac:repacId>REPAC-COM-SS1</repac:repacId>
+        <repac:name>Formal Communication</repac:name>
+        <repac:description>
+            Structured and documented information exchange.
+        </repac:description>
+        <repac:longDescription>
+            Formal Communication includes official reports, documented
+            meetings, written directives, and standardized messaging.
+        </repac:longDescription>
+        <repac:partOf rdf:resource="#Communication"/>
+    </repac:Subset>
+
+    <!-- ===================================================== -->
+    <!-- Subset: Informal Communication                        -->
+    <!-- ===================================================== -->
+
+    <repac:Subset rdf:about="#InformalCommunication">
+        <repac:repacId>REPAC-COM-SS2</repac:repacId>
+        <repac:name>Informal Communication</repac:name>
+        <repac:description>
+            Unstructured or ad-hoc information exchange.
+        </repac:description>
+        <repac:longDescription>
+            Informal Communication includes conversations, chats,
+            verbal exchanges, and undocumented interactions.
+        </repac:longDescription>
+        <repac:partOf rdf:resource="#Communication"/>
+    </repac:Subset>
 
 </rdf:RDF>
