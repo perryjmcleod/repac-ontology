@@ -1,81 +1,102 @@
-# REPAC Ontology
+# REPAC Ontology (v1.0)
 
-This repository contains the formal ontology, diagrams, and supporting artifacts for the REPAC Framework. REPAC is a structured analytical ontology for purpose-driven analysis, decision-making, and value realization in complex organizational systems.
+The REPAC Ontology is a formally structured applied ontology intended to support rigorous analysis of organizational work, failure, and value creation. It provides a stable, domain-independent analytical structure for examining factors that influence work outcomes through explicitly defined analytical domains and their constrained interrelationships.
 
-The ontology is designed to support rigorous reasoning about why work succeeds or fails across governance, scope, communication, collaboration, and value systems. It is not a workflow, process model, or execution framework.
+REPAC is not a workflow model, process framework, maturity model, scorecard, or prescriptive methodology. It does not prescribe how work should be performed. Instead, it provides the logical and structural foundation required for disciplined reasoning about work outcomes.
 
-## Scope of This Repository
+The ontology is designed for analytical reasoning, diagnosis, and post-hoc evaluation across organizational, project, and system contexts.
 
-This repository includes:
+## Ontological Commitment
 
-- Conceptual diagrams defining REPAC Supersets, Subsets, Sets, and Elements  
-- Formal OWL, RDF, and TTL representations of the ontology  
-- Supporting governance decisions, boundary definitions, and modeling constraints  
-- Materials supporting academic publication and pedagogical use  
+REPAC is an applied ontology designed to support analytical reasoning rather than domain simulation.
 
-This repository does not contain:
+The ontology commits to the following principles:
 
-- Implementation-specific tooling  
-- Domain-specific extensions (these will be maintained in separate repositories)  
-- Training courseware or marketing assets  
+- Classes represent analytically necessary constructs that must be considered when evaluating organizational work and outcomes.
+- Relations represent constrained dependencies and influences between analytical domains rather than causal mechanisms or process sequences.
+- Supersets, Subsets, Sets, and Elements are ontological classes organized to enforce analytical separation, boundary discipline, and reuse across contexts.
+- The ontology specifies the necessary considerations required to understand work outcomes rather than modeling how work unfolds over time.
 
-## Status
+REPAC does not model real-time behavior, state transitions, or execution logic. Its focus is structural completeness and analytical sufficiency.
 
-Current version: **v1.0**
+## Ontological Scope
 
-REPAC v1.0 is a stable conceptual release. The ontology structure is locked at the Superset and Subset level. No semantic changes will be made to v1.0. Clarifications may appear in patch versions, while structural or conceptual changes require a new major version.
+The formal ontology encodes:
 
-Readers should treat v1.0 as a deliberate and frozen design state suitable for citation, review, and critique.
+- Supersets as non-overlapping top-level analytical domains
+- Subsets as constrained refinements within domains
+- Sets as structured groupings of related analytical considerations
+- Elements as irreducible analytical constructs
+
+Object properties encode constrained dependencies and influences among analytical domains. These relationships do not indicate process flow, causality, or execution sequence.
+
+## Design Principles
+
+### Non-Reification of Context
+
+REPAC does not model context as a first-class ontological construct.
+
+Context is treated as an emergent property arising from the interaction of Scope, Governance, Work, Value, Communication, Collaboration, and related analytical domains. Treating context as a standalone entity introduces ambiguity, overlap, and post-hoc explanation bias.
+
+By distributing contextual influence across explicit analytical constructs, REPAC enforces traceability and prevents explanatory shortcuts. This is a deliberate design decision and a core principle of the ontology.
+
+## Why REPAC Qualifies as an Ontology
+
+REPAC meets the criteria of an ontology rather than a conceptual framework by providing:
+
+- Explicit class hierarchies with stable identity conditions
+- Typed relationships with defined semantic intent
+- Enforced boundary limitations between analytical domains
+- Formal representations in OWL and TTL suitable for reasoning tools
+- Separation of conceptual structure from methodological application
+
+The ontology is intended to support inspection, critique, extension, and systematic reasoning by ontology practitioners.
+
+## Intended Use and Audience
+
+The REPAC Ontology is intended for:
+
+- Applied ontologists and knowledge engineers
+- Researchers analyzing organizational systems and failure modes
+- Practitioners conducting structured post-incident or post-project analysis
+
+Secondary audiences include educators and analysts who require a stable analytical scaffold but do not intend to formally extend the ontology.
+
+The ontology is not intended for runtime execution, simulation, or workflow automation.
 
 ## How to Read the REPAC Ontology
 
-The REPAC Ontology is a conceptual and analytical ontology designed to model how organizational failure, misalignment, and value erosion occur across purpose, governance, work, and communication systems. It is not a process model, workflow engine, maturity model, or performance framework.
+REPAC should be interpreted as a layered analytical system.
 
-This section explains how to interpret the ontology correctly.
+Supersets define non-overlapping analytical domains.  
+Subsets refine domain scope without collapsing boundaries.  
+Sets organize related analytical concerns within a domain.  
+Elements represent irreducible analytical considerations.
 
-### What REPAC Is
+Relationships represent dependency, constraint, or influence rather than process sequence or causality.
 
-REPAC is a structural reasoning framework that models why work succeeds or fails rather than how work should be executed. It separates intention, constraint, execution, and valuation into distinct analytical domains. The ontology supports failure analysis, diagnosis, and post-hoc reasoning across organizational systems.
+## Repository Structure
 
-REPAC is method-agnostic and tool-independent by design.
 
-### What REPAC Is Not
+## Formal Ontology Artifacts
 
-REPAC does not prescribe workflows, best practices, or methodologies. It does not replace domain-specific frameworks such as project management, business analysis, learning and development, or IT service management. It does not model individual tasks, procedures, tools, or roles, and it is not a maturity model or scorecard.
+The formal ontology is provided in OWL and TTL formats within the ontology directory. These artifacts are machine-readable and suitable for inspection, validation, and automated reasoning using standard ontology tools such as Protégé.
 
-Any interpretation of REPAC as an execution framework is a misuse of the ontology.
+The ontology artifacts are semantically aligned with the stabilized REPAC conceptual structure and are consistent with the diagrams, governance rules, and academic paper contained in this repository.
 
-### Supersets as Analytical Domains
+The ontology is versioned and semantically fixed at v1.0.
 
-At the top level, REPAC is organized into Supersets. Each Superset represents a distinct analytical domain, not a phase, step, or lifecycle stage. Supersets answer different classes of questions, such as why work exists, what constrains it, what work is being performed, and what value is produced or lost.
+## Non-Goals
 
-Supersets are not interchangeable and should not be collapsed into one another.
+REPAC explicitly does not aim to:
 
-### Scope as a Lens
+- Replace existing process frameworks or practices
+- Provide prescriptive advice or best practices
+- Model execution logic, workflows, or system behavior
+- Serve as a maturity model or assessment instrument
 
-REPAC treats Scope as a lens rather than a source. Internal and External Scope constructs define boundaries of applicability, not origins of causation. They do not create work, value, or governance. Instead, they constrain where those constructs apply.
+These exclusions are intentional and enforced to preserve analytical clarity.
 
-This design choice is intentional and differs from many traditional enterprise and architecture models.
+## License
 
-### Directionality and Dependency
-
-Relationships in REPAC are directional and intentional. Governance constrains work; it does not generate it. Work produces value; value does not precede work. Purpose justifies work; it does not perform it.
-
-Circular causality is avoided unless explicitly stated and analytically justified.
-
-### Diagrams and Ontology Files
-
-Diagrams are the primary human-readable representation of REPAC. TTL and OWL files provide the formal, machine-readable encoding. Diagrams and ontology files are semantically aligned. Neither introduces unique meaning.
-
-If a construct appears in a diagram, it must exist in the ontology files, and vice versa.
-
-### Intended Use
-
-REPAC is intended for organizational failure analysis, post-incident reviews, governance and accountability audits, cross-domain alignment reasoning, and the teaching of analytical thinking about work systems.
-
-It is not intended for operational execution.
-
-## Author
-
-Perry J. McLeod  
-Author of *The Complete Guide to Requirements Management Using the REPAC Framework*
+This project is licensed under the terms specified in the LICENSE file.
