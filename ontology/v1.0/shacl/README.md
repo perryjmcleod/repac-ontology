@@ -1,8 +1,6 @@
 # REPAC v1.0 — SHACL Shapes
 
-This directory contains SHACL shapes used to validate the **structural integrity**
-of the REPAC Ontology. These shapes are intentionally minimal and serve as
-governance guardrails rather than semantic constraints.
+This directory contains SHACL shapes that support validation of the structural integrity of the REPAC Ontology. These shapes are deliberately minimal and are intended to provide governance guardrails without imposing semantic constraints.
 
 REPAC separates concerns explicitly:
 
