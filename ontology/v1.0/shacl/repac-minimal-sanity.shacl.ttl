@@ -1,0 +1,116 @@
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix repac: <https://repac.org/ontology#> .
+
+#################################################################
+# REPAC v1.0 — Minimal SHACL Sanity Shapes (Phase 7.3)
+#
+# Intent:
+# - Catch obvious structural errors early (missing names, bad IDs, wrong value types)
+# - Avoid over-constraining semantics (keep relationships mostly optional)
+#################################################################
+
+############################
+# Shared NodeShape (mixin)
+############################
+
+repac:NamedThingShape
+    a sh:NodeShape ;
+    sh:property [
+        sh:path repac:name ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:minLength 1 ;
+        sh:message "Each REPAC construct must have exactly one repac:name (non-empty xsd:string)." ;
+    ] ;
+    sh:property [
+        sh:path repac:repacId ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:pattern "^REPAC-[A-Za-z0-9]+(-[A-Za-z0-9]+)*$" ;
+        sh:message "If present, repac:repacId must match pattern like REPAC-TL-S1 (string)." ;
+    ] ;
+    sh:property [
+        sh:path repac:description ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:message "If present, repac:description must be a single xsd:string." ;
+    ] ;
+    sh:property [
+        sh:path rdfs:label ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:message "If present, rdfs:label must be a single xsd:string." ;
+    ] .
+
+############################
+# Superset
+############################
+
+repac:SupersetShape
+    a sh:NodeShape ;
+    sh:targetClass repac:Superset ;
+    sh:node repac:NamedThingShape ;
+    sh:property [
+        sh:path repac:hasSubset ;
+        sh:class repac:Subset ;
+        sh:message "If present, repac:hasSubset values must be repac:Subset." ;
+    ] .
+
+############################
+# Subset
+############################
+
+repac:SubsetShape
+    a sh:NodeShape ;
+    sh:targetClass repac:Subset ;
+    sh:node repac:NamedThingShape ;
+    sh:property [
+        sh:path repac:inSuperset ;
+        sh:class repac:Superset ;
+        sh:maxCount 1 ;
+        sh:message "If present, repac:inSuperset must point to one repac:Superset." ;
+    ] ;
+    sh:property [
+        sh:path repac:hasSet ;
+        sh:class repac:Set ;
+        sh:message "If present, repac:hasSet values must be repac:Set." ;
+    ] .
+
+############################
+# Set
+############################
+
+repac:SetShape
+    a sh:NodeShape ;
+    sh:targetClass repac:Set ;
+    sh:node repac:NamedThingShape ;
+    sh:property [
+        sh:path repac:inSubset ;
+        sh:class repac:Subset ;
+        sh:maxCount 1 ;
+        sh:message "If present, repac:inSubset must point to one repac:Subset." ;
+    ] ;
+    sh:property [
+        sh:path repac:hasElement ;
+        sh:class repac:Element ;
+        sh:message "If present, repac:hasElement values must be repac:Element." ;
+    ] .
+
+############################
+# Element
+############################
+
+repac:ElementShape
+    a sh:NodeShape ;
+    sh:targetClass repac:Element ;
+    sh:node repac:NamedThingShape ;
+    sh:property [
+        sh:path repac:inSet ;
+        sh:class repac:Set ;
+        sh:maxCount 1 ;
+        sh:message "If present, repac:inSet must point to one repac:Set." ;
+    ] .
