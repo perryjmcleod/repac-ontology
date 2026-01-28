@@ -126,6 +126,10 @@ REPAC explicitly does not aim to:
 
 These exclusions are intentional and enforced to preserve analytical clarity.
 
+## Validation Status
+
+REPAC Ontology v1.0 was validated using the HermiT DL reasoner. The ontology and its imports closure were found to be logically consistent, with no unsatisfiable classes or reasoning errors detected.
+
 ## License
 
 This project is licensed under the terms specified in the LICENSE file.

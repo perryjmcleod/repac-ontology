@@ -20,4 +20,9 @@ not as Source Subsets.
 OWL / TTL files are generated only after semantic stabilization.
 Diagrams and prose are considered the authoritative pre-formal source.
 
+## Validation Status
+
+Logical consistency validation for v1.0 was completed using a DL reasoner. See README for validation status.
+
+
 (Additional decisions appended chronologically.)
