@@ -6,6 +6,26 @@ REPAC is not a workflow model, process framework, maturity model, scorecard, or 
 
 The ontology is designed for analytical reasoning, diagnosis, and post-hoc evaluation across organizational, project, and system contexts.
 
+## Conformance and Authority
+
+The authoritative definition of the REPAC Ontology v1.0 consists exclusively of:
+
+- Formal ontology artifacts (OWL / RDF / TTL) under `/ontology`
+- Canonical REPAC diagrams and their source files
+- This README.md
+
+These artifacts are **normative**.
+
+All other materials in this repository — including walkthroughs, reviewer simulations,
+reviewer notes, positioning documents, and explanatory narratives — are **non-normative**.
+They are provided for transparency, review support, and interpretive guidance only.
+
+Non-normative artifacts:
+- Do not define ontology structure
+- Do not introduce constraints
+- Do not modify semantics
+- Must not be cited as the ontology itself
+
 ## Ontological Commitment
 
 REPAC is an applied ontology designed to support analytical reasoning rather than domain simulation.
@@ -77,10 +97,19 @@ Relationships represent dependency, constraint, or influence rather than process
 
 ## Repository Structure
 
+This repository is organized as follows:
+
+- `/ontology` — Normative ontology artifacts (OWL / RDF / TTL)
+- `/diagrams` — Canonical REPAC diagrams and source files
+- `/docs` — Non-normative supporting materials (reviewer notes, walkthroughs, positioning)
+- `/governance` — Modeling rules, constraints, and design decisions
+- `README.md` — Authoritative definition of ontology scope and intent
+
+Only artifacts under `/ontology`, canonical diagrams, and this README define the ontology.
 
 ## Formal Ontology Artifacts
 
-The formal ontology is provided in OWL and TTL formats within the ontology directory. These artifacts are machine-readable and suitable for inspection, validation, and automated reasoning using standard ontology tools such as Protégé.
+The formal ontology is provided in OWL and TTL formats within the `/ontology` directory. These artifacts are machine-readable and suitable for inspection, validation, and automated reasoning using standard ontology tools such as Protégé.
 
 The ontology artifacts are semantically aligned with the stabilized REPAC conceptual structure and are consistent with the diagrams, governance rules, and academic paper contained in this repository.
 
