@@ -1,0 +1,24 @@
+REPAC v1.0 — Version Authority and Immutability Statement
+
+This document defines the version authority and immutability commitments for REPAC v1.0, an applied analytical ontology for disciplined explanation of organizational work and value outcomes.
+
+Version Authority
+REPAC v1.0 semantics are authoritatively defined by the published formal ontology artifacts included in this supplementary package, together with the canonical diagrams referenced in the accompanying manuscript. The manuscript serves an explanatory and illustrative role only and is non-normative with respect to version semantics.
+
+In the event of any divergence between interpretations inferred from narrative description and constraints expressed in the formal artifacts, the formal artifacts are treated as definitive for REPAC v1.0 semantics. This rule exists to support reproducibility, inspection, and comparability across reuse.
+
+Immutability Commitment
+REPAC v1.0 is treated as immutable with respect to the meaning of its top-level analytical domains and declared structural constraints. No revisions, reinterpretations, or retroactive modifications alter the semantics of REPAC v1.0 after publication.
+
+Future work may extend REPAC through additive overlays, mappings, or domain-specific specializations. Such extensions do not modify, override, or reinterpret REPAC v1.0 semantics and must be treated as separate, versioned artifacts.
+
+Scope of Authority
+The authoritative scope of REPAC v1.0 includes:
+- The formal ontology artifacts (e.g., repac-v1.0.ttl)
+- The canonical diagrams included as supplementary materials
+- The version identifier REPAC v1.0
+
+Other materials, including analytical examples, scenario demonstrations, or explanatory prose, do not redefine version semantics.
+
+Purpose
+These commitments exist to prevent semantic drift, support citation stability, and ensure that analyses referencing REPAC v1.0 can be compared under a shared and inspectable meaning basis.
