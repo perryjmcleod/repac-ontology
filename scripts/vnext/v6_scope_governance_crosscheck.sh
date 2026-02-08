@@ -41,15 +41,9 @@ grep -q "^## F\. Import Audit" "${DECOMP_MD}" || \
 grep -q "Cross-check Scaffold Applied (Script 5/6)" "${CROSS_MD}" && \
   die "Cross-check scaffold already applied."
 
-# Locate frozen Scope pilot (fixed to repo layout: ontology/vNext/pilot/scope)
-for d in \
-  vnext/phase-v4-scope-pilot \
-  vnext/phase-v4-scope
-do
-  [ -d "$d" ] && SCOPE_ROOT="$d" && break
-done
-
-[ -n "${SCOPE_ROOT:-}" ] || die "Frozen Scope pilot directory not found."
+# Locate frozen Scope pilot (repo layout)
+SCOPE_ROOT="pilot/scope"
+[ -d "" ] || die "Frozen Scope pilot directory not found."
 
 SCOPE_GIT_COMMIT="$(git rev-parse HEAD)"
 
