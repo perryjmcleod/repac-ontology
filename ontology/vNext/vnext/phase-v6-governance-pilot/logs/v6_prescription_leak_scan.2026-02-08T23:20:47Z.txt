@@ -1,0 +1,9 @@
+REPAC vNext — Phase V-6 Prescription Leak Scan Report (Revised)
+Timestamp (UTC): 2026-02-08T23:20:47Z
+Git Commit: 95668d208ed2095c864d6967b7d16173b60170e9
+Scope: Decomposition Sections B–E + Cross-check body only
+
+== V6-governance-decomposition.md (Sections B–E) ==
+
+== V6-scope-governance-crosscheck.md (Body) ==
+
