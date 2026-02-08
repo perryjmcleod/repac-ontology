@@ -41,7 +41,7 @@ grep -q "^## F\. Import Audit" "${DECOMP_MD}" || \
 grep -q "Cross-check Scaffold Applied (Script 5/6)" "${CROSS_MD}" && \
   die "Cross-check scaffold already applied."
 
-# Locate frozen Scope pilot (adjust only if directory names change)
+# Locate frozen Scope pilot (fixed to repo layout: ontology/vNext/pilot/scope)
 for d in \
   vnext/phase-v4-scope-pilot \
   vnext/phase-v4-scope
