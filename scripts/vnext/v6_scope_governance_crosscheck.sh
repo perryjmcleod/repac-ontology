@@ -2,6 +2,14 @@
 # REPAC vNext — Phase V-6
 # Script 5/6: Scope ↔ Governance cross-check enforcement
 # POSIX-safe. Robust to formatting differences in prior scripts.
+#
+# Deterministic freeze mode:
+#   If V6_FREEZE=1, the script performs prerequisite validation and
+#   (if needed) scaffold enforcement, but it will NOT:
+#     - create snapshot pointers
+#     - create execution records
+#     - git add / stage files
+#   This enables Script 6/6 to treat Script 5/6 as read-only during freeze.
 
 set -eu
 
@@ -14,7 +22,10 @@ need_cmd sed
 
 git rev-parse --is-inside-work-tree >/dev/null 2>&1 || die "Not inside a git work tree."
 
-# Clean tree guard
+# Freeze mode flag (default: 0)
+FREEZE_MODE="${V6_FREEZE:-0}"
+
+# Clean tree guard (allow logs/ if ignored; enforce porcelain clean regardless)
 if [ -n "$(git status --porcelain)" ]; then
   die "Working tree not clean. Commit or stash before running Script 5/6."
 fi
@@ -37,7 +48,7 @@ mkdir -p "${SCRIPT_REC_DIR}"
 grep -q "^## F\. Import Audit" "${DECOMP_MD}" || \
   die "Canonical import section not found in ${DECOMP_MD}. Run Script 2/6 first."
 
-# Refuse re-run
+# Refuse re-run if scaffold already applied (this is deterministic and prevents drift)
 grep -q "Cross-check Scaffold Applied (Script 5/6)" "${CROSS_MD}" && \
   die "Cross-check scaffold already applied."
 
@@ -46,11 +57,14 @@ SCOPE_ROOT="pilot/scope"
 [ -d "${SCOPE_ROOT}" ] || die "Frozen Scope pilot directory not found."
 SCOPE_GIT_COMMIT="$(git rev-parse HEAD)"
 
-# Snapshot pointer
+# Snapshot pointer (skip in freeze mode)
 SNAPSHOT_MD="${ART_DIR}/V6-scope-pilot-snapshot-pointer.md"
-[ -e "${SNAPSHOT_MD}" ] && die "Snapshot pointer already exists."
+if [ "${FREEZE_MODE}" = "1" ]; then
+  : # deterministic: do not create/modify snapshot pointer
+else
+  [ -e "${SNAPSHOT_MD}" ] && die "Snapshot pointer already exists."
 
-cat > "${SNAPSHOT_MD}" <<EOF2
+  cat > "${SNAPSHOT_MD}" <<EOF2
 # REPAC vNext — Phase V-6
 ## Scope Pilot Snapshot Pointer (Reference Only)
 
@@ -60,6 +74,7 @@ cat > "${SNAPSHOT_MD}" <<EOF2
 
 This file anchors the Scope ↔ Governance cross-check inputs.
 EOF2
+fi
 
 # Enforce cross-check scaffold
 TMP_DIR="$(mktemp -d)"
@@ -126,15 +141,23 @@ awk '
 
 mv "${OUT_MD}" "${CROSS_MD}"
 
-# Execution record
-{
-  printf '%s\n' "Phase V-6 Scope–Governance cross-check enforced @ ${TS_UTC}"
-  printf '%s\n' "git_commit=$(git rev-parse HEAD)"
-  printf '%s\n' "scope_root=${SCOPE_ROOT}"
-  printf '%s\n' "snapshot=${SNAPSHOT_MD}"
-} > "${EXEC_REC}"
+# Execution record + staging (skip in freeze mode)
+if [ "${FREEZE_MODE}" = "1" ]; then
+  : # deterministic: do not create execution record or stage files
+else
+  {
+    printf '%s\n' "Phase V-6 Scope–Governance cross-check enforced @ ${TS_UTC}"
+    printf '%s\n' "git_commit=$(git rev-parse HEAD)"
+    printf '%s\n' "scope_root=${SCOPE_ROOT}"
+    printf '%s\n' "snapshot=${SNAPSHOT_MD}"
+  } > "${EXEC_REC}"
 
-git add "${CROSS_MD}" "${SNAPSHOT_MD}" "${EXEC_REC}"
+  git add "${CROSS_MD}" "${SNAPSHOT_MD}" "${EXEC_REC}"
+fi
 
 printf '%s\n' "OK: Script 5/6 complete."
-printf '%s\n' "Next: populate cross-check observations, then run Script 6/6."
+if [ "${FREEZE_MODE}" = "1" ]; then
+  printf '%s\n' "Mode: deterministic (V6_FREEZE=1) — no files staged."
+else
+  printf '%s\n' "Next: populate cross-check observations, then run Script 6/6."
+fi
