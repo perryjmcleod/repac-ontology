@@ -43,7 +43,7 @@ grep -q "Cross-check Scaffold Applied (Script 5/6)" "${CROSS_MD}" && \
 
 # Locate frozen Scope pilot (repo layout)
 SCOPE_ROOT="pilot/scope"
-[ -d "" ] || die "Frozen Scope pilot directory not found."
+[ -d "${SCOPE_ROOT}" ] || die "Frozen Scope pilot directory not found."
 SCOPE_GIT_COMMIT="$(git rev-parse HEAD)"
 
 # Snapshot pointer
