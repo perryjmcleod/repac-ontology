@@ -7,7 +7,7 @@
 ## Governance
 1. What formal governance rules, policies, or procedures govern promotion decisions in this organization?
 2. Were those rules explicitly invoked, bypassed, or reinterpreted in this case?
-3. If an exception pathway exists, what conditions must be met to invoke it?
+3. If an exception pathway exists, what conditions are required to be met to invoke it?
 4. Who holds decision rights for bypassing standard posting procedures?
 5. Was any deviation documented, justified, or auditable?
 6. How are transparency and procedural fairness defined in the governance framework?

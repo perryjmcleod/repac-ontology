@@ -1,4 +1,4 @@
-# REPAC Case 02 — Step 8
+# REPAC Case 02 — Step 08: Communication and Collaboration Analysis
 ## Communication–Collaboration Cross-Domain Constraint Mapping
 
 ## Case Reference

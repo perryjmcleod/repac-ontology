@@ -1,4 +1,4 @@
-# REPAC Case 03 — Step 9
+# REPAC Case 03 — Step 09: Value and Legitimacy Impacts
 ## Value–Legitimacy Impact Mapping
 
 ## Case Reference

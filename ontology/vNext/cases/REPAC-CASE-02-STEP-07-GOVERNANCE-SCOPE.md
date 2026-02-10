@@ -1,4 +1,4 @@
-# REPAC Case 02 — Step 7
+# REPAC Case 02 — Step 07: Governance and Scope
 ## Governance–Scope Cross-Domain Constraint Mapping
 
 ## Case Reference
@@ -71,7 +71,7 @@ The goal is to make **constraint interactions explicit** so performance outcomes
 This artifact does **not** claim:
 - That governance mandates were misguided
 - That scope was excessive
-- That exemptions should have been granted
+- That exemptions were expected to be granted
 
 ---
 

@@ -38,7 +38,7 @@
 ## Work
 
 1. What work was required to deliver the transformation?
-2. What additional work was required to adopt or integrate the delivered solution?
+2. What additional work was required to adopt or integrate the delivered resolution?
 3. Were these work types distinguished or conflated?
 4. Who was responsible for adoption-related work?
 5. Was adoption work resourced, scheduled, or assumed?

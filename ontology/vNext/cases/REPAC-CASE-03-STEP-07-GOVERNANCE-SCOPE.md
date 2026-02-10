@@ -1,4 +1,4 @@
-# REPAC Case 03 — Step 7
+# REPAC Case 03 — Step 07: Governance and Scope
 ## Governance–Scope Cross-Domain Constraint Mapping
 
 ## Case Reference

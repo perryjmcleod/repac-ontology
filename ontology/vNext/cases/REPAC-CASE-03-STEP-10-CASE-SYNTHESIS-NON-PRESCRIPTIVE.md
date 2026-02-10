@@ -1,4 +1,4 @@
-# REPAC Case 03 — Step 10
+# REPAC Case 03 — Step 10: Case Synthesis (Non-Prescriptive)
 ## Case Synthesis (Non-Prescriptive)
 
 This case demonstrates how **delivery-oriented governance and tightly bounded scope** can produce formally successful outcomes that remain contested in terms of value and legitimacy.

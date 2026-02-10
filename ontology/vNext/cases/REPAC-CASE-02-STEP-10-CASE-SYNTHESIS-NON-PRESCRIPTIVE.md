@@ -1,4 +1,4 @@
-# REPAC Case 02 — Step 10
+# REPAC Case 02 — Step 10: Case Synthesis (Non-Prescriptive)
 ## Case Synthesis (Non-Prescriptive)
 
 This case demonstrates how **compliance-oriented governance**, when combined with **broad, uniform scope and limited collaboration**, can satisfy formal mandates while producing contested value outcomes.

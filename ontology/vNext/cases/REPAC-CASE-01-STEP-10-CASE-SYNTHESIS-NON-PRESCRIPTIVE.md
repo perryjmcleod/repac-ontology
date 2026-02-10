@@ -1,4 +1,4 @@
-# REPAC Case 01 — Step 10
+# REPAC Case 01 — Step 10: Case Synthesis (Non-Prescriptive)
 ## Case Synthesis (Non-Prescriptive)
 
 ## Case Reference
