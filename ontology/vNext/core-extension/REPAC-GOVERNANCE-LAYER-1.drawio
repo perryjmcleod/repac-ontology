@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2026-02-11T00:00:00.000Z" agent="GPT-5.2 Thinking" version="24.7.17" type="device">
+  <diagram id="GOV-L1" name="GOV-LAYER-1-Explosion">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Superset Header (UserObject, blue header tile) -->
+        <UserObject id="GOV-SUPERSET" label="Governance">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1F4E79;fontColor=#FFFFFF;strokeColor=#1F4E79;align=center;verticalAlign=middle;fontStyle=1;" vertex="1" parent="1">
+            <mxGeometry x="390" y="40" width="320" height="50" as="geometry"/>
+          </mxCell>
+        </UserObject>
+
+        <!-- Row 1 -->
+        <mxCell id="GOV-EL-01" value="GOV-EL-01&#10;Authority Structure" style="rounded=1;whiteSpace=wrap;html=1;arcSize=18;fillColor=#FFFFFF;strokeColor=#2F5597;align=center;verticalAlign=middle;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="140" width="200" height="90" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="GOV-EL-02" value="GOV-EL-02&#10;Decision Rights Allocation" style="rounded=1;whiteSpace=wrap;html=1;arcSize=18;fillColor=#FFFFFF;strokeColor=#2F5597;align=center;verticalAlign=middle;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="140" width="200" height="90" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="GOV-EL-03" value="GOV-EL-03&#10;Legitimacy Basis" style="rounded=1;whiteSpace=wrap;html=1;arcSize=18;fillColor=#FFFFFF;strokeColor=#2F5597;align=center;verticalAlign=middle;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="140" width="200" height="90" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="GOV-EL-04" value="GOV-EL-04&#10;Enforcement Mechanism" style="rounded=1;whiteSpace=wrap;html=1;arcSize=18;fillColor=#FFFFFF;strokeColor=#2F5597;align=center;verticalAlign=middle;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="140" width="200" height="90" as="geometry"/>
+        </mxCell>
+
+        <!-- Row 2 -->
+        <mxCell id="GOV-EL-05" value="GOV-EL-05&#10;Escalation Logic" style="rounded=1;whiteSpace=wrap;html=1;arcSize=18;fillColor=#FFFFFF;strokeColor=#2F5597;align=center;verticalAlign=middle;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="270" width="200" height="90" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="GOV-EL-06" value="GOV-EL-06&#10;Oversight Construct" style="rounded=1;whiteSpace=wrap;html=1;arcSize=18;fillColor=#FFFFFF;strokeColor=#2F5597;align=center;verticalAlign=middle;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="270" width="200" height="90" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="GOV-EL-07" value="GOV-EL-07&#10;Compliance Mechanism" style="rounded=1;whiteSpace=wrap;html=1;arcSize=18;fillColor=#FFFFFF;strokeColor=#2F5597;align=center;verticalAlign=middle;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="270" width="200" height="90" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="GOV-EL-08" value="GOV-EL-08&#10;Informal Governance Overlay" style="rounded=1;whiteSpace=wrap;html=1;arcSize=18;fillColor=#FFFFFF;strokeColor=#2F5597;align=center;verticalAlign=middle;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="270" width="200" height="90" as="geometry"/>
+        </mxCell>
+
+        <!-- Connectors: Governance -> each element (no arrows, no labels) -->
+        <mxCell id="E-GOV-01" style="endArrow=none;startArrow=none;html=1;strokeColor=#2F5597;rounded=0;" edge="1" parent="1" source="GOV-SUPERSET" target="GOV-EL-01">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="E-GOV-02" style="endArrow=none;startArrow=none;html=1;strokeColor=#2F5597;rounded=0;" edge="1" parent="1" source="GOV-SUPERSET" target="GOV-EL-02">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="E-GOV-03" style="endArrow=none;startArrow=none;html=1;strokeColor=#2F5597;rounded=0;" edge="1" parent="1" source="GOV-SUPERSET" target="GOV-EL-03">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="E-GOV-04" style="endArrow=none;startArrow=none;html=1;strokeColor=#2F5597;rounded=0;" edge="1" parent="1" source="GOV-SUPERSET" target="GOV-EL-04">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="E-GOV-05" style="endArrow=none;startArrow=none;html=1;strokeColor=#2F5597;rounded=0;" edge="1" parent="1" source="GOV-SUPERSET" target="GOV-EL-05">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="E-GOV-06" style="endArrow=none;startArrow=none;html=1;strokeColor=#2F5597;rounded=0;" edge="1" parent="1" source="GOV-SUPERSET" target="GOV-EL-06">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="E-GOV-07" style="endArrow=none;startArrow=none;html=1;strokeColor=#2F5597;rounded=0;" edge="1" parent="1" source="GOV-SUPERSET" target="GOV-EL-07">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="E-GOV-08" style="endArrow=none;startArrow=none;html=1;strokeColor=#2F5597;rounded=0;" edge="1" parent="1" source="GOV-SUPERSET" target="GOV-EL-08">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
