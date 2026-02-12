@@ -1,0 +1,71 @@
+<mxfile host="app.diagrams.net" modified="2026-02-11T00:00:00.000Z" agent="5.0 (Mac)" version="22.1.0">
+  <diagram name="Scope L1 Structure" id="scope-l1-structure">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Scope Superset -->
+        <mxCell id="scope" value="Scope (Superset)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="100" width="300" height="70" as="geometry"/>
+        </mxCell>
+
+        <!-- Inclusion Boundary -->
+        <mxCell id="incl" value="Inclusion Boundary" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="300" width="220" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Exclusion Boundary -->
+        <mxCell id="excl" value="Exclusion Boundary" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="300" width="220" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Granularity Level -->
+        <mxCell id="gran" value="Granularity Level" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="300" width="220" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Actor Boundary -->
+        <mxCell id="actor" value="Actor Boundary" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="185" y="420" width="220" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Artefact Boundary -->
+        <mxCell id="artefact" value="Artefact Boundary" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="455" y="420" width="220" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Constraint Boundary -->
+        <mxCell id="constraint" value="Constraint Boundary" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="725" y="420" width="220" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Edges -->
+        <mxCell id="e1" edge="1" parent="1" source="scope" target="incl">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e2" edge="1" parent="1" source="scope" target="excl">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e3" edge="1" parent="1" source="scope" target="gran">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e4" edge="1" parent="1" source="scope" target="actor">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e5" edge="1" parent="1" source="scope" target="artefact">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e6" edge="1" parent="1" source="scope" target="constraint">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

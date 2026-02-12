@@ -1,229 +1,243 @@
 # Scope Superset  
-## Layer-1 Validation Stubs  
+## Layer-1 Validation (Populated)  
 ### Cases 01–03  
-### Status: Draft (Populate with case-specific nouns only)
+### Source: Step 10 Case Synthesis Surfaces  
+### Status: Candidate Instantiation (Non-Prescriptive)
 
 ---
 
-## Usage Rules (Locked)
+## Locked Usage Rules
 
 - These are **Scope boundary declarations**, not recommendations.
 - Use neutral language: “in-frame”, “out-of-frame”, “treated as”, “considered”.
-- Do not use: “should”, “must”, “needs to”, “recommended”.
+- Avoid: “should”, “must”, “needs to”, “recommended”.
 - Do not encode workflow, accountability, authority, or governance enforcement.
-- Constraints are treated as **boundary conditions**, not “context objects”.
+- Constraints are captured as **boundary conditions**, not “context objects”.
 
 ---
 
-# CASE 01 — Validation Stubs
+# CASE 01 — Promotion Without Posting
 
 ## 1. Inclusion Boundary (Case 01)
 
-**In-frame:**  
-- [Thing(s) explicitly included for consideration]  
-- [Actor(s)/artefact(s) included as subjects of analysis]
+**In-frame (treated as eligible for consideration):**
+- The promotion decision and the absence of a formal posting or open competition.
+- The decision process as experienced as “procedurally irregular” by at least one affected party.
+- How boundary signalling (explicit vs implicit) shapes interpretive ambiguity about eligibility to participate.
 
 **Boundary note:**  
-This inclusion is a statement of analytic frame membership only.
+Inclusion establishes what is examined as part of the analytic frame, without asserting whether posting was required or whether the decision was justified.
 
 ---
 
 ## 2. Exclusion Boundary (Case 01)
 
-**Out-of-frame:**  
-- [Thing(s) explicitly excluded]  
-- [Actor(s)/artefact(s) excluded from consideration]
+**Out-of-frame (explicitly not treated as part of the analytic frame):**
+- Determinations of individual wrongdoing, intent, or fault.
+- Claims that a policy failure necessarily occurred.
+- Counterfactual claims about which candidate “should” have received the promotion.
 
 **Boundary note:**  
-This exclusion prevents uncontrolled frame expansion; it does not imply prohibition.
+Exclusion is out-of-frame delimitation only. It does not imply that excluded claims are false, only that they are not established within the current evidence surface.
 
 ---
 
 ## 3. Granularity Level (Case 01)
 
-**Resolution treated as:**  
-- [e.g., “process-level”, “interaction-level”, “decision-level”, “artefact-level”, “policy-statement-level”]
+**Resolution treated as:**
+- Decision-process and meaning-transfer level (how the decision was bounded, signalled, and interpreted).
+- Cross-domain interaction level (Scope–Governance, Communication–Collaboration, Value–Legitimacy).
 
 **Boundary note:**  
-Granularity states the resolution of explanation, not a decomposition of execution.
+Granularity indicates resolution of explanation, not a decomposition of execution steps.
 
 ---
 
 ## 4. Actor Boundary (Case 01)
 
-**Actors considered in-frame:**  
-- [Actor group A]  
-- [Actor group B]  
-- [Optional: external actor type, if explicitly considered]
+**Actors considered in-frame:**
+- The decision-maker(s) (unspecified).
+- At least one affected party who experienced the process as procedurally irregular.
+- Potentially eligible participants as a class, insofar as “eligibility to participate” is implicated by boundary signalling.
 
 **Boundary note:**  
-Actor boundary identifies who is considered, not who is responsible or accountable.
+Actor boundary identifies who is considered, not who is accountable or authorized.
 
 ---
 
 ## 5. Artefact Boundary (Case 01)
 
-**Artefacts/systems/deliverables considered in-frame:**  
-- [Artefact/system A]  
-- [Artefact/system B]
+**Artefacts/systems considered in-frame:**
+- The promotion posting mechanism (or its absence as an artefact-state).
+- Any visible governance mechanism signalling eligibility and process boundary (treated abstractly; not enumerated as policy requirements).
 
 **Boundary note:**  
-Artefact boundary identifies objects considered, not required deliverables.
+Artefact boundary identifies objects considered without asserting mandatory documentation regimes.
 
 ---
 
 ## 6. Constraint Boundary (Case 01)
 
-**Limiting conditions treated as active delimiters:**  
-- [Constraint A stated neutrally as a boundary condition]  
-- [Constraint B stated neutrally as a boundary condition]
+**Limiting conditions treated as active delimiters:**
+- Visibility limits on exceptions (exceptions “not visibly bounded” increase interpretive ambiguity).
+- Evidence limits (additional evidence would be required to support conclusions about wrongdoing, policy failure, or unjustified exception).
 
 **Boundary note:**  
-Constraints are captured as delimiters on analysis, not as governance rules or obligations.
+Constraints function as delimiters on what can be explained from the available surface, without converting constraints into obligations or governance rules.
 
 ---
 
-# CASE 02 — Validation Stubs
+# CASE 02 — Compliance-Driven Training That Reduces Performance
 
 ## 1. Inclusion Boundary (Case 02)
 
-**In-frame:**  
-- [Thing(s) explicitly included for consideration]  
-- [Actor(s)/artefact(s) included as subjects of analysis]
+**In-frame:**
+- Compliance-oriented governance defined narrowly by completion.
+- Broad, uniform scope applied across participants.
+- Limited collaboration conditions (beyond information transfer) and their interaction with perceived value outcomes.
 
 **Boundary note:**  
-Inclusion states analytic membership only.
+Inclusion bounds the explanatory surface without asserting training “failed” or that compliance is improper.
 
 ---
 
 ## 2. Exclusion Boundary (Case 02)
 
-**Out-of-frame:**  
-- [Thing(s) explicitly excluded]  
-- [Actor(s)/artefact(s) excluded]
+**Out-of-frame:**
+- A critique of compliance as a category.
+- Claims of mismanagement or fault.
+- Claims that mandatory training is inherently harmful or unjustified.
 
 **Boundary note:**  
-Exclusion is out-of-frame delimitation, not a prohibition.
+Exclusion prevents drift into normative judgement and maintains the analytic frame.
 
 ---
 
 ## 3. Granularity Level (Case 02)
 
-**Resolution treated as:**  
-- [resolution label]
+**Resolution treated as:**
+- Governance-success definition level (completion as success criterion).
+- Scope application level (uniform framing across participants).
+- Value-interpretation level (how outcomes are contested when compliance is used as a proxy for value).
 
 **Boundary note:**  
-Granularity is the resolution of explanation, not a method or workflow.
+Granularity remains explanatory; it does not prescribe instructional design methods or operational remedies.
 
 ---
 
 ## 4. Actor Boundary (Case 02)
 
-**Actors considered in-frame:**  
-- [Actor group A]  
-- [Actor group B]
+**Actors considered in-frame:**
+- Governance definers of “success” (as a role category, not named).
+- Training participants (as an affected population).
+- Operational stakeholders who interpret value outcomes (as a class, not individualized).
 
 **Boundary note:**  
-No authority/accountability encoding here.
+No responsibility, performance measurement, or accountability assignment is encoded here.
 
 ---
 
 ## 5. Artefact Boundary (Case 02)
 
-**Artefacts/systems/deliverables considered in-frame:**  
-- [Artefact/system A]  
-- [Artefact/system B]
+**Artefacts/systems considered in-frame:**
+- Compliance training artefact(s) and completion evidence (treated generically).
+- The uniform scope frame applied to the training (as a boundary artefact, not a deliverable requirement).
 
 **Boundary note:**  
-Objects considered only; do not imply mandated documentation.
+Artefact boundary is “objects considered”, not “required documentation”.
 
 ---
 
 ## 6. Constraint Boundary (Case 02)
 
-**Limiting conditions treated as active delimiters:**  
-- [Constraint A]  
-- [Constraint B]
+**Limiting conditions treated as active delimiters:**
+- Success criterion constraint: governance success treated narrowly as completion.
+- Collaboration constraint: limited collaboration availability beyond communication/information transfer.
 
 **Boundary note:**  
-Constraints are delimiters, not obligations.
+Constraints delimit explanation without converting “completion” or “mandate” into imperative claims.
 
 ---
 
-# CASE 03 — Validation Stubs
+# CASE 03 — On-Time Digital Transformation That Destroys Value
 
 ## 1. Inclusion Boundary (Case 03)
 
-**In-frame:**  
-- [Thing(s) included]  
-- [Actor(s)/artefact(s) included]
+**In-frame:**
+- Delivery-oriented governance defining success by delivery.
+- Tightly bounded scope used to support delivery success.
+- Collaboration/adoption dynamics as interpretive conditions for legitimacy and contested value outcomes.
 
 **Boundary note:**  
-Inclusion is analytic frame membership only.
+Inclusion frames what is examined without asserting that delivery discipline is wrong or that the transformation “failed”.
 
 ---
 
 ## 2. Exclusion Boundary (Case 03)
 
-**Out-of-frame:**  
-- [Thing(s) excluded]  
-- [Actor(s)/artefact(s) excluded]
+**Out-of-frame:**
+- Claims of poor project management as a necessary explanation.
+- Claims of communication failure as a sufficient explanation.
+- Rejection of delivery discipline as a general position.
 
 **Boundary note:**  
-Exclusion prevents drift; it is not enforcement.
+Exclusion prevents collapse into single-domain sufficiency.
 
 ---
 
 ## 3. Granularity Level (Case 03)
 
-**Resolution treated as:**  
-- [resolution label]
+**Resolution treated as:**
+- Governance metric level (delivery as success measure).
+- Scope framing level (tight bounding as a delimitation condition).
+- Adoption/legitimacy interpretation level (how unresolved collaboration surfaces as legitimacy challenge).
 
 **Boundary note:**  
-Granularity indicates resolution, not decomposition of execution.
+Granularity does not become a project plan decomposition.
 
 ---
 
 ## 4. Actor Boundary (Case 03)
 
-**Actors considered in-frame:**  
-- [Actor group A]  
-- [Actor group B]
+**Actors considered in-frame:**
+- Delivery governance roles (as a class).
+- Adopting stakeholders/users (as a class).
+- Collaboration participants implicated in adoption dynamics (as a class, not assigned fault).
 
 **Boundary note:**  
-No responsibility/accountability statements.
+Actor boundary identifies considered participants without encoding authority or accountability.
 
 ---
 
 ## 5. Artefact Boundary (Case 03)
 
-**Artefacts/systems/deliverables considered in-frame:**  
-- [Artefact/system A]  
-- [Artefact/system B]
+**Artefacts/systems considered in-frame:**
+- Delivered transformation output(s) (treated generically as “delivered outcomes”).
+- Adoption-related interaction surfaces (treated abstractly; not expanded into processes).
 
 **Boundary note:**  
-Objects considered only.
+Artefacts are considered for explanation; no deliverable prescription is implied.
 
 ---
 
 ## 6. Constraint Boundary (Case 03)
 
-**Limiting conditions treated as active delimiters:**  
-- [Constraint A]  
-- [Constraint B]
+**Limiting conditions treated as active delimiters:**
+- Success-measure constraint: delivery metrics treated as the dominant success lens.
+- Adoption/collaboration constraint: unresolved collaboration and adoption dynamics treated as limiting conditions on legitimacy interpretation.
 
 **Boundary note:**  
-Constraint boundary has the highest drift risk; keep neutral.
+Constraints remain delimiters, not governance prescriptions.
 
 ---
 
-# Cross-Case Validation Checklist (Pass/Fail)
+## Cross-Case Validation Notes (Pass/Fail)
 
-For each subset, confirm:
+### PASS (conditional) for all six Layer-1 candidates.
 
-- [ ] The statement is purely delimiting (not justificatory, not prescriptive).
-- [ ] No overlap into Purpose (teleology), Imperative (obligation), Work (execution structure), Governance (control/authority).
-- [ ] No “context object” is introduced (constraints remain boundary conditions).
-- [ ] Language uses “in-frame/out-of-frame/treated as/considered”.
+Highest drift risks observed in real instantiation:
+1. **Constraint Boundary** — risk of sliding into Imperative (“must comply”) or Governance (“rules dictate”) language.
+2. **Actor Boundary** — risk of sliding into Governance/Work (authority/accountability/role assignment).
+3. **Artefact Boundary** — risk of sliding into Work (deliverables) or Governance (mandated documentation).
 
-Status: PRE-VALIDATION (populate nouns; do not expand semantics).
+Discipline required: keep all statements as **frame boundaries** only.
