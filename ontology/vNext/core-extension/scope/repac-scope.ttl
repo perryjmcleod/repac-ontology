@@ -1,0 +1,177 @@
+# File: repac-scope.ttl
+@base <https://w3id.org/repac/ontology/scope#> .
+
+@prefix :        <https://w3id.org/repac/ontology/scope#> .
+@prefix repac:   <https://w3id.org/repac/ontology/core#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+
+######################################################################
+# Ontology header
+######################################################################
+
+<https://w3id.org/repac/ontology/scope>
+    a owl:Ontology ;
+    dcterms:title "REPAC Scope L1"@en ;
+    dcterms:description "Structural stub for REPAC vNext: Scope (L1). Declares the Scope superset shell and L1 bridge properties. Non-prescriptive."@en ;
+    owl:versionInfo "vNext" ;
+
+    # Development import (local) to unblock Protégé.
+    # Note: keep repac: namespace pointing at the stable core IRI.
+    owl:imports <file:/Users/perryjmcleod/repac-ontology/ontology/v1.0/owl/repac-core.owl> ;
+.
+
+######################################################################
+# Annotation properties
+######################################################################
+
+repac:repacId a owl:AnnotationProperty .
+repac:epistemicStance a owl:AnnotationProperty .
+repac:scopeLensNote a owl:AnnotationProperty .
+
+######################################################################
+# Classes
+######################################################################
+
+:Scope a owl:Class ;
+  rdfs:label "Scope"@en ;
+  skos:definition "An analytical domain used to bound what is treated as included, excluded, or assumed for an explanation."@en ;
+  repac:repacId "REPAC-SCOPE-L1" ;
+  repac:epistemicStance "Applied analytical, non-prescriptive."@en ;
+.
+
+:ScopeClaim a owl:Class ;
+  rdfs:label "Scope claim"@en ;
+  skos:definition "An explicit statement that bounds or qualifies the analysis (inclusions, exclusions, assumptions, and boundary choices)."@en ;
+  repac:repacId "REPAC-SCOPE-L1-CLAIM" ;
+.
+
+:ScopeBoundary a owl:Class ;
+  rdfs:label "Scope boundary"@en ;
+  skos:definition "A boundary construct representing what is treated as inside versus outside the analysis."@en ;
+  repac:repacId "REPAC-SCOPE-L1-BOUNDARY" ;
+.
+
+:ScopeAssumption a owl:Class ;
+  rdfs:label "Scope assumption"@en ;
+  skos:definition "A declared assumption that affects what is treated as given for the analysis."@en ;
+  repac:repacId "REPAC-SCOPE-L1-ASSUMPTION" ;
+.
+
+:ScopeExclusion a owl:Class ;
+  rdfs:label "Scope exclusion"@en ;
+  skos:definition "A declared exclusion identifying what the analysis is not attempting to cover."@en ;
+  repac:repacId "REPAC-SCOPE-L1-EXCLUSION" ;
+.
+
+:ScopeInclusion a owl:Class ;
+  rdfs:label "Scope inclusion"@en ;
+  skos:definition "A declared inclusion identifying what the analysis explicitly covers."@en ;
+  repac:repacId "REPAC-SCOPE-L1-INCLUSION" ;
+.
+
+:InternalSourceLens a owl:Class ;
+  rdfs:label "Internal source lens"@en ;
+  skos:definition "A Scope lens used to qualify interpretation with respect to internal sources."@en ;
+  repac:repacId "REPAC-SCOPE-L1-LENS-INTERNAL" ;
+  repac:scopeLensNote "Phase-1 audit rule: Internal Source and External Source are Scope-related lenses, not Source subsets."@en ;
+.
+
+:ExternalSourceLens a owl:Class ;
+  rdfs:label "External source lens"@en ;
+  skos:definition "A Scope lens used to qualify interpretation with respect to external sources."@en ;
+  repac:repacId "REPAC-SCOPE-L1-LENS-EXTERNAL" ;
+  repac:scopeLensNote "Phase-1 audit rule: Internal Source and External Source are Scope-related lenses, not Source subsets."@en ;
+.
+
+######################################################################
+# Object properties
+######################################################################
+
+:hasScopeClaim a owl:ObjectProperty ;
+  rdfs:label "has scope claim"@en ;
+  rdfs:domain :Scope ;
+  rdfs:range :ScopeClaim ;
+  skos:definition "Relates a Scope framing to its explicit Scope claims."@en ;
+.
+
+:hasBoundary a owl:ObjectProperty ;
+  rdfs:label "has boundary"@en ;
+  rdfs:domain :Scope ;
+  rdfs:range :ScopeBoundary ;
+  skos:definition "Relates a Scope framing to a declared boundary."@en ;
+.
+
+:hasAssumption a owl:ObjectProperty ;
+  rdfs:label "has assumption"@en ;
+  rdfs:domain :Scope ;
+  rdfs:range :ScopeAssumption ;
+  skos:definition "Relates a Scope framing to a declared assumption."@en ;
+.
+
+:hasExclusion a owl:ObjectProperty ;
+  rdfs:label "has exclusion"@en ;
+  rdfs:domain :Scope ;
+  rdfs:range :ScopeExclusion ;
+  skos:definition "Relates a Scope framing to a declared exclusion."@en ;
+.
+
+:hasInclusion a owl:ObjectProperty ;
+  rdfs:label "has inclusion"@en ;
+  rdfs:domain :Scope ;
+  rdfs:range :ScopeInclusion ;
+  skos:definition "Relates a Scope framing to a declared inclusion."@en ;
+.
+
+:usesLens a owl:ObjectProperty ;
+  rdfs:label "uses lens"@en ;
+  rdfs:domain :Scope ;
+  rdfs:range owl:Thing ;
+  skos:definition "Relates a Scope framing to an interpretive lens used to qualify claims."@en ;
+.
+
+######################################################################
+# Cross-superset bridge properties
+######################################################################
+
+:constrainsWork a owl:ObjectProperty ;
+  rdfs:label "constrains work"@en ;
+  rdfs:domain :Scope ;
+  rdfs:range repac:Work ;
+  skos:definition "Indicates that Scope bounds the work treated as in-play for analysis."@en ;
+.
+
+:qualifiesGovernance a owl:ObjectProperty ;
+  rdfs:label "qualifies governance"@en ;
+  rdfs:domain :Scope ;
+  rdfs:range repac:Governance ;
+  skos:definition "Indicates that Scope bounds governance claims treated as relevant."@en ;
+.
+
+:boundsValueClaim a owl:ObjectProperty ;
+  rdfs:label "bounds value claim"@en ;
+  rdfs:domain :Scope ;
+  rdfs:range repac:Value ;
+  skos:definition "Indicates that Scope bounds value outcomes treated as relevant for explanation."@en ;
+.
+
+######################################################################
+# Datatype properties
+######################################################################
+
+:scopeNote a owl:DatatypeProperty ;
+  rdfs:label "scope note"@en ;
+  rdfs:domain :Scope ;
+  rdfs:range xsd:string ;
+  skos:definition "A concise statement of the chosen scope framing for a case or analysis."@en ;
+.
+
+:scopeRationale a owl:DatatypeProperty ;
+  rdfs:label "scope rationale"@en ;
+  rdfs:domain :Scope ;
+  rdfs:range xsd:string ;
+  skos:definition "An analytical rationale for why boundaries were chosen (not a prescription)."@en ;
+.
