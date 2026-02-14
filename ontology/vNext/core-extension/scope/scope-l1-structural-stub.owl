@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns="https://example.org/repac/vnext#"
+    xml:base="https://example.org/repac/vnext"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+    <!-- ====================================================== -->
+    <!-- Ontology                                                -->
+    <!-- ====================================================== -->
+
+    <owl:Ontology rdf:about="https://example.org/repac/vnext#ScopeL1Ontology">
+        <rdfs:label xml:lang="en">REPAC vNext — Scope L1 Structural Stub</rdfs:label>
+        <rdfs:comment xml:lang="en">Defines controlled Scope L1 Subsets: Perspective, Boundary, Granularity, Interval. Structural only.</rdfs:comment>
+    </owl:Ontology>
+
+    <!-- ====================================================== -->
+    <!-- Classes                                                 -->
+    <!-- ====================================================== -->
+
+    <owl:Class rdf:about="https://example.org/repac/vnext#ScopeAssertion">
+        <rdfs:label xml:lang="en">Scope Assertion</rdfs:label>
+        <rdfs:comment xml:lang="en">An explicit declaration of analytical scope, requiring Perspective, Boundary, Granularity, and Interval.</rdfs:comment>
+
+        <!-- Minimal integrity constraints (someValuesFrom) -->
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://example.org/repac/vnext#hasPerspective"/>
+                <owl:someValuesFrom rdf:resource="https://example.org/repac/vnext#Perspective"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://example.org/repac/vnext#hasBoundary"/>
+                <owl:someValuesFrom rdf:resource="https://example.org/repac/vnext#Boundary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://example.org/repac/vnext#hasGranularity"/>
+                <owl:someValuesFrom rdf:resource="https://example.org/repac/vnext#Granularity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://example.org/repac/vnext#hasInterval"/>
+                <owl:someValuesFrom rdf:resource="https://example.org/repac/vnext#Interval"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+    <owl:Class rdf:about="https://example.org/repac/vnext#ScopeSubset">
+        <rdfs:label xml:lang="en">Scope Subset</rdfs:label>
+        <rdfs:comment xml:lang="en">A controlled structural dimension used to specify Scope at L1.</rdfs:comment>
+    </owl:Class>
+
+    <owl:Class rdf:about="https://example.org/repac/vnext#Perspective">
+        <rdfs:subClassOf rdf:resource="https://example.org/repac/vnext#ScopeSubset"/>
+        <rdfs:label xml:lang="en">Perspective</rdfs:label>
+        <rdfs:comment xml:lang="en">Analytical vantage determining the class of entities eligible to be bounded and examined.</rdfs:comment>
+    </owl:Class>
+
+    <owl:Class rdf:about="https://example.org/repac/vnext#Boundary">
+        <rdfs:subClassOf rdf:resource="https://example.org/repac/vnext#ScopeSubset"/>
+        <rdfs:label xml:lang="en">Boundary</rdfs:label>
+        <rdfs:comment xml:lang="en">Structural partition defining inside versus outside for the asserted scope.</rdfs:comment>
+    </owl:Class>
+
+    <owl:Class rdf:about="https://example.org/repac/vnext#Granularity">
+        <rdfs:subClassOf rdf:resource="https://example.org/repac/vnext#ScopeSubset"/>
+        <rdfs:label xml:lang="en">Granularity</rdfs:label>
+        <rdfs:comment xml:lang="en">Analytical resolution applied to in-scope entities.</rdfs:comment>
+    </owl:Class>
+
+    <owl:Class rdf:about="https://example.org/repac/vnext#Interval">
+        <rdfs:subClassOf rdf:resource="https://example.org/repac/vnext#ScopeSubset"/>
+        <rdfs:label xml:lang="en">Interval</rdfs:label>
+        <rdfs:comment xml:lang="en">Temporal span within which the asserted scope is considered analytically valid (including snapshots).</rdfs:comment>
+    </owl:Class>
+
+    <!-- ====================================================== -->
+    <!-- Object Properties                                       -->
+    <!-- ====================================================== -->
+
+    <owl:ObjectProperty rdf:about="https://example.org/repac/vnext#hasPerspective">
+        <rdfs:label xml:lang="en">has perspective</rdfs:label>
+        <rdfs:comment xml:lang="en">Links a ScopeAssertion to its required Perspective.</rdfs:comment>
+        <rdfs:domain rdf:resource="https://example.org/repac/vnext#ScopeAssertion"/>
+        <rdfs:range rdf:resource="https://example.org/repac/vnext#Perspective"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="https://example.org/repac/vnext#hasBoundary">
+        <rdfs:label xml:lang="en">has boundary</rdfs:label>
+        <rdfs:comment xml:lang="en">Links a ScopeAssertion to its required Boundary.</rdfs:comment>
+        <rdfs:domain rdf:resource="https://example.org/repac/vnext#ScopeAssertion"/>
+        <rdfs:range rdf:resource="https://example.org/repac/vnext#Boundary"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="https://example.org/repac/vnext#hasGranularity">
+        <rdfs:label xml:lang="en">has granularity</rdfs:label>
+        <rdfs:comment xml:lang="en">Links a ScopeAssertion to its required Granularity.</rdfs:comment>
+        <rdfs:domain rdf:resource="https://example.org/repac/vnext#ScopeAssertion"/>
+        <rdfs:range rdf:resource="https://example.org/repac/vnext#Granularity"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="https://example.org/repac/vnext#hasInterval">
+        <rdfs:label xml:lang="en">has interval</rdfs:label>
+        <rdfs:comment xml:lang="en">Links a ScopeAssertion to its required Interval.</rdfs:comment>
+        <rdfs:domain rdf:resource="https://example.org/repac/vnext#ScopeAssertion"/>
+        <rdfs:range rdf:resource="https://example.org/repac/vnext#Interval"/>
+    </owl:ObjectProperty>
+
+    <!-- Boundary outcomes (properties, not Subsets) -->
+    <owl:ObjectProperty rdf:about="https://example.org/repac/vnext#includes">
+        <rdfs:label xml:lang="en">includes</rdfs:label>
+        <rdfs:comment xml:lang="en">Outcome of Boundary assertion: entities treated as inside the asserted scope. Outcome/property, not a Scope Subset.</rdfs:comment>
+        <rdfs:domain rdf:resource="https://example.org/repac/vnext#Boundary"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="https://example.org/repac/vnext#excludes">
+        <rdfs:label xml:lang="en">excludes</rdfs:label>
+        <rdfs:comment xml:lang="en">Outcome of Boundary assertion: entities treated as outside the asserted scope. Outcome/property, not a Scope Subset.</rdfs:comment>
+        <rdfs:domain rdf:resource="https://example.org/repac/vnext#Boundary"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:ObjectProperty>
+
+    <!-- ====================================================== -->
+    <!-- Datatype Properties                                     -->
+    <!-- ====================================================== -->
+
+    <owl:DatatypeProperty rdf:about="https://example.org/repac/vnext#intervalStart">
+        <rdfs:label xml:lang="en">interval start</rdfs:label>
+        <rdfs:comment xml:lang="en">Optional start boundary for the Interval.</rdfs:comment>
+        <rdfs:domain rdf:resource="https://example.org/repac/vnext#Interval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="https://example.org/repac/vnext#intervalEnd">
+        <rdfs:label xml:lang="en">interval end</rdfs:label>
+        <rdfs:comment xml:lang="en">Optional end boundary for the Interval.</rdfs:comment>
+        <rdfs:domain rdf:resource="https://example.org/repac/vnext#Interval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="https://example.org/repac/vnext#intervalType">
+        <rdfs:label xml:lang="en">interval type</rdfs:label>
+        <rdfs:comment xml:lang="en">Optional descriptor such as 'snapshot', 'bounded', or 'open' (structural helper only).</rdfs:comment>
+        <rdfs:domain rdf:resource="https://example.org/repac/vnext#Interval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+
+</rdf:RDF>

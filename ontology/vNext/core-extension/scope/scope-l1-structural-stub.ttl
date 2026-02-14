@@ -1,0 +1,143 @@
+@prefix repac: <https://example.org/repac/vnext#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+#################################################################
+# SCOPE-L1 (Structural Stub) — REPAC vNext
+# Scope Superset: Controlled Subset Definition Phase
+# Notes:
+# - Structural only (non-normative, non-prescriptive)
+# - No Set→Element explosion
+# - Inclusion/Exclusion are Boundary outcomes (properties), not Subsets
+#################################################################
+
+repac:ScopeL1Ontology
+  a owl:Ontology ;
+  rdfs:label "REPAC vNext — Scope L1 Structural Stub"@en ;
+  rdfs:comment "Defines controlled Scope L1 Subsets: Perspective, Boundary, Granularity, Interval. Structural only."@en .
+
+#################################################################
+# Core Classes
+#################################################################
+
+repac:ScopeAssertion
+  a owl:Class ;
+  rdfs:label "Scope Assertion"@en ;
+  rdfs:comment "An explicit declaration of analytical scope, requiring Perspective, Boundary, Granularity, and Interval."@en .
+
+repac:ScopeSubset
+  a owl:Class ;
+  rdfs:label "Scope Subset"@en ;
+  rdfs:comment "A controlled structural dimension used to specify Scope at L1."@en .
+
+repac:Perspective
+  a owl:Class ;
+  rdfs:subClassOf repac:ScopeSubset ;
+  rdfs:label "Perspective"@en ;
+  rdfs:comment "Analytical vantage determining the class of entities eligible to be bounded and examined."@en .
+
+repac:Boundary
+  a owl:Class ;
+  rdfs:subClassOf repac:ScopeSubset ;
+  rdfs:label "Boundary"@en ;
+  rdfs:comment "Structural partition defining inside versus outside for the asserted scope."@en .
+
+repac:Granularity
+  a owl:Class ;
+  rdfs:subClassOf repac:ScopeSubset ;
+  rdfs:label "Granularity"@en ;
+  rdfs:comment "Analytical resolution applied to in-scope entities."@en .
+
+repac:Interval
+  a owl:Class ;
+  rdfs:subClassOf repac:ScopeSubset ;
+  rdfs:label "Interval"@en ;
+  rdfs:comment "Temporal span within which the asserted scope is considered analytically valid (including snapshots)."@en .
+
+#################################################################
+# Object Properties (ScopeAssertion → Subsets)
+#################################################################
+
+repac:hasPerspective
+  a owl:ObjectProperty ;
+  rdfs:label "has perspective"@en ;
+  rdfs:domain repac:ScopeAssertion ;
+  rdfs:range repac:Perspective ;
+  rdfs:comment "Links a ScopeAssertion to its required Perspective."@en .
+
+repac:hasBoundary
+  a owl:ObjectProperty ;
+  rdfs:label "has boundary"@en ;
+  rdfs:domain repac:ScopeAssertion ;
+  rdfs:range repac:Boundary ;
+  rdfs:comment "Links a ScopeAssertion to its required Boundary."@en .
+
+repac:hasGranularity
+  a owl:ObjectProperty ;
+  rdfs:label "has granularity"@en ;
+  rdfs:domain repac:ScopeAssertion ;
+  rdfs:range repac:Granularity ;
+  rdfs:comment "Links a ScopeAssertion to its required Granularity."@en .
+
+repac:hasInterval
+  a owl:ObjectProperty ;
+  rdfs:label "has interval"@en ;
+  rdfs:domain repac:ScopeAssertion ;
+  rdfs:range repac:Interval ;
+  rdfs:comment "Links a ScopeAssertion to its required Interval."@en .
+
+#################################################################
+# Boundary Outcomes (Properties, not Subsets)
+#################################################################
+
+repac:includes
+  a owl:ObjectProperty ;
+  rdfs:label "includes"@en ;
+  rdfs:domain repac:Boundary ;
+  rdfs:range owl:Thing ;
+  rdfs:comment "Outcome of Boundary assertion: entities treated as inside the asserted scope. Outcome/property, not a Scope Subset."@en .
+
+repac:excludes
+  a owl:ObjectProperty ;
+  rdfs:label "excludes"@en ;
+  rdfs:domain repac:Boundary ;
+  rdfs:range owl:Thing ;
+  rdfs:comment "Outcome of Boundary assertion: entities treated as outside the asserted scope. Outcome/property, not a Scope Subset."@en .
+
+#################################################################
+# Interval Data Properties (Optional for stub; supports begin/end/snapshot)
+#################################################################
+
+repac:intervalStart
+  a owl:DatatypeProperty ;
+  rdfs:label "interval start"@en ;
+  rdfs:domain repac:Interval ;
+  rdfs:range xsd:dateTime ;
+  rdfs:comment "Optional start boundary for the Interval."@en .
+
+repac:intervalEnd
+  a owl:DatatypeProperty ;
+  rdfs:label "interval end"@en ;
+  rdfs:domain repac:Interval ;
+  rdfs:range xsd:dateTime ;
+  rdfs:comment "Optional end boundary for the Interval."@en .
+
+repac:intervalType
+  a owl:DatatypeProperty ;
+  rdfs:label "interval type"@en ;
+  rdfs:domain repac:Interval ;
+  rdfs:range xsd:string ;
+  rdfs:comment "Optional descriptor such as 'snapshot', 'bounded', or 'open' (structural helper only)."@en .
+
+#################################################################
+# Minimal Integrity Constraints (OWL restrictions)
+#################################################################
+
+repac:ScopeAssertion
+  rdfs:subClassOf
+    [ a owl:Restriction ; owl:onProperty repac:hasPerspective ; owl:someValuesFrom repac:Perspective ] ,
+    [ a owl:Restriction ; owl:onProperty repac:hasBoundary ;     owl:someValuesFrom repac:Boundary ] ,
+    [ a owl:Restriction ; owl:onProperty repac:hasGranularity ;  owl:someValuesFrom repac:Granularity ] ,
+    [ a owl:Restriction ; owl:onProperty repac:hasInterval ;     owl:someValuesFrom repac:Interval ] .

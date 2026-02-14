@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+    xmlns="http://www.w3.org/2002/07/owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:dcterms="http://purl.org/dc/terms/">
+
+  <Ontology rdf:about="https://w3id.org/repac/ontology/vnext/scope">
+
+    <versionIRI rdf:resource="https://w3id.org/repac/ontology/vnext/scope/1.0"/>
+
+    <!-- Proper import using ontology IRI, NOT local file path -->
+    <imports rdf:resource="https://w3id.org/repac/ontology/vnext/core"/>
+
+    <dcterms:title xml:lang="en">REPAC Scope L1 Module</dcterms:title>
+
+    <dcterms:description xml:lang="en">
+      Structural module for REPAC vNext Scope L1.
+      Defines Perspective, Boundary, Granularity, and Interval.
+      Non-prescriptive structural layer.
+    </dcterms:description>
+
+  </Ontology>
+
+</rdf:RDF>
