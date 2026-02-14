@@ -1,0 +1,109 @@
+@prefix repac: <https://example.org/repac/vnext#> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+#################################################################
+# scope-l1-shapes.ttl
+# REPAC vNext — Scope L1 SHACL Shapes
+#
+# Purpose:
+# - Deterministic validation of ScopeAssertion completeness
+# - Structural only (non-normative, non-prescriptive)
+# - No Set→Element explosion
+#################################################################
+
+repac:ScopeL1ShapesOntology
+  a sh:ShapesGraph ;
+  rdfs:label "REPAC vNext — Scope L1 SHACL Shapes"@en ;
+  rdfs:comment "SHACL shapes enforcing required Scope L1 Subsets: Perspective, Boundary, Granularity, Interval."@en .
+
+#################################################################
+# Shape: ScopeAssertion must declare all four required Subsets
+#################################################################
+
+repac:ScopeAssertionShape
+  a sh:NodeShape ;
+  sh:targetClass repac:ScopeAssertion ;
+  rdfs:label "ScopeAssertion completeness (L1)"@en ;
+  rdfs:comment "A ScopeAssertion is structurally complete only if it declares Perspective, Boundary, Granularity, and Interval."@en ;
+
+  sh:property [
+    sh:path repac:hasPerspective ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:class repac:Perspective ;
+    sh:message "ScopeAssertion must declare exactly one Perspective via repac:hasPerspective."@en ;
+  ] ;
+
+  sh:property [
+    sh:path repac:hasBoundary ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:class repac:Boundary ;
+    sh:message "ScopeAssertion must declare exactly one Boundary via repac:hasBoundary."@en ;
+  ] ;
+
+  sh:property [
+    sh:path repac:hasGranularity ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:class repac:Granularity ;
+    sh:message "ScopeAssertion must declare exactly one Granularity via repac:hasGranularity."@en ;
+  ] ;
+
+  sh:property [
+    sh:path repac:hasInterval ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:class repac:Interval ;
+    sh:message "ScopeAssertion must declare exactly one Interval via repac:hasInterval."@en ;
+  ] .
+
+#################################################################
+# Optional helper shapes (structural hygiene)
+# These do NOT require Includes/Excludes; they only constrain types if present.
+#################################################################
+
+repac:BoundaryOutcomeTypingShape
+  a sh:NodeShape ;
+  sh:targetClass repac:Boundary ;
+  rdfs:label "Boundary outcome typing (optional)"@en ;
+  rdfs:comment "If includes/excludes are used, they must point to some rdf:Resource (owl:Thing equivalent). No cardinality enforced."@en ;
+
+  sh:property [
+    sh:path repac:includes ;
+    sh:nodeKind sh:IRIOrLiteral ;   # allow IRI, blank node, or literal if you later model identifiers
+    sh:message "If repac:includes is used, its values must be representable as RDF nodes."@en ;
+  ] ;
+
+  sh:property [
+    sh:path repac:excludes ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:message "If repac:excludes is used, its values must be representable as RDF nodes."@en ;
+  ] .
+
+repac:IntervalDatatypeShape
+  a sh:NodeShape ;
+  sh:targetClass repac:Interval ;
+  rdfs:label "Interval datatype constraints (optional)"@en ;
+  rdfs:comment "Constrains intervalStart/intervalEnd to xsd:dateTime when present; intervalType to xsd:string when present."@en ;
+
+  sh:property [
+    sh:path repac:intervalStart ;
+    sh:datatype xsd:dateTime ;
+    sh:message "repac:intervalStart must be an xsd:dateTime when provided."@en ;
+  ] ;
+
+  sh:property [
+    sh:path repac:intervalEnd ;
+    sh:datatype xsd:dateTime ;
+    sh:message "repac:intervalEnd must be an xsd:dateTime when provided."@en ;
+  ] ;
+
+  sh:property [
+    sh:path repac:intervalType ;
+    sh:datatype xsd:string ;
+    sh:message "repac:intervalType must be an xsd:string when provided."@en ;
+  ] .
