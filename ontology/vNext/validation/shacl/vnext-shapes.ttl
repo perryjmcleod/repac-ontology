@@ -1,0 +1,7 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix : <http://example.org/repac/vnext/validation/shacl#> .
+
+:repac-vnext-shacl a owl:Ontology ;
+  owl:imports
+    <./scope/scope-l1-shapes.ttl>
+.
