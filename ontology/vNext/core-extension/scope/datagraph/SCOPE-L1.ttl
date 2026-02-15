@@ -1,0 +1,59 @@
+@prefix repac: <https://example.org/repac#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+repac:scope-l1
+  a owl:Ontology ;
+  rdfs:label "REPAC Scope L1 (vNext) — Structural Stub"@en ;
+  rdfs:comment "Structural integration of Scope L1 into the DataGraph. Classes and subclass chains only. No instances. No cross-superset bindings."@en .
+
+#################################################################
+# Core structural classes
+#################################################################
+
+repac:ScopeL1
+  a owl:Class ;
+  rdfs:label "Scope (L1)"@en ;
+  rdfs:comment "Top class for Scope L1. Subsets and Sets attach via subclassing in this structural phase."@en .
+
+# Optional intermediate abstractions (keep if useful for shapes later; remove if you want a pure tree)
+repac:ScopeSubset
+  a owl:Class ;
+  rdfs:subClassOf repac:ScopeL1 ;
+  rdfs:label "Scope Subset"@en ;
+  rdfs:comment "Abstract grouping class for Scope L1 Subsets."@en .
+
+repac:ScopeSet
+  a owl:Class ;
+  rdfs:subClassOf repac:ScopeSubset ;
+  rdfs:label "Scope Set"@en ;
+  rdfs:comment "Abstract grouping class for Scope L1 Sets (Sets are not exploded into Elements in this phase)."@en .
+
+#################################################################
+# Subset placeholders (rename to your locked Subset IDs/names)
+# NOTE: keep ONLY vertical relationships. No governance/source/paradigm links here.
+#################################################################
+
+repac:SCOPEL1-SS-001
+  a owl:Class ;
+  rdfs:subClassOf repac:ScopeSubset ;
+  rdfs:label "SCOPE L1 Subset 001"@en ;
+  rdfs:comment "Placeholder subset. Replace label/comment with locked definition."@en .
+
+repac:SCOPEL1-SS-002
+  a owl:Class ;
+  rdfs:subClassOf repac:ScopeSubset ;
+  rdfs:label "SCOPE L1 Subset 002"@en ;
+  rdfs:comment "Placeholder subset. Replace label/comment with locked definition."@en .
+
+#################################################################
+# Set placeholders (optional now; include only if Scope L1 already locked Sets)
+#################################################################
+
+repac:SCOPEL1-SS-001-SET-001
+  a owl:Class ;
+  rdfs:subClassOf repac:SCOPEL1-SS-001, repac:ScopeSet ;
+  rdfs:label "SCOPE L1 SS-001 Set 001"@en ;
+  rdfs:comment "Placeholder set. Do not create Elements/instances in this phase."@en .

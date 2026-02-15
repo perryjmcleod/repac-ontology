@@ -1,0 +1,10 @@
+@prefix repac: <https://example.org/repac#> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+repac:ScopeL1Shape
+  a sh:NodeShape ;
+  sh:targetClass repac:ScopeL1 ;
+  rdfs:label "Scope L1 — Placeholder Shape"@en ;
+  rdfs:comment "Placeholder SHACL shape for Scope L1. Structural integration phase only; constraints added in later phases."@en .
