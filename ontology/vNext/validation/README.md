@@ -12,3 +12,8 @@ Scope L1 SHACL shapes are integrated via the SHACL entrypoint:
   - imports `ontology/vNext/validation/shacl/scope/scope-l1-shapes.ttl`
 
 Validation scripts MUST reference the entrypoint (`vnext-shapes.ttl`) for deterministic execution.
+
+### Scope L1 SHACL
+
+- Shapes: `validation/shacl/scope/scope-l1-shapes.ttl`
+- SHACL entrypoint: `validation/shacl/vnext-shapes.ttl`
