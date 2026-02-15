@@ -1,55 +1,9 @@
-cat > datagraph/SCOPE-L1.ttl <<'TTL'
-@prefix repac: <https://example.org/repac#> .
+@prefix repac: <https://example.org/repac/vnext#> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 
-repac:scope-l1
+repac:scope-l1-datagraph
   a owl:Ontology ;
-  rdfs:label "REPAC Scope L1 (vNext) — DataGraph Structural Stub"@en ;
-  rdfs:comment "Structural integration of Scope L1 into the DataGraph. Classes and subclass chains only. No instances. No cross-superset bindings."@en .
-
-#################################################################
-# Core structural classes (structural only; no interpretation)
-#################################################################
-
-repac:ScopeL1
-  a owl:Class ;
-  rdfs:label "Scope (L1)"@en ;
-  rdfs:comment "Top class for Scope L1. Controlled Subsets attach via subclassing in this structural phase."@en .
-
-repac:ScopeSubset
-  a owl:Class ;
-  rdfs:subClassOf repac:ScopeL1 ;
-  rdfs:label "Scope Subset (L1)"@en ;
-  rdfs:comment "Abstract grouping class for Scope L1 controlled Subsets."@en .
-
-#################################################################
-# Controlled Scope L1 Subsets (FROZEN)
-# From SCOPE-L1-SUBSETS.md and SCOPE-L1-FREEZE-DECISION.md:
-# Perspective, Boundary, Granularity, Interval
-#################################################################
-
-repac:ScopePerspective
-  a owl:Class ;
-  rdfs:subClassOf repac:ScopeSubset ;
-  rdfs:label "Perspective"@en ;
-  rdfs:comment "Controlled Scope L1 Subset. Structural; non-prescriptive."@en .
-
-repac:ScopeBoundary
-  a owl:Class ;
-  rdfs:subClassOf repac:ScopeSubset ;
-  rdfs:label "Boundary"@en ;
-  rdfs:comment "Controlled Scope L1 Subset. Structural; non-prescriptive. Inclusion/Exclusion are outcomes/properties, not Subsets."@en .
-
-repac:ScopeGranularity
-  a owl:Class ;
-  rdfs:subClassOf repac:ScopeSubset ;
-  rdfs:label "Granularity"@en ;
-  rdfs:comment "Controlled Scope L1 Subset. Structural; non-prescriptive."@en .
-
-repac:ScopeInterval
-  a owl:Class ;
-  rdfs:subClassOf repac:ScopeSubset ;
-  rdfs:label "Interval"@en ;
-  rdfs:comment "Controlled Scope L1 Subset. Structural; non-prescriptive."@en .
-TTL
+  rdfs:label "REPAC vNext — Scope L1 DataGraph Wrapper"@en ;
+  rdfs:comment "DataGraph integration wrapper for Scope L1. This ontology imports the authoritative Scope L1 structural stub to guarantee identical naming and IRIs."@en ;
+  owl:imports <../scope-l1-structural-stub.ttl> .
