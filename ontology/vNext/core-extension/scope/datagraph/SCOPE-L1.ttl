@@ -1,8 +1,7 @@
+cat > datagraph/SCOPE-L1.ttl <<'TTL'
 @prefix repac: <https://example.org/repac#> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 repac:scope-l1
   a owl:Ontology ;
@@ -16,17 +15,41 @@ repac:scope-l1
 repac:ScopeL1
   a owl:Class ;
   rdfs:label "Scope (L1)"@en ;
-  rdfs:comment "Top class for Scope L1. Subsets and Sets attach via subclassing in this structural phase."@en .
+  rdfs:comment "Top class for Scope L1. Controlled Subsets attach via subclassing in this structural phase."@en .
 
 repac:ScopeSubset
   a owl:Class ;
   rdfs:subClassOf repac:ScopeL1 ;
-  rdfs:label "Scop  rdfs:label "Scop  rdfs:label "Sco"A  rdfs:label "Scop  rdfs:label "Sco Subsets."@  rdfs:label "Scop  rdfs:label "Scop  rdfs:labeCla  rdfs:label "Scop  rdfs:label "Scop  rdfs:label "Sco"A  rdfs r  rdfs:label "Scop  rdfs:label "Scop  rdfs:label "Scts. S  rdfs:label "Scop  rdfs:label "Scop  rdfs:label "@en   rdfs:label ##  rdfs:label "#####  rdfs:label "Scop  rdfs:label "Scop  rdfs:label "Sco"A  rdfs:label "Scyour locked Subset IDs/names)
+  rdfs:label "Scope Subset (L1)"@en ;
+  rdfs:comment "Abstract grouping class for Scope L1 controlled Subsets."@en .
+
+#################################################################
+# Controlled Scope L1 Subsets (FROZEN)
+# From SCOPE-L1-SUBSETS.md and SCOPE-L1-FREEZE-DECISION.md:
+# Perspective, Boundary, Granularity, Interval
 #################################################################
 
-repac:SCOPEL1-SS-001
+repac:ScopePerspective
   a owl:Class ;
-  rdfs:subClassOf repa  rdfs:subClassOf repa  rdfs:subClassOf repa  rdfs:subClassOf rcom  rdfs:subClassOf repa  rdfs:subClassOf repa  rdfs:subClass def  rdfs:subClassOf repa  rdfs:subClassOf repa  rdfs:subClassOf r  a   rdfsass ;
   rdfs:subClassOf repac:ScopeSubset ;
-  rdfs:label "SCOPE L1 Subset 002"@en ;
-  rdfs:comment "Placeholder subset. Replace label/comment with locked definition; keep structure uncha  rdfs:com.
+  rdfs:label "Perspective"@en ;
+  rdfs:comment "Controlled Scope L1 Subset. Structural; non-prescriptive."@en .
+
+repac:ScopeBoundary
+  a owl:Class ;
+  rdfs:subClassOf repac:ScopeSubset ;
+  rdfs:label "Boundary"@en ;
+  rdfs:comment "Controlled Scope L1 Subset. Structural; non-prescriptive. Inclusion/Exclusion are outcomes/properties, not Subsets."@en .
+
+repac:ScopeGranularity
+  a owl:Class ;
+  rdfs:subClassOf repac:ScopeSubset ;
+  rdfs:label "Granularity"@en ;
+  rdfs:comment "Controlled Scope L1 Subset. Structural; non-prescriptive."@en .
+
+repac:ScopeInterval
+  a owl:Class ;
+  rdfs:subClassOf repac:ScopeSubset ;
+  rdfs:label "Interval"@en ;
+  rdfs:comment "Controlled Scope L1 Subset. Structural; non-prescriptive."@en .
+TTL
