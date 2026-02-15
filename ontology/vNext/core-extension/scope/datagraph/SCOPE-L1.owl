@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://example.org/repac/vnext#"
+     xml:base="https://example.org/repac/vnext#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://example.org/repac/vnext#scope-l1-datagraph">
+        <rdfs:label xml:lang="en">REPAC vNext — Scope L1 DataGraph Wrapper</rdfs:label>
+        <rdfs:comment xml:lang="en">DataGraph integration wrapper for Scope L1. Imports the authoritative Scope L1 structural stub to guarantee identical naming and IRIs.</rdfs:comment>
+        <owl:imports rdf:resource="../scope-l1-structural-stub.owl"/>
+    </owl:Ontology>
+</rdf:RDF>
