@@ -5,10 +5,10 @@
 This document defines the controlled Subsets of the Scope Superset at Level 1 (L1). These Subsets are structural and non-normative. They define the geometry of analytical delimitation and do not encode value judgement, governance authority, or domain-specific content.
 
 A complete Scope assertion requires the following Subsets:
-1. Perspective
-2. Boundary
-3. Granularity
-4. Interval
+1. Perspective (SCOPE-EL-01)
+2. Boundary (SCOPE-EL-02)
+3. Granularity (SCOPE-EL-03)
+4. Interval (SCOPE-EL-04)
 
 Inclusion and Exclusion are properties of Boundary and are not independent Subsets.
 
