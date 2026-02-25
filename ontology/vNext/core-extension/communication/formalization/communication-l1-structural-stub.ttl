@@ -8,9 +8,21 @@
 <http://example.org/repac/vNext/core-extension/communication-l1>
   a owl:Ontology ;
   rdfs:label "REPAC vNext Communication L1 Structural Stub"@en ;
-  rdfs:comment "Structural stub only. No subset explosion. No element modeling. Used to anchor Communication L1 packaging and freeze alignment."@en .
+  rdfs:comment "Structural stub only. Subset structure is frozen. No element modeling."@en .
 
 repac:Communication
   a owl:Class ;
   rdfs:label "Communication"@en ;
-  rdfs:comment "Top-level anchor for Communication in REPAC vNext. Structural placeholder pending L1 freeze."@en .
+  rdfs:comment "Top-level anchor for Communication in REPAC vNext."@en .
+
+repac:FormalCommunication
+  a owl:Class ;
+  rdfs:label "Formal Communication"@en ;
+  rdfs:comment "Frozen Communication L1 Subset. Structural anchor only."@en ;
+  rdfs:subClassOf repac:Communication .
+
+repac:InformalCommunication
+  a owl:Class ;
+  rdfs:label "Informal Communication"@en ;
+  rdfs:comment "Frozen Communication L1 Subset. Structural anchor only."@en ;
+  rdfs:subClassOf repac:Communication .
