@@ -14,11 +14,10 @@ The authoritative subset inventory is the diagram:
 
 ## Frozen Governance L1 Subsets
 
-1. 
-2. 
-3. 
-4. 
-5. 
+1. Athority
+2. Decision Rights
+3. Control
+4. Acountability
 
 ## Freeze Rule
 Any future change that adds, removes, renames, or reinterprets Governance L1 subsets requires an explicit semantic change decision.# GOVERNANCE L1 — Semantic Freeze Decision
