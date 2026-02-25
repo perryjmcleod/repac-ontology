@@ -1,0 +1,16 @@
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix repac: <http://example.org/repac/vNext#> .
+
+<http://example.org/repac/vNext/core-extension/communication-l1>
+  a owl:Ontology ;
+  rdfs:label "REPAC vNext Communication L1 Structural Stub"@en ;
+  rdfs:comment "Structural stub only. No subset explosion. No element modeling. Used to anchor Communication L1 packaging and freeze alignment."@en .
+
+repac:Communication
+  a owl:Class ;
+  rdfs:label "Communication"@en ;
+  rdfs:comment "Top-level anchor for Communication in REPAC vNext. Structural placeholder pending L1 freeze."@en .
