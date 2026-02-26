@@ -1,0 +1,11 @@
+@prefix : <http://example.org/repac/vNext/collaboration#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Structural stub placeholder.
+# This file MUST NOT be expanded until after:
+# 1) Audit completes
+# 2) Semantic freeze decision is recorded
+
+:repac-collaboration-l1-structural-stub a owl:Ontology .
