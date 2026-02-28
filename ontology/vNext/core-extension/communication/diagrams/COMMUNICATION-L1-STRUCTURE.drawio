@@ -1,0 +1,19 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.5.2 Chrome/142.0.7444.265 Electron/39.6.1 Safari/537.36" version="29.5.2">
+  <diagram name="Scope L1 Structure" id="scope-l1-structure">
+    <mxGraphModel dx="1185" dy="308" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="OP_jduQgytACfuw61v6Z-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Communication" vertex="1">
+          <mxGeometry height="60" width="120" x="120" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="OP_jduQgytACfuw61v6Z-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;COMM-EL-01&lt;/div&gt;&lt;div&gt;Formal Communication&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="120" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="OP_jduQgytACfuw61v6Z-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="COMM-EL-02 Informal Communication" vertex="1">
+          <mxGeometry height="60" width="120" x="250" y="470" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
