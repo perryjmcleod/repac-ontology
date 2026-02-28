@@ -1,0 +1,66 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.5.2 Chrome/142.0.7444.265 Electron/39.6.1 Safari/537.36" version="29.5.2">
+  <diagram id="GOV-L1" name="GOV-LAYER-1-Explosion">
+    <mxGraphModel dx="1426" dy="888" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <UserObject label="Governance" id="GOV-SUPERSET">
+          <mxCell parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1F4E79;fontColor=#FFFFFF;strokeColor=#1F4E79;align=center;verticalAlign=middle;fontStyle=1;" vertex="1">
+            <mxGeometry height="50" width="320" x="320" y="120" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="GOV-EL-01" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=18;fillColor=#FFFFFF;strokeColor=#2F5597;align=center;verticalAlign=middle;fontStyle=1;" value="&lt;div&gt;GOV-EL-01&lt;/div&gt;&lt;div&gt;Authority&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="200" x="230" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="GOV-EL-02" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=18;fillColor=#FFFFFF;strokeColor=#2F5597;align=center;verticalAlign=middle;fontStyle=1;" value="&lt;div&gt;GOV-EL-02&lt;/div&gt;&lt;div&gt;Decision Rights&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="200" x="230" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="GOV-EL-03" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=18;fillColor=#FFFFFF;strokeColor=#2F5597;align=center;verticalAlign=middle;fontStyle=1;" value="&lt;div&gt;GOV-EL-04&lt;/div&gt;&lt;div&gt;Control&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="200" x="490" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="GOV-EL-04" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=18;fillColor=#FFFFFF;strokeColor=#2F5597;align=center;verticalAlign=middle;fontStyle=1;" value="&lt;div&gt;GOV-EL-06&lt;/div&gt;&lt;div&gt;Accountability&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="200" x="490" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="E-GOV-01" edge="1" parent="1" source="GOV-SUPERSET" style="endArrow=none;startArrow=none;html=1;strokeColor=#2F5597;rounded=0;" target="GOV-EL-01">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E-GOV-02" edge="1" parent="1" source="GOV-SUPERSET" style="endArrow=none;startArrow=none;html=1;strokeColor=#2F5597;rounded=0;" target="GOV-EL-02">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E-GOV-03" edge="1" parent="1" source="GOV-SUPERSET" style="endArrow=none;startArrow=none;html=1;strokeColor=#2F5597;rounded=0;" target="GOV-EL-03">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E-GOV-04" edge="1" parent="1" source="GOV-SUPERSET" style="endArrow=none;startArrow=none;html=1;strokeColor=#2F5597;rounded=0;" target="GOV-EL-04">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qWDDtYu-hUOlNIVexhJn-1" edge="1" parent="1" source="GOV-EL-02" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="GOV-EL-01" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="460" y="430" as="sourcePoint" />
+            <mxPoint x="510" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qWDDtYu-hUOlNIVexhJn-2" edge="1" parent="1" source="GOV-EL-02" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="GOV-EL-03" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="590" as="sourcePoint" />
+            <mxPoint x="450" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qWDDtYu-hUOlNIVexhJn-3" edge="1" parent="1" source="GOV-EL-03" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="GOV-EL-04" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="760" y="410" as="sourcePoint" />
+            <mxPoint x="810" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qWDDtYu-hUOlNIVexhJn-4" edge="1" parent="1" source="GOV-EL-01" style="endArrow=none;dashed=1;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="GOV-EL-04" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="440" y="330" as="sourcePoint" />
+            <mxPoint x="490" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qWDDtYu-hUOlNIVexhJn-5" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-family: -webkit-standard; font-size: medium; font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration: none; display: inline !important; float: none;&quot;&gt;Analytically separable; does not imply.&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="260" x="240" y="530" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
