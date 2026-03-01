@@ -1,11 +1,30 @@
-@prefix : <http://example.org/repac/vNext/collaboration#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-# Structural stub placeholder.
-# This file MUST NOT be expanded until after:
-# 1) Audit completes
-# 2) Semantic freeze decision is recorded
+# NOTE: Use your existing REPAC namespace if different in vNext.
+# This stub encodes ONLY the frozen L1 structure and introduces no new constructs.
+@prefix repac: <https://perryjmcleod.github.io/repac-ontology/ontology/repac-core#> .
+@prefix : <https://perryjmcleod.github.io/repac-ontology/ontology/vNext/repac-collaboration#> .
 
-:repac-collaboration-l1-structural-stub a owl:Ontology .
+:repac-collaboration-l1 a owl:Ontology ;
+  rdfs:label "REPAC Ontology – Collaboration Superset (vNext L1 Structural Stub)" .
+
+#################################################################
+# Superset: Collaboration
+#################################################################
+
+:Collaboration a repac:Superset ;
+  repac:name "Collaboration" .
+
+#################################################################
+# Subsets (L1): CoordinatedCollaboration, EmergentCollaboration
+#################################################################
+
+:CoordinatedCollaboration a repac:Subset ;
+  repac:name "Coordinated Collaboration" ;
+  repac:partOf :Collaboration .
+
+:EmergentCollaboration a repac:Subset ;
+  repac:name "Emergent Collaboration" ;
+  repac:partOf :Collaboration .
