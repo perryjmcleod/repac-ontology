@@ -1,4 +1,3 @@
-# IMPERATIVE L1 — Freeze Decision
-
-## Status
-NOT FROZEN
+# IMPERATIVE L1 — # IMPERATIVE L1 — # IMPERATIVE L1 # # IMPERATIVE L1 — # IMPERets are fro# IMPERATIVE L1 —go# IMPERATIVE L1 — # IMPERATIVE L1 — # IMPERATIVE L1 # za# IMPERATIVE L1 — # IMPERATIVE L# IMPERts
+1. MandatoryImperati1. MandatoryImperati1. MandatoryImperati1. MandatoryImperati1. MandatoryImperati1. MandatoryImperati1. MandatoryI on1. MandatoryImperati1. Mandfr1. MandatoryImperatiur1. MandatoryImperatiDEC1. Mandatory'EOM'
+##################################################################### L1 Subse###############This###################################################### a########################## Frozen SOURCE L1 Subset#####HumanSo##################################################################### L1 Subse#######Migrated verbatim from `ont#########################ce.owl` on `main`.
