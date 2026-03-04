@@ -1,10 +1,10 @@
 # SOURCE L1 — Semantic Audit
 
 ## Result
-PASS — L1 Subsets are defined and stable.
+PASS — L1 Subsets are defined, bounded, and stable.
 
 ## Evidence
-The following L1 Subset definition files exist and are aligned to the Source L1 freeze list:
+The following L1 Subset definition files exist and provide descriptive definitions and scope boundaries aligned to the Source L1 freeze list:
 
 - `SRC-SUBSET-01-human-source.md`
 - `SRC-SUBSET-02-system-source.md`
@@ -12,10 +12,10 @@ The following L1 Subset definition files exist and are aligned to the Source L1 
 - `SRC-SUBSET-04-environmental-source.md`
 
 ## Conformance Checks
-- Subset naming is consistent across files and matches the frozen subset list.
-- Definitions are descriptive and non-prescriptive (no best-practice guidance).
-- No element explosion is present at L1 (subset definitions only).
-- No additional L1 subsets are introduced implicitly.
+- Subset naming aligns to the frozen subset list (Human Source, System Source, Documentary Source, Environmental Source).
+- Definitions are descriptive and non-prescriptive.
+- L1 content remains subset-only (no element explosion).
+- Each subset includes a scope boundary plus inclusion/exclusion cues to prevent implicit subset drift.
 
 ## Notes
-- Any residual normative phrasing discovered during grep-based review is handled through a purity pass prior to freeze (wording adjustment only; no semantic expansion).
+v1.0 identifiers are retained in each subset file to preserve lineage while allowing vNext packaging normalization.
