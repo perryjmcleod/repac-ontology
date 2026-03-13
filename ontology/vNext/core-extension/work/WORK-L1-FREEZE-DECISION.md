@@ -6,9 +6,9 @@ Work L1 Subsets are frozen. This decision governs all subsequent Work L1 diagram
 ## Frozen Work L1 Subsets
 A complete Work assertion requires the following Subsets:
 
-1. Task Work
-2. Process Work
-3. Outcome Work
+1. WORK-SUBSET-01 Task Work
+2. WORK-SUBSET-02 Process Work
+3. WORK-SUBSET-03 Outcome Work
 
 ## Constraints
 - v1.0 is immutable.

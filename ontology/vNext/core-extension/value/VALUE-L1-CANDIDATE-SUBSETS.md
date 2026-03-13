@@ -1,30 +1,18 @@
-File: ontology/vNext/core-extension/value/VALUE-L1-CANDIDATE-SUBSETS.md
+# VALUE L1 — Candidate Subsets
 
-# Value L1 — Candidate Subsets
+## Objective
+Identify the controlled Layer 1 candidate subsets for Value in vNext core-extension using the established REPAC structure already present in the Value freeze decision.
 
-## Status
-Structural placeholder created to satisfy the canonical REPAC vNext L1 scaffold.
+## Candidate Value L1 Subsets
 
-## Purpose
-This document records the candidate subsets identified during L1 analysis for the VALUE superset.
+1. VAL-SUBSET-01 TangibleValue
+2. VAL-SUBSET-02 IntangibleValue
 
-These candidates support:
+## Constraints
+- No conceptual expansion
+- No renaming
+- No ontology drift
+- No element-level modelling at L1
 
-- L1 subset definition
-- semantic audit verification
-- semantic freeze decision
-- preparation for controlled element explosion
-
-## Candidate Subsets
-
-1.
-2.
-3.
-
-## Notes
-This file may reference subset definitions recorded in:
-
-- `VALUE-L1-FREEZE-DECISION.md`
-- `VALUE-L1-PACKAGING-AUDIT.md`
-
-Candidate subsets will be refined or confirmed during later modelling phases.
+## Assessment
+These candidates are carried forward as the working Value L1 subset set and are aligned to the existing freeze decision for this superset.

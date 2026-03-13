@@ -19,8 +19,8 @@ Source: `ontology/v1.0/owl/repac-communication.owl`
 ## Frozen Communication L1 Subsets
 A complete Communication assertion requires the following Subsets:
 
-1. COMM-EL-01 Formal Communication 
-2. COMM-EL-02 Informal Communication
+1. COMM-SUBSET-01 Formal Communication
+2. COMM-SUBSET-02 Informal Communication
 
 ## Freeze Scope
 This freeze locks:

@@ -1,30 +1,17 @@
-File: ontology/vNext/core-extension/imperative/IMPERATIVE-L1-CANDIDATE-SUBSETS.md
+# IMPERATIVE L1 — Candidate Subsets
 
-# Imperative L1 — Candidate Subsets
+## Objective
+Identify the controlled Layer 1 candidate subset set for Imperative in vNext core-extension while preserving strict separation between subset-layer and corrupted source artifacts.
 
-## Status
-Structural placeholder created to satisfy the canonical REPAC vNext L1 scaffold.
+## Authority
+The Imperative L1 candidate subset set must be derived from authoritative project structure and not from the currently corrupted freeze decision text.
 
-## Purpose
-This document records the candidate subsets identified during L1 analysis for the IMPERATIVE superset.
+## Constraints
+- No conceptual expansion
+- No renaming without explicit semantic justification
+- No ontology drift
+- No element-level modelling at L1
+- Corrupted source text must not be treated as authoritative
 
-These candidates support:
-
-- L1 subset definition
-- semantic audit verification
-- semantic freeze decision
-- preparation for controlled element explosion
-
-## Candidate Subsets
-
-1.
-2.
-3.
-
-## Notes
-This file may reference subset definitions recorded in:
-
-- `IMPERATIVE-L1-FREEZE-DECISION.md`
-- `IMPERATIVE-L1-PACKAGING-AUDIT.md`
-
-Candidate subsets will be refined or confirmed during later modelling phases.
+## Assessment
+This file is restored as part of the structural repair pass. Final Imperative L1 candidate subset transcription must be normalized from authoritative project evidence before semantic closure.
