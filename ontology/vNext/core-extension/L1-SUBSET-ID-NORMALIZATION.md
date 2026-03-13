@@ -1,176 +1,227 @@
-# REPAC vNext — L1 Subset ID Normalization Standard
+# L1-SUBSET-ID-NORMALIZATION.md
 
-## Purpose
+REPAC vNext — Core Extension Structural Repair Pass
 
-This document defines the canonical identifier standard for Layer-1 Subsets across all REPAC supersets in the vNext core-extension repository.
+## Objective
 
-The objective of this normalization is to:
+Normalize Layer 1 subset identifiers across all nine REPAC core-extension supersets so that every subset follows one canonical identifier pattern.
 
-- eliminate subset / element identifier drift
-- enforce consistent identifier structure across supersets
-- ensure diagrams, markdown, OWL, and SHACL artifacts reference the same identifiers
-- stabilize Layer-1 before controlled element expansion
+This normalization supports:
 
-This standard applies to all artifacts located under:
+- deterministic file naming
+- reliable repository search
+- consistent markdown references
+- clean OWL and TTL alignment
+- repeatable audit logic
+- stable structural reconstruction
 
-`ontology/vNext/core-extension/`
+This file is the authoritative normalization reference for Layer 1 subset identifiers in `ontology/vNext/core-extension`.
 
-## Canonical Identifier Rules
+## Canonical Identifier Pattern
 
-### Rule 1 — Subset Identifiers
+All Layer 1 subset identifiers must follow this pattern:
 
-All Layer-1 subsets must follow this identifier structure:
-
-`PREFIX-SUBSET-NN`
+`PREFIX-SUBSET-XX-name`
 
 Where:
 
-- `PREFIX` = superset identifier
-- `SUBSET` = indicates Layer-1 subset
-- `NN` = two-digit ordinal sequence
+- `PREFIX` = fixed superset prefix
+- `SUBSET` = literal constant
+- `XX` = two-digit ordinal
+- `name` = lowercase kebab-case descriptive label
 
 Example:
 
-`SOURCE-SUBSET-01`
+`PUR-SUBSET-01-intent`
 
-### Rule 2 — Element Identifiers
+## Fixed Superset Prefix Map
 
-Element-layer constructs must follow this structure:
+The following prefixes are fixed and must not vary.
 
-`PREFIX-EL-NN`
+| Superset | Prefix |
+|---|---|
+| Source | SRC |
+| Collaboration | COLLAB |
+| Governance | GOV |
+| Purpose | PUR |
+| Value | VAL |
+| Communication | COMM |
+| Imperative | IMP |
+| Scope | SCOPE |
+| Work | WORK |
 
-These represent analytical constructs that exist below the subset layer.
+These prefixes must be used consistently across:
+
+- subset markdown files
+- freeze decisions
+- packaging audits
+- structural stubs
+- diagram labels
+- OWL entities
+- TTL entities
+- SHACL references
+- grep and audit scripts
+
+## File Naming Standard
+
+Each subset definition file must use the canonical identifier as the filename, with `.md` appended.
 
 Example:
 
-`GOV-EL-01`
+`PUR-SUBSET-01-intent.md`
 
-Elements must never be used as substitutes for subset identifiers.
+File names must match the canonical subset identifier exactly.
 
-### Rule 3 — Layer Separation
+### Allowed
 
-REPAC analytical layers must remain structurally distinct.
+- uppercase prefix
+- uppercase `SUBSET`
+- two-digit numbering
+- lowercase kebab-case descriptive label
+- hyphens
 
-- **Superset**  
-  Top analytical domain
+### Not Allowed
 
-- **Subset**  
-  Primary analytical category within a superset
+- single-digit numbering
+- spaces
+- underscores
+- camelCase
+- title case labels
+- prefix variation for the same superset
+- descriptive labels that do not match the locked canonical form
 
-- **Element**  
-  Analytical mechanism or construct used within subsets
-
-- **Artifact**  
-  Documentation or implementation representation
-
-Subset artifacts must never reference element identifiers as subset identifiers.
-
-## Superset Prefix Table
-
-- Source → `SOURCE`
-- Collaboration → `COLLAB`
-- Governance → `GOV`
-- Purpose → `PUR`
-- Value → `VAL`
-- Communication → `COMM`
-- Imperative → `IMP`
-- Scope → `SCOPE`
-- Work → `WORK`
-
-## Canonical L1 Subset Inventory
+## Canonical Layer 1 Subset Identifiers
 
 ### Source
 
-- `SOURCE-SUBSET-01 Human Source`
-- `SOURCE-SUBSET-02 System Source`
-- `SOURCE-SUBSET-03 Documentary Source`
-- `SOURCE-SUBSET-04 Environmental Source`
+- `SRC-SUBSET-01-human-source`
+- `SRC-SUBSET-02-system-source`
+- `SRC-SUBSET-03-document-source`
 
 ### Collaboration
 
-- `COLLAB-SUBSET-01 CoordinatedCollaboration`
-- `COLLAB-SUBSET-02 EmergentCollaboration`
+- `COLLAB-SUBSET-01-coordination`
+- `COLLAB-SUBSET-02-cooperation`
+- `COLLAB-SUBSET-03-collaboration`
 
 ### Governance
 
-Governance subset inventory is currently maintained in the authoritative diagram:
-
-`ontology/vNext/core-extension/governance/diagrams/GOVERNANCE-L1-STRUCTURE.drawio`
-
-Governance presently contains element-layer constructs using `GOV-EL` identifiers.
-
-Governance subset normalization will occur during a later controlled repair phase.
-
-No renaming is authorized during this stabilization pass.
+- `GOV-SUBSET-01-authority-structure`
+- `GOV-SUBSET-02-decision-rights`
+- `GOV-SUBSET-03-accountability`
+- `GOV-SUBSET-04-policy-constraints`
+- `GOV-SUBSET-05-compliance-oversight`
 
 ### Purpose
 
-- `PUR-SUBSET-01 IntentionalPurpose`
-- `PUR-SUBSET-02 DeclarativePurpose`
+- `PUR-SUBSET-01-intent`
 
 ### Value
 
-- `VAL-SUBSET-01 TangibleValue`
-- `VAL-SUBSET-02 IntangibleValue`
+- `VAL-SUBSET-01-tangible-value`
+- `VAL-SUBSET-02-intangible-value`
 
 ### Communication
 
-- `COMM-SUBSET-01 Formal Communication`
-- `COMM-SUBSET-02 Informal Communication`
+- `COMM-SUBSET-01-formal-communication`
+- `COMM-SUBSET-02-informal-communication`
 
 ### Imperative
 
-Imperative subset normalization is temporarily deferred due to corruption discovered in earlier freeze artifacts.
-
-The subset structure must be reconstructed before identifier normalization is applied.
+- `IMP-SUBSET-01-mandatory-imperative`
+- `IMP-SUBSET-02-discretionary-imperative`
 
 ### Scope
 
-Scope currently uses element identifiers for its L1 analytical dimensions.
-
-Current structure:
-
-- `SCOPE-EL-01 Perspective`
-- `SCOPE-EL-02 Boundary`
-- `SCOPE-EL-03 Granularity`
-- `SCOPE-EL-04 Interval`
-
-A future normalization may convert these to:
-
-- `SCOPE-SUBSET-01 Perspective`
-- `SCOPE-SUBSET-02 Boundary`
-- `SCOPE-SUBSET-03 Granularity`
-- `SCOPE-SUBSET-04 Interval`
-
-This conversion is not performed during the current repair pass.
+- `SCOPE-SUBSET-01-perspective`
+- `SCOPE-SUBSET-02-boundary`
+- `SCOPE-SUBSET-03-timeframe`
+- `SCOPE-SUBSET-04-constraints`
 
 ### Work
 
-- `WORK-SUBSET-01 Task Work`
-- `WORK-SUBSET-02 Process Work`
-- `WORK-SUBSET-03 Outcome Work`
+- `WORK-SUBSET-01-activity`
+- `WORK-SUBSET-02-process`
+- `WORK-SUBSET-03-deliverable`
 
-## Normalization Scope
+## Normalization Rules
 
-This identifier standard applies to:
+### Rule 1 — Use the Canonical Pattern Only
 
-- candidate subset files
-- freeze decision files
-- semantic audit files
-- subset definition files
-- structural documentation
-- future ontology class identifiers
+Every Layer 1 subset identifier must follow:
 
-## Explicit Prohibitions
+`PREFIX-SUBSET-XX-name`
 
-The following practices are not permitted:
+Any deviation must be repaired.
 
-- using element identifiers as subset identifiers
-- renaming subsets outside freeze decisions
-- introducing new subset identifiers without governance approval
-- mixing subset-layer and element-layer constructs
+### Rule 2 — Use Two-Digit Ordinals
 
-## Status
+Correct:
 
-REPAC vNext Structural Repair Pass  
-Core-Extension Layer-1 Stabilization
+- `SUBSET-01`
+- `SUBSET-02`
+
+Incorrect:
+
+- `SUBSET-1`
+- `SUBSET-2`
+
+### Rule 3 — Use Lowercase Kebab-Case Labels
+
+Correct:
+
+- `tangible-value`
+- `formal-communication`
+
+Incorrect:
+
+- `TangibleValue`
+- `tangible_value`
+- `Formal-Communication`
+
+### Rule 4 — Match Filename to Identifier Exactly
+
+The markdown filename must exactly equal the canonical identifier plus `.md`.
+
+Correct:
+
+`VAL-SUBSET-01-tangible-value.md`
+
+Incorrect:
+
+- `val-subset-01-tangible-value.md`
+- `VAL_SUBSET_01_tangible_value.md`
+- `VAL-SUBSET-1-tangible-value.md`
+
+### Rule 5 — Preserve Locked Prefixes
+
+Do not substitute or shorten locked prefixes.
+
+Correct:
+
+- `SCOPE-SUBSET-01-perspective`
+- `COLLAB-SUBSET-01-coordination`
+
+Incorrect:
+
+- `SCP-SUBSET-01-perspective`
+- `COL-SUBSET-01-coordination`
+
+### Rule 6 — Store Files in the Correct Superset Directory
+
+Each subset markdown file must reside in its corresponding superset directory under:
+
+`ontology/vNext/core-extension/{superset}/`
+
+Example:
+
+`ontology/vNext/core-extension/value/VAL-SUBSET-01-tangible-value.md`
+
+## Audit Method
+
+Normalization must be checked by reviewing both identifiers and filenames.
+
+Suggested repository checks:
+
+```bash
+grep -RInE '\b(SRC|COLLAB|GOV|PUR|VAL|COMM|IMP|SCOPE|WORK)-SUBSET-[0-9]{2}-[a-z0-9-]+\b' ontology/vNext/core-extension
