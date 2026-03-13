@@ -1,4 +1,4 @@
-# SCOPE-EL-02 — Boundary
+# SCOPE-SUBSET-02-Boundary
 
 ## Definition
 Boundary is the structural partition that defines what is inside versus outside the asserted scope, given a selected Perspective, Granularity, and Interval.

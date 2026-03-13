@@ -1,4 +1,4 @@
-# SCOPE-EL-04 — Interval
+# SCOPE-SUBSET-04-Interval
 
 ## Definition
 Interval is the temporal span within which the asserted Scope is considered analytically valid. It specifies the beginning, end, or snapshot conditions under which the boundary applies.

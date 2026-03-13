@@ -5,8 +5,8 @@ Identify the controlled Layer 1 candidate subsets for Collaboration in vNext cor
 
 ## Candidate Collaboration L1 Subsets
 
-1. COLLAB-SUBSET-01 CoordinatedCollaboration
-2. COLLAB-SUBSET-02 EmergentCollaboration
+1. `COLLAB-SUBSET-01-coordinated`
+2. `COLLAB-SUBSET-02-emergent`
 
 ## Constraints
 - No conceptual expansion

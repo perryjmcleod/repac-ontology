@@ -1,75 +1,23 @@
-# Scope Superset  
-## Layer-1 Candidate Subsets  
-### Structural Draft (Pre-Validation)
+# SCOPE L1 — Candidate Subsets
 
----
+## Objective
 
-## 1. Inclusion Boundary
+Identify the controlled Layer 1 candidate subsets for Scope in vNext core-extension using the ontologically valid Scope structure selected for structural repair.
 
-Defines what is explicitly treated as inside the analytical frame.
+## Candidate Scope L1 Subsets
 
-This boundary specifies what is considered eligible for examination within the Scope of the case.
+1. `SCOPE-SUBSET-01-perspective`
+2. `SCOPE-SUBSET-02-boundary`
+3. `SCOPE-SUBSET-03-granularity`
+4. `SCOPE-SUBSET-04-interval`
 
----
+## Constraints
 
-## 2. Exclusion Boundary
+- No conceptual expansion
+- No renaming
+- No ontology drift
+- No element-level modelling at L1
 
-Defines what is explicitly treated as outside the analytical frame.
+## Assessment
 
-This boundary prevents uncontrolled analytical expansion and enforces discipline of omission.
-
----
-
-## 3. Granularity Level
-
-Defines the level of analytical resolution applied within the bounded frame.
-
-Granularity does not prescribe method; it specifies resolution depth.
-
----
-
-## 4. Actor Boundary
-
-Defines which actors are included within the Scope frame.
-
-This boundary restricts analysis to identified agents without modelling relational behaviour (which belongs elsewhere).
-
----
-
-## 5. Artefact Boundary
-
-Defines which artefacts, systems, or deliverables fall within the Scope frame.
-
-This boundary prevents implicit expansion to unbounded organisational objects.
-
----
-
-## 6. Constraint Boundary
-
-Defines which limiting conditions are treated as active delimiters within the Scope frame.
-
-Constraint is treated as a boundary condition, not as contextual reification.
-
----
-
-## Structural Integrity Check (Preliminary)
-
-Each candidate subset:
-
-- Represents a dimension of delimitation
-- Is non-prescriptive
-- Avoids modelling process
-- Avoids modelling context
-- Avoids overlap with Purpose, Imperative, Work, or Governance
-
-Formal validation pending.
-
----
-
-## Status
-
-All subsets currently in:
-
-> PRE-VALIDATION STATE
-
-No subset locked.
+These candidates are carried forward as the working Scope L1 subset set and are aligned to the authoritative ontological structure for this superset.

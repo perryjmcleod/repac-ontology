@@ -1,14 +1,27 @@
 # PURPOSE L1 — Freeze Decision
 
 ## Status
-FROZEN
 
-## Decision
-Purpose L1 Subsets are frozen. This decision governs all subsequent Purpose L1 diagramming and formalization work.
+Purpose Layer 1 Subsets are frozen.  
+This decision governs all subsequent Purpose Layer 1 diagramming and formalization work.
 
-## Frozen PURPOSE L1 Subsets
-1. PUR-SUBSET-01 IntentionalPurpose
-2. PUR-SUBSET-02 DeclarativePurpose
+## Frozen Purpose L1 Subsets
 
-## Evidence (v1.0)
-Migrated verbatim from `ontology/v1.0/owl/repac-purpose.owl` on `main`.
+A complete Purpose assertion requires the following Subsets:
+
+1. `PUR-SUBSET-01-intentional-purpose`
+2. `PUR-SUBSET-02-declarative-purpose`
+
+## Constraints
+
+- v1.0 is immutable.
+- vNext is additive only.
+- No new Supersets unless justified.
+- L1 Subsets freeze before any element explosion.
+- Packaging scaffold consistency must be maintained across all supersets.
+
+## Scope of Freeze
+
+This freeze applies only to **Layer 1 subset selection and naming** for Purpose.
+
+Elements, relationships, and axioms are not expanded until the controlled explosion phase.

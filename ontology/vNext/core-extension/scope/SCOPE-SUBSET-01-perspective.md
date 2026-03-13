@@ -1,4 +1,4 @@
-# SCOPE-EL-01 — Perspective
+# SCOPE-SUBSET-01-Perspective
 
 ## Definition
 Perspective is the analytical vantage that determines the class of entities eligible to be bounded and examined. It specifies what type of entity is under consideration prior to boundary assertion.
