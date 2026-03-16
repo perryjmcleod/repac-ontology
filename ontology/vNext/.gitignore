@@ -1,3 +1,4 @@
 
 # REPAC case audit backups
 cases/.backup_*
+.DS_Store
