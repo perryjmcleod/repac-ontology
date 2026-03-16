@@ -1,27 +1,28 @@
-# GOVERNANCE L1 — Freeze Decision (Packaging Lock)
-
-## Objective
-Align Governance L1 packaging with Scope L1 packaging **without altering semantics**.
-
-## Constraint
-- No conceptual expansion
-- No renaming
-- No ontology drift
+# GOVERNANCE L1 — Freeze Decision
 
 ## Status
-Governance L1 packaging is frozen:
-- The directory structure and artifact inventory are locked.
-- Governance L1 semantic inventory (subset names and node set) remains authoritative in:
-  - `ontology/vNext/core-extension/governance/diagrams/GOVERNANCE-L1-STRUCTURE.drawio`
+Governance L1 Subsets are frozen. This decision governs all subsequent Governance L1 diagramming and formalization work.
 
-## Frozen Packaging Artifacts
-1. Inventory index: `ontology/vNext/core-extension/governance/GOVERNANCE-L1-INVENTORY-INDEX.md`
-2. Freeze decision: `ontology/vNext/core-extension/governance/GOVERNANCE-L1-FREEZE-DECISION.md`
-3. Structural stubs:
-   - `ontology/vNext/core-extension/governance/ontology/repac-governance.owl`
-   - `ontology/vNext/core-extension/governance/ontology/repac-governance.ttl`
-4. Diagram location (authoritative): `ontology/vNext/core-extension/governance/diagrams/GOVERNANCE-L1-STRUCTURE.drawio`
+## Frozen Governance L1 Subsets
 
-## Freeze Rule
-Any future change that modifies Governance L1 subset naming, adds new conceptual nodes, or reinterprets relationships
-is out-of-scope for packaging and must be handled in the explicit Governance L1 semantic audit workflow.
+1. Authority
+2. Decision Rights
+3. Control
+4. Accountability
+
+## Canonical Subset Identifiers
+
+1. `GOV-SUBSET-01-authority`
+2. `GOV-SUBSET-02-decision-rights`
+3. `GOV-SUBSET-03-control`
+4. `GOV-SUBSET-04-accountability`
+
+## Rules
+- The Governance L1 subset set is closed for the current stabilization pass.
+- All Governance subset definition files must use canonical identifiers in the form `GOV-SUBSET-XX-name`.
+- No additional Governance L1 subsets may be introduced without a new formal review decision.
+- Element-layer artifacts must not be treated as Governance L1 subset definitions.
+- Structural and semantic work must align to this frozen list.
+
+## Rationale
+The authoritative Governance L1 diagram confirms a four-subset Layer 1 structure. This freeze decision records that structure explicitly so Governance can be normalized into canonical subset files without conceptual drift.

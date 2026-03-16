@@ -7,21 +7,31 @@ Packaging scaffold → Candidate subsets → Freeze decision → Semantic audit 
 
 ## Constraints
 - No conceptual expansion
-- No renaming
 - No ontology drift
-- No mixing of subset and element layers in canonical L1 control files
+- No substitution of element-layer artifacts for subset-layer definitions
+- Canonical Governance subset identifiers must follow the pattern `GOV-SUBSET-XX-name`
 
-## Result
+## Audit Result
 PASS
 
 ## Evidence
 The canonical Governance L1 control scaffold is present:
 
-- `GOVERNANCE-L1-PACKAGING-AUDIT.md`
 - `GOVERNANCE-L1-CANDIDATE-SUBSETS.md`
 - `GOVERNANCE-L1-FREEZE-DECISION.md`
 - `GOVERNANCE-L1-SEMANTIC-AUDIT.md`
 - `GOVERNANCE-L1-SEMANTIC-FREEZE-DECISION.md`
 
-## Notes
-Governance remains subject to structural normalization because prior artifacts mixed subset-layer and element-layer material. This audit confirms packaging scaffold presence only. It does not certify semantic purity.
+The authoritative Governance L1 subset inventory has now been confirmed from:
+
+`ontology/vNext/core-extension/governance/diagrams/GOVERNANCE-L1-STRUCTURE.drawio`
+
+Confirmed Governance L1 subset set:
+
+1. Authority
+2. Decision Rights
+3. Control
+4. Accountability
+
+## Decision
+Governance L1 packaging is structurally ready to proceed to canonical subset markdown creation and integrity alignment.

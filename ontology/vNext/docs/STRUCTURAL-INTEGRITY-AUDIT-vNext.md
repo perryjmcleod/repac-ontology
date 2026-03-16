@@ -1,75 +1,42 @@
-File: docs/STRUCTURAL-INTEGRITY-AUDIT-vNext.md
+## L1 Subset Normalization Repair Pass — Result
 
-# REPAC vNext — Structural Integrity Audit
-
-## Objective
-Confirm that all nine REPAC supersets follow the standardized L1 scaffold before controlled element explosion begins.
-
-## Repository Scope
-This audit covers the following directories under:
-
-`ontology/vNext/core-extension/`
-
-- `purpose/`
-- `value/`
-- `imperative/`
-- `communication/`
-- `collaboration/`
-- `governance/`
-- `scope/`
-- `source/`
-- `work/`
-
-## Structural Criteria
-Each superset was checked for the presence of:
-
-- L1 scaffold artifacts
-- OWL structural stub
-- TTL structural stub
-- `diagrams/` directory
-
-## Audit Result
-
-### Purpose
-Path: `ontology/vNext/core-extension/purpose/`  
-Result: PASS
-
-### Value
-Path: `ontology/vNext/core-extension/value/`  
-Result: PASS
-
-### Imperative
-Path: `ontology/vNext/core-extension/imperative/`  
-Result: PASS
-
-### Communication
-Path: `ontology/vNext/core-extension/communication/`  
-Result: PASS
-
-### Collaboration
-Path: `ontology/vNext/core-extension/collaboration/`  
-Result: PASS
-
-### Governance
-Path: `ontology/vNext/core-extension/governance/`  
-Result: PASS
+### Status
+PASS
 
 ### Scope
-Path: `ontology/vNext/core-extension/scope/`  
-Result: PASS
+This pass verified canonical Layer 1 subset normalization across:
 
-### Source
-Path: `ontology/vNext/core-extension/source/`  
-Result: PASS
+`ontology/vNext/core-extension`
 
-### Work
-Path: `ontology/vNext/core-extension/work/`  
-Result: PASS
+### Confirmed
 
-## Conclusion
-All nine supersets satisfy the REPAC vNext L1 structural scaffold requirements.
+All vNext L1 subset identifiers follow the canonical pattern:
 
-The repository is structurally aligned for the next modelling phase.
+`PREFIX-SUBSET-XX-name`
 
-## Decision
-Controlled element explosion is authorized to proceed.
+Redundant superset suffixes were removed during the normalization pass (examples: `tangible-value`, `formal-communication`, `task-work`).
+
+Governance L1 structural stabilization is complete.
+
+Governance canonical subset set is frozen as:
+
+1. `GOV-SUBSET-01-authority`
+2. `GOV-SUBSET-02-decision-rights`
+3. `GOV-SUBSET-03-control`
+4. `GOV-SUBSET-04-accountability`
+
+The full vNext canonical subset inventory is now structurally present across all nine supersets.
+
+### Historical Note
+
+`SRC-` identifiers found in:
+
+`ontology/v1.0/owl/repac-source.owl`
+
+are intentionally preserved as immutable historical identifiers and are out of scope for vNext normalization.
+
+### Outcome
+
+vNext Layer-1 structural normalization is complete.
+
+All supersets now contain canonical subset files and pass repository integrity checks.

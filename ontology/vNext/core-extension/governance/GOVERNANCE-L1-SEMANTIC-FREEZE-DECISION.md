@@ -1,25 +1,28 @@
 # GOVERNANCE L1 — Semantic Freeze Decision
 
 ## Status
-Governance L1 semantics are frozen for the vNext core-extension structural repair pass.
-
-## Constraint
-- No conceptual expansion
-- No renaming
-- No ontology drift
-
-## Authority
-The authoritative Governance L1 subset inventory is the diagram:
-
-- `ontology/vNext/core-extension/governance/diagrams/GOVERNANCE-L1-STRUCTURE.drawio`
+Governance L1 semantics are frozen for the current vNext core-extension structural repair pass.
 
 ## Frozen Governance L1 Subsets
-Governance L1 subset names must be transcribed from the authoritative diagram exactly during semantic normalization. This freeze decision records the semantic lock while preserving the diagram as the controlling source.
 
-## Freeze Rule
-Any future change that adds, removes, renames, or reinterprets Governance L1 subsets requires an explicit semantic change decision and is out-of-scope for this structural repair pass.
+1. Authority
+2. Decision Rights
+3. Control
+4. Accountability
 
-## Note
-This file replaces a corrupted prior version that contained duplicated content, placeholder residue, and transcription defects. Until a controlled exact transcription is completed from the authoritative diagram, the diagram remains the sole source of truth for Governance L1 subset naming.
+## Canonical Subset Identifiers
 
+1. `GOV-SUBSET-01-authority`
+2. `GOV-SUBSET-02-decision-rights`
+3. `GOV-SUBSET-03-control`
+4. `GOV-SUBSET-04-accountability`
 
+## Semantic Rules
+- These subset meanings are fixed for the current pass.
+- Subsequent Governance L1 work must preserve semantic distinctness.
+- Structural files, diagrams, and formal representations must not redefine subset intent.
+- Element-layer artifacts may support later elaboration, but they must not replace the frozen Governance L1 subset layer.
+- Any future change requires a new semantic review decision.
+
+## Outcome
+Governance L1 is approved to proceed to canonical subset markdown creation and structural stub alignment.
