@@ -1,7 +1,7 @@
-# COMM-SUBSET-01 — Formal Communication
+# COMM-SUBSET-01—formal
 
 ## Subset
-COMMM-EL-01 Formal Communication
+COMMM-SUBSET-01-formal
 
 ## Superset
 Communication

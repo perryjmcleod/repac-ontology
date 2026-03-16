@@ -1,4 +1,4 @@
-# IMP-SUBSET-01 — Mandatory Imperative
+# IMP-SUBSET-01—mandatory
 
 ## Canonical Identifier
 `IMP-SUBSET-01-mandatory`

@@ -1,4 +1,4 @@
-# SOURCE L1 Subset — System Source
+# SOURCE-L1-SUBSET—system
 
 ## Source
 Migrated from REPAC v1.0 (`repac-source.owl`) and normalized for vNext L1 packaging.

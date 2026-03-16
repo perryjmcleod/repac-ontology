@@ -1,4 +1,4 @@
-# COLLAB-SUBSET-02 — Emergent
+# COLLAB-SUBSET-02—emergent
 
 ## Canonical Identifier
 `COLLAB-SUBSET-02-emergent`

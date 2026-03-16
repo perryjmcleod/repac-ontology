@@ -1,4 +1,4 @@
-# COLLAB-SUBSET-01 — Coordinated
+# COLLAB-SUBSET-01—coordinated
 
 ## Canonical Identifier
 `COLLAB-SUBSET-01-coordinated`

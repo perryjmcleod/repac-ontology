@@ -1,4 +1,4 @@
-# IMP-SUBSET-02 — Discretionary Imperative
+# IMP-SUBSET-02—discretionary
 
 ## Canonical Identifier
 `IMP-SUBSET-02-discretionary`

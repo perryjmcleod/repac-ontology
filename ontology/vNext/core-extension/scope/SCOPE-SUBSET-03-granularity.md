@@ -1,4 +1,4 @@
-# SCOPE-SUBSET-03-Granularity
+# SCOPE-SUBSET-03-granularity
 
 ## Definition
 Granularity is the resolution at which in-scope entities are treated and analyzed. It specifies the level of analytical detail applied to entities admitted by Boundary under the selected Perspective.

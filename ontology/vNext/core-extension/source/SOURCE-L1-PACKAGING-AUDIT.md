@@ -1,5 +1,4 @@
 # SOURCE L1 — Packaging Audit
-# SOURCE L1 — Packaging Audit
 
 ## Result
 PASS — Packaging scaffold present.
