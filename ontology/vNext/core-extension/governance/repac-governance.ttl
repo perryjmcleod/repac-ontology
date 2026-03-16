@@ -1,0 +1,39 @@
+@prefix repac: <https://w3id.org/repac/ontology/vNext/core-extension/governance#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/repac/ontology/vNext/core-extension/governance>
+    a owl:Ontology ;
+    rdfs:label "REPAC vNext Governance Ontology"@en ;
+    rdfs:comment "Governance superset population for REPAC vNext based on the authoritative L1 structural freeze."@en .
+
+repac:Governance
+    a owl:Class ;
+    rdfs:label "Governance"@en ;
+    rdfs:comment "Top-level REPAC superset representing governance-related analytical structure."@en .
+
+repac:Authority
+    a owl:Class ;
+    rdfs:subClassOf repac:Governance ;
+    rdfs:label "Authority"@en ;
+    rdfs:comment "Governance subset representing authority."@en .
+
+repac:DecisionRights
+    a owl:Class ;
+    rdfs:subClassOf repac:Governance ;
+    rdfs:label "Decision Rights"@en ;
+    rdfs:comment "Governance subset representing decision rights."@en .
+
+repac:Control
+    a owl:Class ;
+    rdfs:subClassOf repac:Governance ;
+    rdfs:label "Control"@en ;
+    rdfs:comment "Governance subset representing control."@en .
+
+repac:Accountability
+    a owl:Class ;
+    rdfs:subClassOf repac:Governance ;
+    rdfs:label "Accountability"@en ;
+    rdfs:comment "Governance subset representing accountability."@en .
