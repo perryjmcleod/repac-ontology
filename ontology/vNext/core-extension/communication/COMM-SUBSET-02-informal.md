@@ -1,7 +1,7 @@
 # COMM-SUBSET-02—informal
 
 ## Subset
-COMM-EL-02-informal
+COMM-EL-02
 
 ## Superset
 Communication

@@ -1,41 +1,41 @@
-# IMP-SUBSET-02—discretionary
+# IMP-SUBSET-02-discretionary
 
 ## Canonical Identifier
+
 `IMP-SUBSET-02-discretionary`
 
 ## Superset
+
 Imperative
 
 ## Layer
-Layer 1 Subset
+
+L1 Subset
 
 ## Definition
-Discretionary Imperative identifies an imperative that influences or guides action without constituting an absolute requirement.
+
+Discretionary imperative captures imperative force that guides, pressures, or influences action while still allowing judgement, latitude, interpretation, or choice in how action is taken.
 
 ## Analytical Role
-This subset captures non-mandatory drivers that may shape behaviour, prioritization, interpretation, or execution, but that do not rise to the level of compulsory obligation.
+
+This subset identifies imperative forms that shape action without fully determining it as obligatory in a singular or fixed way.
 
 ## Boundary
-Discretionary Imperative does not represent:
 
-- mandatory obligation
-- formal rule enforcement
-- governance structure
-- decision-right allocation
-- work execution
-- communicative form
+This subset concerns imperative force that permits discretion rather than strictly binding action.
+
+It does not by itself capture mandatory, absolute, or non-optional imperative force.
 
 ## Distinction from Mandatory Imperative
-Mandatory Imperative identifies what must be done, honoured, or satisfied.
 
-Discretionary Imperative identifies what is encouraged, preferred, recommended, or directionally influential without being strictly required.
+Discretionary imperative is analytically distinct from mandatory imperative because it preserves judgement and permitted variation rather than imposing fixed obligation.
 
 ## Constraints
+
 - No conceptual expansion
-- No renaming
-- No ontology drift
-- No element-level modelling at L1
-- No prescriptive method language
+- No collapse into governance, purpose, or work
+- Use only as a subset-layer construct at this phase
 
 ## Status
-Reconstructed during the REPAC vNext core-extension structural repair pass.
+
+FROZEN

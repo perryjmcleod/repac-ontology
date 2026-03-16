@@ -1,17 +1,21 @@
 # IMPERATIVE L1 — Candidate Subsets
 
 ## Objective
-Identify the controlled Layer 1 candidate subset set for Imperative in vNext core-extension while preserving strict separation between subset-layer and corrupted source artifacts.
 
-## Authority
-The Imperative L1 candidate subset set must be derived from authoritative project structure and not from the currently corrupted freeze decision text.
+Identify the controlled Layer 1 candidate subsets for Imperative in REPAC vNext.
+
+## Candidate Imperative L1 Subsets
+
+1. `IMP-SUBSET-01-mandatory`
+2. `IMP-SUBSET-02-discretionary`
 
 ## Constraints
+
 - No conceptual expansion
-- No renaming without explicit semantic justification
 - No ontology drift
-- No element-level modelling at L1
-- Corrupted source text must not be treated as authoritative
+- No OWL/TTL population yet
+- Use canonical identifier form
 
 ## Assessment
-This file is restored as part of the structural repair pass. Final Imperative L1 candidate subset transcription must be normalized from authoritative project evidence before semantic closure.
+
+The Imperative L1 structure is adequately represented by a two-subset distinction between mandatory and discretionary imperative forms.

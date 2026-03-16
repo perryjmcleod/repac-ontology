@@ -1,41 +1,41 @@
-# IMP-SUBSET-01—mandatory
+# IMP-SUBSET-01-mandatory
 
 ## Canonical Identifier
+
 `IMP-SUBSET-01-mandatory`
 
 ## Superset
+
 Imperative
 
 ## Layer
-Layer 1 Subset
+
+L1 Subset
 
 ## Definition
-Mandatory Imperative identifies an imperative that constitutes a required obligation, condition, or demand that must be satisfied or observed.
+
+Mandatory imperative captures imperative force that is binding, required, non-optional, or otherwise treated as obligatory within the relevant context of action or judgement.
 
 ## Analytical Role
-This subset captures compulsory drivers that structure expected action, required compliance, or non-optional constraint within the analysed case.
+
+This subset identifies imperative forms that constrain action through obligation, duty, requirement, or necessity.
 
 ## Boundary
-Mandatory Imperative does not represent:
 
-- discretionary preference
-- optional guidance
-- governance structure
-- decision-right allocation
-- work execution
-- communicative form
+This subset concerns imperative force that is understood as required rather than optional.
+
+It does not by itself capture optional, preferential, or permissive forms of imperative influence.
 
 ## Distinction from Discretionary Imperative
-Mandatory Imperative identifies what must be done, honoured, or satisfied.
 
-Discretionary Imperative identifies what may guide action without creating absolute obligation.
+Mandatory imperative is analytically distinct from discretionary imperative because it limits or removes choice rather than allowing judgement within a permitted range.
 
 ## Constraints
+
 - No conceptual expansion
-- No renaming
-- No ontology drift
-- No element-level modelling at L1
-- No prescriptive method language
+- No collapse into governance, purpose, or work
+- Use only as a subset-layer construct at this phase
 
 ## Status
-Validated during the REPAC vNext core-extension structural repair pass.
+
+FROZEN
