@@ -9,10 +9,10 @@ This decision governs all subsequent Source Layer 1 diagramming and formalizatio
 
 A complete Source assertion requires the following Subsets:
 
-1. `SRC-SUBSET-01-human-source`
-2. `SRC-SUBSET-02-system-source`
-3. `SRC-SUBSET-03-documentary-source`
-4. `SRC-SUBSET-04-environmental-source`
+1. `SOURCE-SUBSET-01-human`
+2. `SOURCE-SUBSET-02-system`
+3. `SOURCE-SUBSET-03-documentary`
+4. `SOURCE-SUBSET-04-environmental`
 
 ## Constraints
 

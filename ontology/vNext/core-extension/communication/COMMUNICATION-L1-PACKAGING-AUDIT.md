@@ -31,8 +31,8 @@ Evidence (directory listing confirms required subdirectories exist):
 total 48
 drwxr-xr-x  11 perryjmcleod  staff   352 Feb 25 15:22 .
 drwxr-xr-x   7 perryjmcleod  staff   224 Feb 25 14:48 ..
--rw-r--r--   1 perryjmcleod  staff   596 Feb 25 15:18 COMM-SUBSET-01-formal-communication.md
--rw-r--r--   1 perryjmcleod  staff   581 Feb 25 15:18 COMM-SUBSET-02-informal-communication.md
+-rw-r--r--   1 perryjmcleod  staff   596 Feb 25 15:18 COMM-SUBSET-01-formal.md
+-rw-r--r--   1 perryjmcleod  staff   581 Feb 25 15:18 COMM-SUBSET-02-informal.md
 -rw-r--r--   1 perryjmcleod  staff  1093 Feb 25 15:17 COMMUNICATION-L1-FREEZE-DECISION.md
 -rw-r--r--   1 perryjmcleod  staff  2108 Feb 25 15:08 COMMUNICATION-L1-STRUCTURAL-INTEGRITY-AUDIT.md
 -rw-r--r--   1 perryjmcleod  staff  2164 Feb 25 15:12 COMMUNICATION-L1-SUBSET-DISCOVERY.md

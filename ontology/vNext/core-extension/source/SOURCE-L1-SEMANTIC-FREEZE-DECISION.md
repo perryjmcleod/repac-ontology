@@ -4,10 +4,10 @@
 Source L1 Subsets are semantically frozen. This decision governs all subsequent Source L1 modelling and prohibits changes to the L1 subset set outside an explicit governance decision.
 
 ## Frozen Source L1 Subsets
-1. Human Source
-2. System Source
-3. Documentary Source
-4. Environmental Source
+1. Human
+2. System
+3. Documentary
+4. Environmental
 
 ## What This Freeze Locks
 - The L1 subset set (membership, naming, meaning)

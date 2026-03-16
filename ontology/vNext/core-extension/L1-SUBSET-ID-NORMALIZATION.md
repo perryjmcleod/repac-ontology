@@ -4,7 +4,7 @@ REPAC vNext — Core Extension Structural Repair Pass
 
 ## Objective
 
-Normalize Layer 1 subset identifiers across all nine REPAC core-extension supersets so that every subset follows one canonical identifier pattern.
+Normalize Layer 1 subset identifiers across all REPAC core-extension supersets so that every subset follows one canonical identifier pattern.
 
 This normalization supports:
 
@@ -17,7 +17,9 @@ This normalization supports:
 
 This file is the authoritative normalization reference for Layer 1 subset identifiers in `ontology/vNext/core-extension`.
 
-## Canonical Identifier Pattern
+---
+
+# Canonical Identifier Pattern
 
 All Layer 1 subset identifiers must follow this pattern:
 
@@ -32,15 +34,17 @@ Where:
 
 Example:
 
-`PUR-SUBSET-01-intentional-purpose`
+`PUR-SUBSET-01-intentional`
 
-## Fixed Superset Prefix Map
+---
+
+# Fixed Superset Prefix Map
 
 The following prefixes are fixed and must not vary.
 
 | Superset | Prefix |
 |---|---|
-| Source | SRC |
+| Source | SOURCE |
 | Collaboration | COLLAB |
 | Governance | GOV |
 | Purpose | PUR |
@@ -63,13 +67,15 @@ These prefixes must be used consistently across:
 - SHACL references
 - grep and audit scripts
 
-## File Naming Standard
+---
+
+# File Naming Standard
 
 Each subset definition file must use the canonical identifier as the filename, with `.md` appended.
 
 Example:
 
-`PUR-SUBSET-01-intentional-purpose.md`
+`PUR-SUBSET-01-intentional.md`
 
 File names must match the canonical subset identifier exactly.
 
@@ -89,71 +95,70 @@ File names must match the canonical subset identifier exactly.
 - camelCase
 - title case labels
 - prefix variation for the same superset
-- descriptive labels that do not match the locked canonical form
+- descriptive labels that repeat the superset name unnecessarily
 
-## Canonical Layer 1 Subset Identifiers
+---
 
-### Source
+# Canonical Layer 1 Subset Identifiers
 
-- `SRC-SUBSET-01-human-source`
-- `SRC-SUBSET-02-system-source`
-- `SRC-SUBSET-03-documentary-source`
-- `SRC-SUBSET-04-environmental-source`
+## Source
 
-### Collaboration
+- `SOURCE-SUBSET-01-human`
+- `SOURCE-SUBSET-02-system`
+- `SOURCE-SUBSET-03-documentary`
+- `SOURCE-SUBSET-04-environmental`
 
-- `COLLAB-SUBSET-01-coordination`
-- `COLLAB-SUBSET-02-cooperation`
-- `COLLAB-SUBSET-03-collaboration`
+## Collaboration
 
-### Governance
+- `COLLAB-SUBSET-01-coordinated`
+- `COLLAB-SUBSET-02-emergent`
 
-Governance Layer 1 subset identifiers must use the fixed `GOV` prefix and two-digit ordinal format. The current candidate subset inventory and freeze-aligned set remain governed by the Governance L1 files already present in the repository. Any non-canonical references must be normalized to the `GOV-SUBSET-XX-name` pattern during structural repair.
+## Governance
 
-### Purpose
+Governance Layer 1 subset identifiers will follow the canonical pattern:
 
-- `PUR-SUBSET-01-intentional-purpose`
-- `PUR-SUBSET-02-declarative-purpose`
+`GOV-SUBSET-XX-name`
 
-### Value
+The final Governance subset set will be defined and frozen during the Governance L1 stabilization phase.
 
-- `VAL-SUBSET-01-tangible-value`
-- `VAL-SUBSET-02-intangible-value`
+## Purpose
 
-### Communication
+- `PUR-SUBSET-01-intentional`
+- `PUR-SUBSET-02-declarative`
 
-- `COMM-SUBSET-01-formal-communication`
-- `COMM-SUBSET-02-informal-communication`
+## Value
 
-### Imperative
+- `VAL-SUBSET-01-tangible`
+- `VAL-SUBSET-02-intangible`
 
-- `IMP-SUBSET-01-mandatory-imperative`
-- `IMP-SUBSET-02-discretionary-imperative`
+## Communication
 
-### Scope
+- `COMM-SUBSET-01-formal`
+- `COMM-SUBSET-02-informal`
 
-Scope Layer 1 is not yet normalized into individual canonical subset files. The current Scope structural draft remains in pre-validation state and must be normalized before canonical Scope subset identifiers are locked.
+## Imperative
 
-Current pre-validation Scope candidate subset labels:
+- `IMP-SUBSET-01-mandatory`
+- `IMP-SUBSET-02-discretionary`
 
-1. Inclusion Boundary
-2. Exclusion Boundary
-3. Granularity Level
-4. Actor Boundary
-5. Artefact Boundary
-6. Constraint Boundary
+## Scope
 
-No canonical `SCOPE-SUBSET-XX-name` set is locked until the Scope subset normalization audit is completed.
+- `SCOPE-SUBSET-01-perspective`
+- `SCOPE-SUBSET-02-boundary`
+- `SCOPE-SUBSET-03-granularity`
+- `SCOPE-SUBSET-04-interval`
 
-### Work
+## Work
 
-- `WORK-SUBSET-01-task-work`
-- `WORK-SUBSET-02-process-work`
-- `WORK-SUBSET-03-outcome-work`
+- `WORK-SUBSET-01-task`
+- `WORK-SUBSET-02-process`
+- `WORK-SUBSET-03-outcome`
 
-## Normalization Rules
+---
 
-### Rule 1 — Use the Canonical Pattern Only
+# Normalization Rules
+
+## Rule 1 — Use the Canonical Pattern Only
 
 Every Layer 1 subset identifier must follow:
 
@@ -161,7 +166,7 @@ Every Layer 1 subset identifier must follow:
 
 Any deviation must be repaired.
 
-### Rule 2 — Use Two-Digit Ordinals
+## Rule 2 — Use Two-Digit Ordinals
 
 Correct examples:
 
@@ -170,45 +175,59 @@ Correct examples:
 
 Incorrect examples include single-digit numbering or non-padded ordinals.
 
-### Rule 3 — Use Lowercase Kebab-Case Labels
+## Rule 3 — Use Lowercase Kebab-Case Labels
 
 Correct examples:
 
-- `tangible-value`
-- `formal-communication`
-- `intentional-purpose`
+- `tangible`
+- `formal`
+- `intentional`
 
 Incorrect examples include camelCase, underscores, title case, or space-separated labels.
 
-### Rule 4 — Match Filename to Identifier Exactly
+## Rule 4 — Match Filename to Identifier Exactly
 
 The markdown filename must exactly equal the canonical identifier plus `.md`.
 
 Correct example:
 
-`VAL-SUBSET-01-tangible-value.md`
+`VAL-SUBSET-01-tangible.md`
 
 Incorrect forms include lowercase prefixes, underscore variants, non-padded ordinals, and mismatched descriptive labels.
 
-### Rule 5 — Preserve Locked Prefixes
+## Rule 5 — Preserve Locked Prefixes
 
 Do not substitute or shorten locked prefixes.
 
 Correct examples:
 
 - `SCOPE-SUBSET-01-name`
-- `COLLAB-SUBSET-01-coordination`
-- `PUR-SUBSET-01-intentional-purpose`
+- `COLLAB-SUBSET-01-coordinated`
+- `PUR-SUBSET-01-intentional`
 
-Incorrect forms include alternate prefixes such as shortened or legacy variants.
+Incorrect forms include alternate prefixes or legacy abbreviations.
 
-### Rule 6 — Normalize Legacy Variants to Canonical Prefixes
+## Rule 6 — Avoid Redundant Superset Labels
 
-Legacy identifiers that use superset names rather than canonical prefixes must be normalized to the fixed prefix map defined in this document.
+Subset labels must not repeat the superset name.
 
-Examples of legacy forms include identifiers using the superset name (for example Source or Purpose) instead of the canonical short prefix. These legacy identifiers must be converted to the canonical `PREFIX-SUBSET-XX-name` format during structural repair.
+Examples of redundant forms:
 
-### Rule 7 — Store Files in the Correct Superset Directory
+- `tangible-value`
+- `formal-communication`
+- `mandatory-imperative`
+- `task-work`
+
+These must be simplified to the differentiating concept only.
+
+Correct examples:
+
+- `tangible`
+- `formal`
+- `mandatory`
+- `task`
+
+## Rule 7 — Store Files in the Correct Superset Directory
 
 Each subset markdown file must reside in its corresponding superset directory under:
 
@@ -216,9 +235,11 @@ Each subset markdown file must reside in its corresponding superset directory un
 
 Example:
 
-`ontology/vNext/core-extension/value/VAL-SUBSET-01-tangible-value.md`
+`ontology/vNext/core-extension/value/VAL-SUBSET-01-tangible.md`
 
-## Audit Method
+---
+
+# Audit Method
 
 Normalization must be checked by reviewing both identifiers and filenames.
 

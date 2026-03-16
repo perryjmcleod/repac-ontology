@@ -9,8 +9,8 @@ This decision governs all subsequent Purpose Layer 1 diagramming and formalizati
 
 A complete Purpose assertion requires the following Subsets:
 
-1. `PUR-SUBSET-01-intentional-purpose`
-2. `PUR-SUBSET-02-declarative-purpose`
+1. `PUR-SUBSET-01-intentional`
+2. `PUR-SUBSET-02-declarative`
 
 ## Constraints
 

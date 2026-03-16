@@ -1,7 +1,7 @@
 # IMP-SUBSET-01 — Mandatory Imperative
 
 ## Canonical Identifier
-`IMP-SUBSET-01-mandatory-imperative`
+`IMP-SUBSET-01-mandatory`
 
 ## Superset
 Imperative

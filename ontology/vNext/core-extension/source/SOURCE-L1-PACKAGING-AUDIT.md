@@ -12,10 +12,10 @@ The following required scaffold artifacts exist in `ontology/vNext/core-extensio
 - `repac-source.ttl` present (stub; currently 0 bytes)
 - `SOURCE-L1-FREEZE-DECISION.md` present
 - L1 Subset definition files present:
-  - `SRC-SUBSET-01-human-source.md`
-  - `SRC-SUBSET-02-system-source.md`
-  - `SRC-SUBSET-03-documentary-source.md`
-  - `SRC-SUBSET-04-environmental-source.md`
+- `SOURCE-SUBSET-01-human.md`
+- `SOURCE-SUBSET-02-system.md`
+- `SOURCE-SUBSET-03-documentary.md`
+- `SOURCE-SUBSET-04-environmental.md`
 
 ## Notes
 - OWL/TTL stubs are currently empty. This does not fail the packaging scaffold check, but a minimal structural stub will be required prior to validation and integration steps.

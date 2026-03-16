@@ -6,10 +6,10 @@ PASS — L1 Subsets are defined, bounded, and stable.
 ## Evidence
 The following L1 Subset definition files exist and provide descriptive definitions and scope boundaries aligned to the Source L1 freeze list:
 
-- `SRC-SUBSET-01-human-source.md`
-- `SRC-SUBSET-02-system-source.md`
-- `SRC-SUBSET-03-documentary-source.md`
-- `SRC-SUBSET-04-environmental-source.md`
+- `SOURCE-SUBSET-01-human.md`
+- `SOURCE-SUBSET-02-system.md`
+- `SOURCE-SUBSET-03-documentary.md`
+- `SOURCE-SUBSET-04-environmental.md`
 
 ## Conformance Checks
 - Subset naming aligns to the frozen subset list (Human Source, System Source, Documentary Source, Environmental Source).

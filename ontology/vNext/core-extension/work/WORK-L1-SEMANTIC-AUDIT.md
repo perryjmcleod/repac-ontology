@@ -6,9 +6,9 @@ PASS — L1 Subsets are defined, bounded, and stable.
 ## Evidence
 The following L1 Subset definition files exist and provide descriptive definitions and scope boundaries:
 
-- `WORK-SUBSET-01-task-work.md`
-- `WORK-SUBSET-02-process-work.md`
-- `WORK-SUBSET-03-outcome-work.md`
+- `WORK-SUBSET-01-task.md`
+- `WORK-SUBSET-02-process.md`
+- `WORK-SUBSET-03-outcome.md`
 
 ## Conformance Checks
 - Definitions are descriptive and non-prescriptive.

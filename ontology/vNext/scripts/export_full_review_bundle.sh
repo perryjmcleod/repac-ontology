@@ -76,7 +76,7 @@ append_superset_section() {
   done < <(
     find "$REPO_ROOT/$base" -maxdepth 1 -type f -name "*.md" \
       | sort \
-      | grep -E '/(PURP|VAL|IMP|COMM|COLLAB|GOV|SRC|WORK|SCOPE)-SUBSET-[0-9]{2}-.+\.md$|/(GOV|SCOPE)-EL-[0-9]{2}-.+\.md$' || true
+      | grep -E '/(PUR|VAL|IMP|COMM|COLLAB|GOV|SOURCE|WORK|SCOPE)-SUBSET-[0-9]{2}-.+\.md$|/(GOV|SCOPE)-EL-[0-9]{2}-.+\.md$' || true
   )
 }
 

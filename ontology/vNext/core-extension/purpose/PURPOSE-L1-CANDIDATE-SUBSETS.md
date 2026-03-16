@@ -6,8 +6,8 @@ Identify the controlled Layer 1 candidate subsets for Purpose in vNext core-exte
 
 ## Candidate Purpose L1 Subsets
 
-1. `PUR-SUBSET-01-intentional-purpose`
-2. `PUR-SUBSET-02-declarative-purpose`
+1. `PUR-SUBSET-01-intentional`
+2. `PUR-SUBSET-02-declarative`
 
 ## Constraints
 
