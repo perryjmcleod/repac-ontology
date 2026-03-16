@@ -1,0 +1,132 @@
+REPAC vNext Core-Extension Structural Verification
+Generated: Mon Mar 16 16:37:44 EDT 2026
+Repository root: .
+
+============================================================
+SUPERSET: SOURCE
+PATH: ./ontology/vNext/core-extension/source
+PASS: SOURCE-L1-CANDIDATE-SUBSETS.md
+PASS: SOURCE-L1-FREEZE-DECISION.md
+PASS: SOURCE-L1-PACKAGING-AUDIT.md
+PASS: SOURCE-L1-SEMANTIC-AUDIT.md
+PASS: SOURCE-L1-SEMANTIC-FREEZE-DECISION.md
+PASS: repac-source.owl
+PASS: repac-source.ttl
+PASS: diagrams/
+PASS: subset files present (4)
+PASS: no hygiene artifacts
+
+============================================================
+SUPERSET: COLLABORATION
+PATH: ./ontology/vNext/core-extension/collaboration
+PASS: COLLABORATION-L1-CANDIDATE-SUBSETS.md
+PASS: COLLABORATION-L1-FREEZE-DECISION.md
+PASS: COLLABORATION-L1-PACKAGING-AUDIT.md
+PASS: COLLABORATION-L1-SEMANTIC-AUDIT.md
+PASS: COLLABORATION-L1-SEMANTIC-FREEZE-DECISION.md
+PASS: repac-collaboration.owl
+PASS: repac-collaboration.ttl
+PASS: diagrams/
+PASS: subset files present (2)
+PASS: no hygiene artifacts
+
+============================================================
+SUPERSET: GOVERNANCE
+PATH: ./ontology/vNext/core-extension/governance
+PASS: GOVERNANCE-L1-CANDIDATE-SUBSETS.md
+PASS: GOVERNANCE-L1-FREEZE-DECISION.md
+PASS: GOVERNANCE-L1-PACKAGING-AUDIT.md
+PASS: GOVERNANCE-L1-SEMANTIC-AUDIT.md
+PASS: GOVERNANCE-L1-SEMANTIC-FREEZE-DECISION.md
+PASS: repac-governance.owl
+PASS: repac-governance.ttl
+PASS: diagrams/
+PASS: subset files present (4)
+PASS: no hygiene artifacts
+
+============================================================
+SUPERSET: PURPOSE
+PATH: ./ontology/vNext/core-extension/purpose
+PASS: PURPOSE-L1-CANDIDATE-SUBSETS.md
+PASS: PURPOSE-L1-FREEZE-DECISION.md
+PASS: PURPOSE-L1-PACKAGING-AUDIT.md
+PASS: PURPOSE-L1-SEMANTIC-AUDIT.md
+PASS: PURPOSE-L1-SEMANTIC-FREEZE-DECISION.md
+PASS: repac-purpose.owl
+PASS: repac-purpose.ttl
+PASS: diagrams/
+PASS: subset files present (2)
+PASS: no hygiene artifacts
+
+============================================================
+SUPERSET: VALUE
+PATH: ./ontology/vNext/core-extension/value
+PASS: VALUE-L1-CANDIDATE-SUBSETS.md
+PASS: VALUE-L1-FREEZE-DECISION.md
+PASS: VALUE-L1-PACKAGING-AUDIT.md
+PASS: VALUE-L1-SEMANTIC-AUDIT.md
+PASS: VALUE-L1-SEMANTIC-FREEZE-DECISION.md
+PASS: repac-value.owl
+PASS: repac-value.ttl
+PASS: diagrams/
+PASS: subset files present (2)
+PASS: no hygiene artifacts
+
+============================================================
+SUPERSET: COMMUNICATION
+PATH: ./ontology/vNext/core-extension/communication
+PASS: COMMUNICATION-L1-CANDIDATE-SUBSETS.md
+PASS: COMMUNICATION-L1-FREEZE-DECISION.md
+PASS: COMMUNICATION-L1-PACKAGING-AUDIT.md
+PASS: COMMUNICATION-L1-SEMANTIC-AUDIT.md
+PASS: COMMUNICATION-L1-SEMANTIC-FREEZE-DECISION.md
+PASS: repac-communication.owl
+PASS: repac-communication.ttl
+PASS: diagrams/
+PASS: subset files present (2)
+PASS: no hygiene artifacts
+
+============================================================
+SUPERSET: IMPERATIVE
+PATH: ./ontology/vNext/core-extension/imperative
+PASS: IMPERATIVE-L1-CANDIDATE-SUBSETS.md
+PASS: IMPERATIVE-L1-FREEZE-DECISION.md
+PASS: IMPERATIVE-L1-PACKAGING-AUDIT.md
+PASS: IMPERATIVE-L1-SEMANTIC-AUDIT.md
+PASS: IMPERATIVE-L1-SEMANTIC-FREEZE-DECISION.md
+PASS: repac-imperative.owl
+PASS: repac-imperative.ttl
+PASS: diagrams/
+PASS: subset files present (2)
+PASS: no hygiene artifacts
+
+============================================================
+SUPERSET: SCOPE
+PATH: ./ontology/vNext/core-extension/scope
+PASS: SCOPE-L1-CANDIDATE-SUBSETS.md
+PASS: SCOPE-L1-FREEZE-DECISION.md
+PASS: SCOPE-L1-PACKAGING-AUDIT.md
+PASS: SCOPE-L1-SEMANTIC-AUDIT.md
+PASS: SCOPE-L1-SEMANTIC-FREEZE-DECISION.md
+PASS: repac-scope.owl
+PASS: repac-scope.ttl
+PASS: diagrams/
+PASS: subset files present (5)
+PASS: no hygiene artifacts
+
+============================================================
+SUPERSET: WORK
+PATH: ./ontology/vNext/core-extension/work
+PASS: WORK-L1-CANDIDATE-SUBSETS.md
+PASS: WORK-L1-FREEZE-DECISION.md
+PASS: WORK-L1-PACKAGING-AUDIT.md
+PASS: WORK-L1-SEMANTIC-AUDIT.md
+PASS: WORK-L1-SEMANTIC-FREEZE-DECISION.md
+PASS: repac-work.owl
+PASS: repac-work.ttl
+PASS: diagrams/
+PASS: subset files present (3)
+PASS: no hygiene artifacts
+
+============================================================
+RESULT: PASS — Core-extension structure verified.
