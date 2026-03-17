@@ -5,10 +5,10 @@ Identify the controlled Governance Layer 1 candidate subset set for vNext core-e
 
 ## Candidate Governance L1 Subsets
 
-1. Authority
-2. Decision Rights
-3. Control
-4. Accountability
+1. `GOV-SUBSET-01-authority`
+2. `GOV-SUBSET-02-decision-rights`
+3. `GOV-SUBSET-03-control`
+4. `GOV-SUBSET-04-accountability`
 
 ## Constraints
 - No conceptual expansion
