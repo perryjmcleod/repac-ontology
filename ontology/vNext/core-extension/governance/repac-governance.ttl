@@ -9,10 +9,14 @@
     rdfs:label "REPAC vNext Governance Ontology"@en ;
     rdfs:comment "Governance superset population for REPAC vNext based on the authoritative L1 structural freeze."@en .
 
+### Superset
+
 repac:Governance
     a owl:Class ;
     rdfs:label "Governance"@en ;
     rdfs:comment "Top-level REPAC superset representing governance-related analytical structure."@en .
+
+### Subsets
 
 repac:Authority
     a owl:Class ;
@@ -37,3 +41,59 @@ repac:Accountability
     rdfs:subClassOf repac:Governance ;
     rdfs:label "Accountability"@en ;
     rdfs:comment "Governance subset representing accountability."@en .
+
+### Elements — Authority
+
+repac:AuthorityStructure
+    a owl:Class ;
+    rdfs:subClassOf repac:Authority ;
+    rdfs:label "Authority Structure"@en ;
+    rdfs:comment "Governance element representing the structure through which authority is arranged or constituted."@en .
+
+repac:LegitimacyBasis
+    a owl:Class ;
+    rdfs:subClassOf repac:Authority ;
+    rdfs:label "Legitimacy Basis"@en ;
+    rdfs:comment "Governance element representing the recognized basis on which authority or decision rights are accepted as valid."@en .
+
+### Elements — Decision Rights
+
+repac:DecisionRightsAllocation
+    a owl:Class ;
+    rdfs:subClassOf repac:DecisionRights ;
+    rdfs:label "Decision Rights Allocation"@en ;
+    rdfs:comment "Governance element representing how decision rights are distributed or assigned."@en .
+
+repac:EscalationLogic
+    a owl:Class ;
+    rdfs:subClassOf repac:DecisionRights ;
+    rdfs:label "Escalation Logic"@en ;
+    rdfs:comment "Governance element representing the logic by which decisions, exceptions, or issues are escalated."@en .
+
+### Elements — Control
+
+repac:EnforcementMechanism
+    a owl:Class ;
+    rdfs:subClassOf repac:Control ;
+    rdfs:label "Enforcement Mechanism"@en ;
+    rdfs:comment "Governance element representing the means through which governance expectations are enforced."@en .
+
+repac:ComplianceMechanism
+    a owl:Class ;
+    rdfs:subClassOf repac:Control ;
+    rdfs:label "Compliance Mechanism"@en ;
+    rdfs:comment "Governance element representing the means through which compliance is produced, monitored, or maintained."@en .
+
+### Elements — Accountability
+
+repac:OversightConstruct
+    a owl:Class ;
+    rdfs:subClassOf repac:Accountability ;
+    rdfs:label "Oversight Construct"@en ;
+    rdfs:comment "Governance element representing the structure or mechanism through which oversight is exercised."@en .
+
+repac:InformalGovernanceOverlay
+    a owl:Class ;
+    rdfs:subClassOf repac:Accountability ;
+    rdfs:label "Informal Governance Overlay"@en ;
+    rdfs:comment "Governance element representing informal governance patterns that supplement, bypass, or reshape formal accountability arrangements."@en .
