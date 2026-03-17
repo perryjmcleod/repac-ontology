@@ -5,8 +5,8 @@ Identify the controlled Layer 1 candidate subsets for Value in vNext core-extens
 
 ## Candidate Value L1 Subsets
 
-1. VAL-SUBSET-01 Tangible
-2. VAL-SUBSET-02 Intangible
+1. `VAL-SUBSET-01-tangible`
+2. `VAL-SUBSET-02-intangible`
 
 ## Constraints
 - No conceptual expansion

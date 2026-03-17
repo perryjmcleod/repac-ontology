@@ -5,8 +5,8 @@ Identify the controlled Layer 1 candidate subsets for Communication in vNext cor
 
 ## Candidate Communication L1 Subsets
 
-1. COMM-SUBSET-01 Formal Communication
-2. COMM-SUBSET-02 Informal Communication
+1. `COMM-SUBSET-01-formal`
+2. `COMM-SUBSET-02-informal`
 
 ## Constraints
 - No conceptual expansion

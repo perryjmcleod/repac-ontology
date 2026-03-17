@@ -5,9 +5,9 @@ Identify the controlled Layer 1 candidate subsets for Work in vNext core-extensi
 
 ## Candidate Work L1 Subsets
 
-1. WORK-SUBSET-01 Task Work
-2. WORK-SUBSET-02 Process Work
-3. WORK-SUBSET-03 Outcome Work
+1. `WORK-SUBSET-01-task`
+2. `WORK-SUBSET-02process`
+3. `WORK-SUBSET-03outcome`
 
 ## Constraints
 - No conceptual expansion
