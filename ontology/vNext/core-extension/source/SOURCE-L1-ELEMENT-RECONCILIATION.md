@@ -4,7 +4,7 @@
 
 Reconcile Source element artifacts against the frozen Source L1 subset layer.
 
-This document confirms whether any Source element artifacts currently exist, determines whether reconciliation actions are required, and locks the repository state relative to the authoritative Source L1 subset freeze.
+This document confirms the current Source element inventory, validates correct subset alignment, and locks the repository state relative to the authoritative Source L1 subset freeze.
 
 ## Constraints
 
@@ -36,9 +36,15 @@ All authoritative Source L1 subset identifiers are present in the repository as 
 ### Existing SOURCE-EL artifact inventory
 PASS
 
-No `SOURCE-EL-*` artifacts were detected in the repository.
+The following `SOURCE-EL-*` artifacts were detected and validated:
 
-This means Source is currently in a pre-element state.
+- `SOURCE-EL-01-human-action`
+- `SOURCE-EL-02-human-omission`
+- `SOURCE-EL-03-system-signal`
+- `SOURCE-EL-04-instructional-artifact`
+- `SOURCE-EL-05-recorded-artifact`
+- `SOURCE-EL-06-ambient-condition`
+- `SOURCE-EL-07-external-influence`
 
 ### Markup consistency check
 PARTIAL PASS
@@ -49,40 +55,49 @@ The Source repository is structurally usable, but the following consistency issu
 - `SOURCE-L1-PACKAGING-AUDIT.md` appears to repeat the same top-level heading twice
 - Historical and audit documents remain informative, but they do not override the frozen subset layer
 
-These issues do not block reconciliation because there are no current Source element artifacts to place.
+These issues do not block reconciliation.
 
 ## Reconciliation Decision Rules
 
 1. The subset freeze is authoritative.
-2. Every Source element must reconcile to exactly one Source L1 subset once Source elements exist.
-3. No new Source elements may be introduced during this phase.
-4. If no Source elements exist, the correct outcome is a null-inventory reconciliation.
+2. Every Source element must reconcile to exactly one Source L1 subset.
+3. Element definitions must remain non-evaluative and mechanism-based.
+4. No cross-subset duplication of element semantics is permitted.
 5. Historical candidate or audit documents do not override the frozen Source subset layer.
 
 ## Inventory and Placement Decisions
 
 | Element ID | Element Label | Current Location | Reconciled Subset | Status | Rationale |
 |---|---|---|---|---|---|
-| None | None | None | None | No Action | No Source element artifacts currently exist |
+| SOURCE-EL-01 | Human Action | SOURCE | SOURCE-SUBSET-01-human | Retained | Represents observable human-performed behaviour |
+| SOURCE-EL-02 | Human Omission | SOURCE | SOURCE-SUBSET-01-human | Retained | Represents absence of human action |
+| SOURCE-EL-03 | System Signal | SOURCE | SOURCE-SUBSET-02-system | Retained | Represents system-emitted outputs or state signals |
+| SOURCE-EL-04 | Instructional Artifact | SOURCE | SOURCE-SUBSET-03-documentary | Retained | Represents directive documentary inputs |
+| SOURCE-EL-05 | Recorded Artifact | SOURCE | SOURCE-SUBSET-03-documentary | Retained | Represents recorded documentary inputs |
+| SOURCE-EL-06 | Ambient Condition | SOURCE | SOURCE-SUBSET-04-environmental | Retained | Represents persistent environmental conditions |
+| SOURCE-EL-07 | External Influence | SOURCE | SOURCE-SUBSET-04-environmental | Retained | Represents external environmental interactions |
 
 ## Reconciliation Outcome by Subset
 
 ### `SOURCE-SUBSET-01-human`
-No current Source elements assigned.
+- `SOURCE-EL-01-human-action`
+- `SOURCE-EL-02-human-omission`
 
 ### `SOURCE-SUBSET-02-system`
-No current Source elements assigned.
+- `SOURCE-EL-03-system-signal`
 
 ### `SOURCE-SUBSET-03-documentary`
-No current Source elements assigned.
+- `SOURCE-EL-04-instructional-artifact`
+- `SOURCE-EL-05-recorded-artifact`
 
 ### `SOURCE-SUBSET-04-environmental`
-No current Source elements assigned.
+- `SOURCE-EL-06-ambient-condition`
+- `SOURCE-EL-07-external-influence`
 
 ## Status Summary
 
 ### Retain
-None.
+All elements retained as defined.
 
 ### Rename
 None.
@@ -97,12 +112,12 @@ None.
 None.
 
 ### Defer
-Element instantiation is deferred because no Source element artifacts currently exist.
+None.
 
 ## Controlled Conclusion
 
-Source L1 subset-to-element reconciliation is complete for the current repository state.
+Source L1 subset-to-element reconciliation is complete with a fully defined element layer.
 
-The frozen Source L1 subset layer remains authoritative. No Source element artifacts currently exist, so no placement actions are required at this time.
+The frozen Source L1 subset layer remains authoritative, and all Source elements are correctly aligned to their respective subsets.
 
-The next artifact is the Source element placement freeze, which records the null-inventory state and preserves the frozen subset structure for future controlled element-layer work.
+Source is now structurally stabilized at the element layer and ready for cross-superset validation prior to OWL/TTL population.
