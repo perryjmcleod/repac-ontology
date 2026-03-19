@@ -32,11 +32,25 @@ Rationale:
 Definition:
 A discrete unit of action that can be performed within a work context.
 
+## Element Type Consistency
+
+All Work elements are instances of a single element type:
+
+- `WORK-EL` — Work Unit
+
+This element type is shared across all subsets.
+
+Subsets do not define different element types.
+They classify how Work Units arise:
+
+- Defined → pre-specified Work Units
+- Emergent → context-arising Work Units
+
 ## Characteristics
 
 - Action-oriented
 - Executable
-- Context-independent (at definition level)
+- Context-independent at definition level
 - Can be composed into larger work structures
 
 ## Examples
@@ -44,25 +58,26 @@ A discrete unit of action that can be performed within a work context.
 - "Validate input data"
 - "Install component"
 - "Respond to customer inquiry"
-- "Analyze requirements"
+- "Analyse requirements"
 
 ## Subset Alignment
 
-- Defined Work:
-  - Work Units are pre-specified
-  - Organized into structured sequences
+### Defined Work
+- Work Units are pre-specified
+- Work Units are organized into structured sequences, procedures, or plans
 
-- Emergent Work:
-  - Work Units arise dynamically
-  - May not be predefined
+### Emergent Work
+- Work Units arise dynamically during execution
+- Work Units may not be predefined before activity begins
 
 ## Exclusions
 
-Work elements do NOT represent:
-- Roles (who performs the work)
-- Tools (what is used)
-- Outcomes (what is produced)
-- Value (what is realized)
+Work elements do not represent:
+- Roles
+- Tools
+- Outcomes
+- Value
+- Purpose
 
 ## Result
 

@@ -20,18 +20,19 @@ Lock the placement of Work elements relative to the frozen L1 subset structure.
 
 ### `WORK-SUBSET-01-defined`
 
-- `WORK-EL-*` — Defined Work Units (pre-specified)
+- `WORK-EL-*` — Defined Work Units
 
 ### `WORK-SUBSET-02-emergent`
 
-- `WORK-EL-*` — Emergent Work Units (context-arising)
+- `WORK-EL-*` — Emergent Work Units
 
 ## Structural Rule
 
-- All Work elements are instances of Work Units
+- All Work elements are instances of `WORK-EL`
+- Subsets do not introduce different element types
 - Elements are classified by subset based on how they arise:
-  - Predefined → Defined
-  - Contextual → Emergent
+  - Pre-specified → Defined
+  - Context-arising → Emergent
 
 ## Result
 
