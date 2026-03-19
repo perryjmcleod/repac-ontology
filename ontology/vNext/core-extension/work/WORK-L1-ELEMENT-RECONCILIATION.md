@@ -1,56 +1,69 @@
-# WORK L1 → Element Reconciliation
+# WORK L1 — Element Reconciliation
 
 ## Objective
 
-Reconcile Work against the frozen L1 subset structure and determine whether any authoritative Work element artifacts exist for placement at the current modelling stage.
-
-This phase performs structural validation only.
+Establish the element layer for Work and align it with the frozen L1 subset structure.
 
 ## Constraints
 
 - No conceptual expansion
 - No ontology drift
-- Treat subset freeze as authoritative
-- No OWL/TTL population yet
+- No OWL/TTL population
+- Treat L1 subsets as authoritative
 
 ## Frozen Work L1 Subsets
 
-1. `WORK-SUBSET-01-task`
-2. `WORK-SUBSET-02-process`
-3. `WORK-SUBSET-03-outcome`
+1. `WORK-SUBSET-01-defined`
+2. `WORK-SUBSET-02-emergent`
 
-These subsets are authoritative for Work L1 reconciliation.
+## Element Layer Requirement
 
-## Repository Integrity Sweep
+Work requires an element layer.
 
-A repository integrity sweep was performed for the Work superset directory.
+Rationale:
+- Work represents executable activity
+- It must be decomposable into units
+- These units must be reusable and referenceable
+
+## Element Definition
+
+### `WORK-EL` — Work Unit
+
+Definition:
+A discrete unit of action that can be performed within a work context.
+
+## Characteristics
+
+- Action-oriented
+- Executable
+- Context-independent (at definition level)
+- Can be composed into larger work structures
+
+## Examples
+
+- "Validate input data"
+- "Install component"
+- "Respond to customer inquiry"
+- "Analyze requirements"
+
+## Subset Alignment
+
+- Defined Work:
+  - Work Units are pre-specified
+  - Organized into structured sequences
+
+- Emergent Work:
+  - Work Units arise dynamically
+  - May not be predefined
+
+## Exclusions
+
+Work elements do NOT represent:
+- Roles (who performs the work)
+- Tools (what is used)
+- Outcomes (what is produced)
+- Value (what is realized)
 
 ## Result
 
-PASS
-
-No blocking repository artifact requiring reconciliation was identified in the working Work path during this phase.
-
-## Element Inventory
-
-A repository scan was performed for `WORK-EL` artifacts under `ontology/vNext`.
-
-### Evidence
-
-No `WORK-EL` artifacts were identified.
-
-## Reconciliation Assessment
-
-No authoritative Work element artifacts exist for placement at the current reconciliation stage.
-
-Accordingly, Work is treated as a null-element superset for this phase.
-
-## Structural Determination
-
-Work is a **null-element superset** for the current L1 → Element reconciliation phase.
-
-No authoritative Work elements are frozen for placement in this phase.
-
-## Result
-
-PASS — Work L1 to Element reconciliation complete as null-element reconciliation.
+PASS — Work is confirmed as an element-bearing superset

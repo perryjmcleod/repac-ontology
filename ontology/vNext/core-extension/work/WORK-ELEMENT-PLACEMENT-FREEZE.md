@@ -1,38 +1,38 @@
-# WORK Element Placement Freeze
+# WORK — Element Placement Freeze
 
 ## Objective
 
-Record the element placement status of Work relative to the frozen L1 subset structure.
-
-This file confirms whether any authoritative Work elements are frozen for placement at the current modelling stage.
+Lock the placement of Work elements relative to the frozen L1 subset structure.
 
 ## Constraints
 
 - No conceptual expansion
 - No ontology drift
-- Treat subset freeze as authoritative
-- No OWL/TTL population yet
+- No OWL/TTL population
+- Treat subset structure as authoritative
 
 ## Frozen Work L1 Subsets
 
-1. `WORK-SUBSET-01-task`
-2. `WORK-SUBSET-02-process`
-3. `WORK-SUBSET-03-outcome`
+1. `WORK-SUBSET-01-defined`
+2. `WORK-SUBSET-02-emergent`
 
 ## Element Placement
 
-No authoritative Work elements are recognized for placement in this phase.
+### `WORK-SUBSET-01-defined`
 
-## Structural Status
+- `WORK-EL-*` — Defined Work Units (pre-specified)
 
-Work remains a **null-element superset** at the current L1 → Element reconciliation stage.
+### `WORK-SUBSET-02-emergent`
 
-## Placement Rule
+- `WORK-EL-*` — Emergent Work Units (context-arising)
 
-No Work element placement is frozen in this phase.
+## Structural Rule
 
-Any future Work element introduction must occur only through a later authorized modelling phase or formal REPAC governance decision.
+- All Work elements are instances of Work Units
+- Elements are classified by subset based on how they arise:
+  - Predefined → Defined
+  - Contextual → Emergent
 
 ## Result
 
-PASS — no Work element placement frozen at this stage.
+LOCKED — Work element structure stabilized for vNext pre-ontology phase
