@@ -1,41 +1,26 @@
-# IMP-SUBSET-01-mandatory
+# IMP-SUBSET-01 — mandatory
 
-## Canonical Identifier
-
+## Subset ID
 `IMP-SUBSET-01-mandatory`
 
-## Superset
-
-Imperative
-
-## Layer
-
-L1 Subset
+## Label
+Mandatory
 
 ## Definition
+An imperative that requires a specific action or condition to be satisfied.
 
-Mandatory imperative captures imperative force that is binding, required, non-optional, or otherwise treated as obligatory within the relevant context of action or judgement.
+## Description
+Represents a form of normative force where a defined expectation must be fulfilled. A mandatory imperative establishes that something is required, without specifying how that requirement is expressed or enforced.
 
-## Analytical Role
-
-This subset identifies imperative forms that constrain action through obligation, duty, requirement, or necessity.
-
-## Boundary
-
-This subset concerns imperative force that is understood as required rather than optional.
-
-It does not by itself capture optional, preferential, or permissive forms of imperative influence.
-
-## Distinction from Discretionary Imperative
-
-Mandatory imperative is analytically distinct from discretionary imperative because it limits or removes choice rather than allowing judgement within a permitted range.
+Imperatives manifest through sources and are expressed through communication. This subset defines the degree of obligation, not the mechanism by which the imperative appears in the system.
 
 ## Constraints
+- Represents obligation only
+- Does not encode enforcement, compliance, or outcome
+- Does not specify how the imperative is communicated (explicit or implicit)
 
-- No conceptual expansion
-- No collapse into governance, purpose, or work
-- Use only as a subset-layer construct at this phase
+## Usage Examples
 
-## Status
-
-FROZEN
+- A procedure states that a safety check must be completed before operation
+- A system requires a mandatory field to be completed before submission
+- A policy specifies that approval is required prior to execution

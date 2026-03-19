@@ -1,41 +1,26 @@
-# IMP-SUBSET-02-discretionary
+# IMP-SUBSET-02 — discretionary
 
-## Canonical Identifier
-
+## Subset ID
 `IMP-SUBSET-02-discretionary`
 
-## Superset
-
-Imperative
-
-## Layer
-
-L1 Subset
+## Label
+Discretionary
 
 ## Definition
+An imperative that permits variation in action or condition.
 
-Discretionary imperative captures imperative force that guides, pressures, or influences action while still allowing judgement, latitude, interpretation, or choice in how action is taken.
+## Description
+Represents a form of normative latitude where multiple acceptable actions or conditions may be selected. A discretionary imperative allows choice without prescribing a single required path.
 
-## Analytical Role
-
-This subset identifies imperative forms that shape action without fully determining it as obligatory in a singular or fixed way.
-
-## Boundary
-
-This subset concerns imperative force that permits discretion rather than strictly binding action.
-
-It does not by itself capture mandatory, absolute, or non-optional imperative force.
-
-## Distinction from Mandatory Imperative
-
-Discretionary imperative is analytically distinct from mandatory imperative because it preserves judgement and permitted variation rather than imposing fixed obligation.
+Imperatives manifest through sources and are expressed through communication. This subset defines the degree of flexibility, not the mechanism by which the imperative appears in the system.
 
 ## Constraints
+- Represents allowed variation or optionality
+- Does not encode preference, effectiveness, or outcome
+- Does not specify how the imperative is communicated (explicit or implicit)
 
-- No conceptual expansion
-- No collapse into governance, purpose, or work
-- Use only as a subset-layer construct at this phase
+## Usage Examples
 
-## Status
-
-FROZEN
+- A guideline suggests that additional validation may be performed if needed
+- A process allows different sequences of steps depending on context
+- A user may choose between multiple methods to complete a task

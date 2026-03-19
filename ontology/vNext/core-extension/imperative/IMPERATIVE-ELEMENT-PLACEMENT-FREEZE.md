@@ -46,6 +46,7 @@ No current Imperative elements assigned.
 3. Historical Imperative documents do not constitute placed Imperative elements.
 4. Later OWL/TTL population must follow the frozen Imperative subset layer and any future element placement freeze.
 5. The absence of Imperative elements at this phase is valid and does not constitute incompleteness.
+6. Imperative subsets represent normative force only and do not encode expression or manifestation mechanisms.
 
 ## Outcome
 

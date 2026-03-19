@@ -87,8 +87,12 @@ Element instantiation is deferred because no Imperative element artifacts curren
 
 ## Controlled Conclusion
 
-Imperative L1 subset-to-element reconciliation is complete for the current repository state.
+## Controlled Conclusion
 
-The frozen Imperative L1 subset layer remains authoritative. No Imperative element artifacts currently exist, so no placement actions are required at this time.
+Imperative L1 subset-to-element reconciliation confirms that no distinct element layer is required beyond the frozen L1 subset structure.
 
-The next artifact is the Imperative element placement freeze, which records the null-inventory state and preserves the frozen subset structure for future controlled element-layer work.
+The Imperative superset is implemented as a subset-terminal reduced-pattern structure, where each subset directly represents a complete and non-redundant form of normative force.
+
+Imperatives manifest through sources and are expressed through communication. The Imperative layer defines only the degree of obligation or latitude and does not encode how the imperative is conveyed or realized.
+
+No `IMP-EL-*` artifacts are required at this stage.
