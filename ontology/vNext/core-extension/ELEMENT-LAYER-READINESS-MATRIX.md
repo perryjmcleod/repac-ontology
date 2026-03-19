@@ -19,13 +19,13 @@ This matrix is the authoritative control surface for the Element-Layer Stabiliza
 
 | Superset        | L1 Subsets Frozen | Element Layer Exists | Element Layer Quality | Issues Identified | Pattern Type | Status |
 |----------------|------------------|----------------------|------------------------|-------------------|--------------|--------|
-| Source         | YES              | YES                  | N/A                    | YES               | FULL         | IN PROGRESS |
+| Source         | YES              | No                   | N/A                    | YES               | FULL         | IN PROGRESS |
 | Collaboration  | YES              | UNKNOWN              | UNKNOWN                | UNKNOWN           | UNKNOWN      | NOT STARTED |
 | Governance     | YES              | YES                  | PROVISIONAL            | YES               | FULL         | REVIEW REQUIRED |
 | Purpose        | YES              | UNKNOWN              | UNKNOWN                | UNKNOWN           | UNKNOWN      | NOT STARTED |
 | Value          | YES              | UNKNOWN              | UNKNOWN                | UNKNOWN           | UNKNOWN      | NOT STARTED |
-| Communication  | YES              | YES                  | LOW                    | YES               | REDUCED?     | REFACTOR REQUIRED |
-| Imperative     | YES              | NO                   | N/A                    | YES               | UNKNOWN      | BLOCKED |
+| Communication  | YES              | NO                   | N/A                    | YES               | REDUCED      | IN PROGRESS |
+| Imperative     | YES              | NO                   | N/A                    | YES               | REDUCED      | IN PROGRESS |
 | Scope          | YES              | UNKNOWN              | UNKNOWN                | UNKNOWN           | UNKNOWN      | NOT STARTED |
 | Work           | YES              | UNKNOWN              | UNKNOWN                | UNKNOWN           | UNKNOWN      | NOT STARTED |
 
