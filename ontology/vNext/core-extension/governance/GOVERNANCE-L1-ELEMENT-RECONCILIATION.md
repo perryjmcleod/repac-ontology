@@ -81,7 +81,7 @@ These issues do not block reconciliation, but they should be normalized in the c
 | GOV-EL-05 | Escalation Logic | governance root | `GOV-SUBSET-02-decision-rights` | Retain / Move | Governs transfer or elevation of decision authority when thresholds are crossed |
 | GOV-EL-06 | Oversight Construct | governance root | `GOV-SUBSET-04-accountability` | Retain / Move | Establishes monitoring and answerability structures aligned to accountability |
 | GOV-EL-07 | Compliance Mechanism | governance root | `GOV-SUBSET-03-control` | Retain / Move | Operates as a control-facing mechanism ensuring conformity to governing constraints |
-| GOV-EL-08 | Informal Governance Overlay | governance root | `GOV-SUBSET-01-authority` | Retain / Move | Represents non-formal authority effects that shape how authority operates in practice |
+| GOV-EL-08 | Informal Governance Overlay | governance root | `GOV-SUBSET-04-accountability` | Retain / Move | Represents informal governance patterns that supplement, bypass, or reshape formal accountability arrangements |
 
 ## Reconciliation Outcome by Subset
 
@@ -90,7 +90,6 @@ Retained elements:
 
 - `GOV-EL-01-authority-structure`
 - `GOV-EL-03-legitimacy-basis`
-- `GOV-EL-08-informal-governance-overlay`
 
 ### `GOV-SUBSET-02-decision-rights`
 Retained elements:
@@ -108,6 +107,7 @@ Retained elements:
 Retained elements:
 
 - `GOV-EL-06-oversight-construct`
+- `GOV-EL-08-informal-governance-overlay`
 
 ## Status Summary
 

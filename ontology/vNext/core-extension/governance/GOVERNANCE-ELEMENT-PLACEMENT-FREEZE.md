@@ -33,7 +33,6 @@ This freeze governs subsequent Governance element-layer normalization, directory
 
 - `GOV-EL-01-authority-structure`
 - `GOV-EL-03-legitimacy-basis`
-- `GOV-EL-08-informal-governance-overlay`
 
 ### `GOV-SUBSET-02-decision-rights`
 
@@ -60,7 +59,7 @@ This freeze governs subsequent Governance element-layer normalization, directory
 | `GOV-EL-05-escalation-logic` | `GOV-SUBSET-02-decision-rights` |
 | `GOV-EL-06-oversight-construct` | `GOV-SUBSET-04-accountability` |
 | `GOV-EL-07-compliance-mechanism` | `GOV-SUBSET-03-control` |
-| `GOV-EL-08-informal-governance-overlay` | `GOV-SUBSET-01-authority` |
+| `GOV-EL-08-informal-governance-overlay` | `GOV-SUBSET-04-accountability` |
 
 ## Locked Rules
 
