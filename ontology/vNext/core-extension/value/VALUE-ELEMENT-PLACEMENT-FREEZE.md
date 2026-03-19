@@ -1,54 +1,38 @@
 # VALUE — Element Placement Freeze
 
-## Status
-
-FROZEN
-
-Value element placement relative to the Value L1 subset layer is frozen at a null-inventory state.
-
 ## Objective
 
-Lock the authoritative Value element placement state under the frozen Value L1 subset structure.
-
-At this phase, no Value element artifacts exist. This freeze therefore records the absence of placed Value elements while preserving the frozen subset structure for future controlled element-layer normalization.
+Lock the structure of Value following L1 subset correction and reconciliation.
 
 ## Constraints
 
 - No conceptual expansion
 - No ontology drift
-- No OWL/TTL population yet
-- Subset freeze remains authoritative
-- No Value elements may be implicitly invented to satisfy structure
+- No OWL/TTL population
+- Treat subset structure as authoritative
 
-## Authoritative Value L1 Subsets
+## Frozen Value L1 Subsets
 
-1. `VAL-SUBSET-01-tangible`
-2. `VAL-SUBSET-02-intangible`
+1. `VAL-SUBSET-01-inherent`
+2. `VAL-SUBSET-02-instrumental`
 
-## Frozen Element Placement
+## Element Placement
 
-### `VAL-SUBSET-01-tangible`
-No current Value elements assigned.
+N/A
 
-### `VAL-SUBSET-02-intangible`
-No current Value elements assigned.
+## Structural Rule
 
-## Freeze Table
+Value is a **subset-terminal superset**
 
-| Element ID | Frozen Subset Placement |
-|---|---|
-| None | No current Value element artifacts exist |
+- No element layer (VAL-EL)
+- No element placement required
+- All Value classification occurs at the subset level
 
-## Locked Rules
+## Notes
 
-1. Each future Value element must belong to exactly one Value L1 subset.
-2. No Value element may be added without explicit controlled modelling.
-3. Historical Value documents do not constitute placed Value elements.
-4. Later OWL/TTL population must follow the frozen Value subset layer and any future element placement freeze.
-5. The absence of Value elements at this phase is valid and does not constitute incompleteness.
+- Measurement constructs (quantitative / qualitative, tangible / intangible) are explicitly excluded from ontology
+- Value evaluation occurs downstream and is not modeled as structure
 
-## Outcome
+## Result
 
-Value L1 subset-to-element reconciliation is complete.
-
-Value remains in a frozen pre-element state pending a future controlled Value element modelling phase.
+LOCKED — Value structure finalized for vNext pre-ontology phase

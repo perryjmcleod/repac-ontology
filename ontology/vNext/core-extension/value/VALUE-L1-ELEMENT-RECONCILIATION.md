@@ -2,93 +2,76 @@
 
 ## Objective
 
-Reconcile Value element artifacts against the frozen Value L1 subset layer.
-
-This document confirms whether any Value element artifacts currently exist, determines whether reconciliation actions are required, and locks the repository state relative to the authoritative Value L1 subset freeze.
+Reconcile Value against the corrected L1 subset structure and determine whether an element layer is required.
 
 ## Constraints
 
 - No conceptual expansion
 - No ontology drift
-- No OWL/TTL population yet
-- Treat the Value L1 subset freeze as authoritative
-- Use the controlled stabilization method established during the structural repair pass
+- No OWL/TTL population
+- Treat corrected L1 subset structure as authoritative
+- Maintain separation between ontology and measurement theory
 
-## Authoritative Frozen Value L1 Subsets
+## Corrected Value L1 Subsets
 
-1. `VAL-SUBSET-01-tangible`
-2. `VAL-SUBSET-02-intangible`
+1. `VAL-SUBSET-01-inherent`
+2. `VAL-SUBSET-02-instrumental`
 
-## Integrity Check Summary
+## Structural Assessment
 
-### Corruption / repository artifact check
-PASS
+### Prior State (Invalid)
 
-No corruption or repository artifact files were detected during the pre-reconciliation sweep.
+Previous subsets:
+- Tangible
+- Intangible
 
-### Canonical subset identifier check
-PASS
+Issue:
+These classify value based on perception and measurement modality rather than ontological role.
 
-All authoritative Value L1 subset identifiers are present in the repository as canonical file names.
+This introduces:
+- Epistemic leakage into ontology
+- Inconsistent cross-superset alignment
+- Ambiguity in element definition
 
-### Existing VAL-EL artifact inventory
-PASS
+### Corrected State (Valid)
 
-No `VAL-EL-*` artifacts were detected in the repository.
+New subsets:
+- Inherent Value
+- Instrumental Value
 
-This means Value is currently in a pre-element state.
+These define value based on:
+- Ontological role
+- Dependency structure
+- Relationship to Work and Purpose
 
-### Markup consistency check
-PASS
+## Element Layer Evaluation
 
-Value subset-layer markup has been normalized sufficiently for controlled reconciliation.
+Question:
+Does Value require an element layer (VAL-EL)?
 
-## Reconciliation Decision Rules
+### Assessment
 
-1. The subset freeze is authoritative.
-2. Every Value element must reconcile to exactly one Value L1 subset once Value elements exist.
-3. No new Value elements may be introduced during this phase.
-4. If no Value elements exist, the correct outcome is a null-inventory reconciliation.
-5. Historical candidate or audit documents do not override the frozen Value subset layer.
+No.
 
-## Inventory and Placement Decisions
+Rationale:
+- Value in REPAC is not composed of discrete, reusable entities in the same way as Source or Work
+- Value is classified by role (inherent vs instrumental), not by enumerated instances
+- Introducing elements would force artificial discretization of value
 
-| Element ID | Element Label | Current Location | Reconciled Subset | Status | Rationale |
-|---|---|---|---|---|---|
-| None | None | None | None | No Action | No Value element artifacts currently exist |
+### Conclusion
 
-## Reconciliation Outcome by Subset
+Value is a **subset-terminal superset**
 
-### `VAL-SUBSET-01-tangible`
-No current Value elements assigned.
+- No VAL-EL layer
+- No element artifacts required
+- Subsets fully define the structure
 
-### `VAL-SUBSET-02-intangible`
-No current Value elements assigned.
+## Result
 
-## Status Summary
+PASS — Value is stabilized as a reduced-pattern superset
 
-### Retain
-None.
+## Actions
 
-### Rename
-None.
-
-### Move
-None.
-
-### Merge
-None.
-
-### Retire
-None.
-
-### Defer
-Element instantiation is deferred because no Value element artifacts currently exist.
-
-## Controlled Conclusion
-
-Value L1 subset-to-element reconciliation is complete for the current repository state.
-
-The frozen Value L1 subset layer remains authoritative. No Value element artifacts currently exist, so no placement actions are required at this time.
-
-The next artifact is the Value element placement freeze, which records the null-inventory state and preserves the frozen subset structure for future controlled element-layer work.
+- Replace tangible/intangible subsets with inherent/instrumental
+- Remove any VAL-EL artifacts if present
+- Proceed to placement freeze
