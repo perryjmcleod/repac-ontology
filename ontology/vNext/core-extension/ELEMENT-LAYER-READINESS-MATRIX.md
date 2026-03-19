@@ -22,7 +22,7 @@ This matrix is the authoritative control surface for the Element-Layer Stabiliza
 | Source         | YES              | No                   | N/A                    | YES               | FULL         | IN PROGRESS |
 | Collaboration  | YES              | UNKNOWN              | UNKNOWN                | UNKNOWN           | UNKNOWN      | NOT STARTED |
 | Governance     | YES              | YES                  | PROVISIONAL            | YES               | FULL         | REVIEW REQUIRED |
-| Purpose        | YES              | UNKNOWN              | UNKNOWN                | UNKNOWN           | UNKNOWN      | NOT STARTED |
+| Purpose        | YES              | NO                   | N/A                    | YES               | UNKNOWN      | IN PROGRESS |
 | Value          | YES              | UNKNOWN              | UNKNOWN                | UNKNOWN           | UNKNOWN      | NOT STARTED |
 | Communication  | YES              | NO                   | N/A                    | YES               | REDUCED      | IN PROGRESS |
 | Imperative     | YES              | NO                   | N/A                    | YES               | REDUCED      | IN PROGRESS |
