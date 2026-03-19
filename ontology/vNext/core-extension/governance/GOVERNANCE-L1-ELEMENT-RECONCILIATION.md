@@ -36,16 +36,20 @@ All authoritative Governance L1 subset identifiers are present and correctly nam
 ### Existing GOV-EL artifact inventory
 PASS
 
-The following Governance element artifacts exist and require reconciliation against the frozen subset layer:
+## Authoritative Governance Element Inventory
 
-1. `GOV-EL-01-authority-structure.md`
-2. `GOV-EL-02-decision-rights-allocation.md`
-3. `GOV-EL-03-legitimacy-basis.md`
-4. `GOV-EL-04-enforcement-mechanism.md`
-5. `GOV-EL-05-escalation-logic.md`
-6. `GOV-EL-06-oversight-construct.md`
-7. `GOV-EL-07-compliance-mechanism.md`
-8. `GOV-EL-08-informal-governance-overlay.md`
+The following `GOV-EL-*` artifacts are treated as the authoritative Governance element inventory for the current stabilization phase:
+
+1. `GOV-EL-01-authority-structure`
+2. `GOV-EL-02-decision-rights-allocation`
+3. `GOV-EL-03-legitimacy-basis`
+4. `GOV-EL-04-enforcement-mechanism`
+5. `GOV-EL-05-escalation-logic`
+6. `GOV-EL-06-oversight-construct`
+7. `GOV-EL-07-compliance-mechanism`
+8. `GOV-EL-08-informal-governance-overlay`
+
+These artifacts are reconciled to the frozen Governance L1 subset layer and are not treated as provisional placeholders.
 
 ### Markup consistency check
 PARTIAL PASS

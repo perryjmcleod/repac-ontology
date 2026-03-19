@@ -70,6 +70,12 @@ This freeze governs subsequent Governance element-layer normalization, directory
 4. Later OWL/TTL population must follow this placement freeze unless superseded by an explicit future governance decision.
 5. Future cleanup may normalize file placement and markup, but may not alter semantic placement without a formal revision decision.
 
+## Structural Rule
+
+The following Governance element-to-subset mappings are frozen for the current vNext stabilization phase.
+
+Each Governance element belongs to exactly one frozen Governance L1 subset.
+
 ## Cleanup Notes
 
 The following non-blocking normalization issues were observed during reconciliation:
