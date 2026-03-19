@@ -4,10 +4,17 @@
 The recognized foundation upon which authority and decision rights are accepted as valid by relevant actors within a defined Scope.
 
 ## Analytical Role
-Explains why governance constructs are complied with, resisted, bypassed, or informally replaced.
+Explains why governance constructs are accepted, resisted, bypassed, or informally replaced.
 
 ## Distinguishing Boundary
-Legitimacy concerns perceived validity, not enforcement capability or formal designation alone.
+Legitimacy Basis concerns perceived validity and recognized acceptability. It does not describe enforcement capability, formal designation alone, or oversight structure.
+
+## Exclusions
+- Enforcement mechanisms
+- Compliance mechanisms
+- Oversight structures
+- Operational performance
+- Communication effectiveness
 
 ## Common Sources of Legitimacy
 - Formal mandate
