@@ -2,130 +2,55 @@
 
 ## Objective
 
-Reconcile Scope artifacts against the frozen Scope L1 subset layer and determine whether Scope requires an element layer in the current stabilization phase.
+Confirm and explicitly lock the absence of an element layer for Scope under the frozen L1 subset structure and the authoritative cross-superset boundary rules.
 
 ## Constraints
 
 - No conceptual expansion
 - No ontology drift
-- No OWL/TTL population yet
-- Treat the Scope L1 subset freeze as authoritative
-- Use the controlled stabilization method established during the structural repair pass
+- Treat L1 subset freeze as authoritative
+- Treat cross-superset boundary rules as controlling
+- Do not introduce element-layer semantics into Scope
 
-## Authoritative Frozen Scope L1 Subsets
+## Frozen Scope L1 Subsets
 
 1. `SCOPE-SUBSET-01-perspective`
 2. `SCOPE-SUBSET-02-boundary`
 3. `SCOPE-SUBSET-03-granularity`
 4. `SCOPE-SUBSET-04-interval`
 
-## Structural Assessment
+## Element Layer Decision
 
-Scope Layer 1 is already frozen as a four-subset analytical structure.
+Scope is a **reduced-pattern, subset-terminal superset**.
 
-These subsets represent dimensions of scoping:
+Scope does **not** admit an element layer.
 
-- Perspective
-- Boundary
-- Granularity
-- Interval
+## Rationale
 
-They do not represent element containers and do not require a discrete element inventory at this phase.
+Scope defines:
 
-## Existing Artifact Check
+> The conditions under which something is framed, bounded, viewed, measured, or temporally situated.
 
-### Canonical subset identifier check
-PASS
+These are not units of execution, authority, communication, coordination, or value.
 
-All authoritative Scope L1 subset identifiers are present in the repository as canonical file names.
+They are **structural qualifiers** applied to other supersets.
 
-### Legacy SCOPE-EL reference check
-PARTIAL PASS
+As such, Scope does not produce elements.
 
-Legacy `SCOPE-EL-*` references were detected in historical diagram material, including the Scope L1 structure diagram.
+## Boundary Enforcement
 
-These references do not establish an authoritative Scope element layer.
+Scope MUST NOT encode:
 
-No canonical markdown element artifacts, controlled element inventory, or valid placement structure currently exist for Scope.
+- execution structures (Work)
+- authority or decision allocation (Governance)
+- communication behavior (Communication)
+- coordination structures (Collaboration)
+- outcomes or value states (Value)
 
-### Repository consistency check
-PARTIAL PASS
+Scope provides **framing conditions only**.
 
-The Scope repository is structurally usable, but the following consistency issues remain:
+## Reconciliation Outcome
 
-- Some subset file headings use non-canonical capitalization
-- Historical Scope documents remain in the directory and may preserve earlier terminology
-- `repac-scope.ttl` appears populated beyond a pure structural stub and should be reviewed separately for phase alignment
-- Historical diagram references to `SCOPE-EL-*` should not be treated as authoritative structure
+PASS — No element layer exists or is permitted.
 
-These issues do not alter the frozen L1 subset structure.
-
-## Element Layer Evaluation
-
-Question:
-Does Scope require an element layer in the current stabilization phase?
-
-### Assessment
-
-No.
-
-Rationale:
-- Perspective, Boundary, Granularity, and Interval are analytical dimensions
-- They define how Scope is framed, not reusable element classes
-- Forcing a Scope element layer would introduce artificial structure and ontology drift
-
-## Reconciliation Decision Rules
-
-1. The subset freeze is authoritative.
-2. No new Scope elements may be introduced during this phase.
-3. Legacy `SCOPE-EL-*` references do not override the frozen subset structure.
-4. Internal and External Source remain Scope-related lenses, not Scope L1 subsets.
-5. Scope remains subset-terminal unless a later controlled phase justifies element explosion.
-
-## Reconciliation Outcome by Subset
-
-### `SCOPE-SUBSET-01-perspective`
-No valid Scope elements required.
-
-### `SCOPE-SUBSET-02-boundary`
-No valid Scope elements required.
-
-### `SCOPE-SUBSET-03-granularity`
-No valid Scope elements required.
-
-### `SCOPE-SUBSET-04-interval`
-No valid Scope elements required.
-
-## Status Summary
-
-### Retain
-- Frozen four-subset L1 structure
-
-### Rename
-- Normalize any non-canonical subset headings where required
-
-### Move
-- None
-
-### Merge
-- None
-
-### Retire
-- Treat legacy `SCOPE-EL-*` references as non-authoritative artifacts
-
-### Defer
-- Any future Scope explosion beyond the subset layer
-
-## Controlled Conclusion
-
-Scope reconciliation is complete for the current repository state.
-
-The frozen Scope L1 subset layer remains authoritative.
-
-Scope is a reduced-pattern superset in the present stabilization phase:
-
-- no valid `SCOPE-EL` layer
-- no Scope element placement required
-- internal/external remain Scope-related lenses, not L1 subsets
-
-Any historical `SCOPE-EL-*` references are legacy artifacts and must not govern current structure.
+Any prior or future introduction of Scope elements is considered invalid under the current REPAC vNext model.
