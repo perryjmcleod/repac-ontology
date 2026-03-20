@@ -1,38 +1,52 @@
-# COMMUNICATION — Element Placement Freeze
+# IMPERATIVE — Element Placement Freeze
 
 ## Objective
 
-Lock the Communication structure relative to the frozen L1 subset layer.
-
-This freeze confirms that Communication does not require a distinct element layer.
+Formally close the Imperative element layer and confirm that no element placement is authorized under the frozen L1 subset structure.
 
 ## Constraints
 
 - No conceptual expansion
 - No ontology drift
 - Treat subset freeze as authoritative
+- Treat cross-superset boundary rules as controlling
 - No OWL/TTL population
+- Do not introduce element-layer semantics into Imperative
 
-## Frozen Communication L1 Subsets
+## Frozen Imperative L1 Subsets
 
-1. `COMM-SUBSET-01-formal`
-2. `COMM-SUBSET-02-informal`
+1. `IMP-SUBSET-01-mandatory`
+2. `IMP-SUBSET-02-discretionary`
 
 ## Element Placement Decision
 
-No `COMM-EL-*` artifacts are defined as part of the Communication structure.
+No Imperative element placement is authorized.
 
-Communication is treated as a subset-terminal superset.
+Imperative is a **subset-terminal, non-element-bearing superset**.
 
-## Placement Rules
+## Rationale
 
-1. The frozen L1 subset layer is authoritative
-2. No separate Communication element layer is permitted unless formally introduced
-3. Communication subsets represent expression modality only (formal vs informal)
-4. No duplication between subset and element structures is allowed
+The frozen L1 subset structure fully represents Imperative:
 
-## Controlled Conclusion
+- mandatory
+- discretionary
 
-Communication structure is frozen at the subset level.
+No additional element layer is required or permitted.
 
-No further element-layer modelling is required for Communication in this phase.
+## Boundary Enforcement (Authoritative)
+
+Imperative must not absorb semantics from other supersets.
+
+In particular, Imperative must not encode:
+
+- execution structures (Work)
+- authority or control (Governance)
+- communication transmission (Communication)
+- coordination structures (Collaboration)
+- value attribution (Value)
+
+Imperative defines normative force only.
+
+## Placement Status
+
+LOCKED — No Imperative element placement exists or is permitted under the current REPAC vNext model.

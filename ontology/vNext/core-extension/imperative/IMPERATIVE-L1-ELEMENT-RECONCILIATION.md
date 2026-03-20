@@ -50,6 +50,7 @@ Imperative subset-layer markup has been normalized sufficiently for controlled r
 3. No new Imperative elements may be introduced during this phase.
 4. If no Imperative elements exist, the correct outcome is a null-inventory reconciliation.
 5. Historical candidate or audit documents do not override the frozen Imperative subset layer.
+6. Cross-superset boundary rules are authoritative and must be enforced during Imperative reconciliation.
 
 ## Inventory and Placement Decisions
 
@@ -85,12 +86,37 @@ None.
 ### Defer
 Element instantiation is deferred because no Imperative element artifacts currently exist.
 
+## Boundary Enforcement (Authoritative)
+
+The Imperative subset structure is governed by the locked cross-superset boundary rules.
+
+Imperative defines:
+
+> The degree of requiredness or optionality attached to action, expectation, or direction.
+
+Imperative MUST NOT encode semantics belonging to other supersets:
+
+- **Work** — execution or realization of activity
+- **Governance** — authority, decision rights, control, or accountability
+- **Communication** — transmission, messaging, or signaling
+- **Collaboration** — coordination structures or participation patterns
+- **Value** — outcomes, benefits, or perceived worth
+
+Imperative represents normative force only, not execution, authority, transmission, coordination, or value attribution.
+
 ## Controlled Conclusion
 
 Imperative L1 subset-to-element reconciliation confirms that no distinct element layer is required beyond the frozen L1 subset structure.
 
-The Imperative superset is implemented as a subset-terminal reduced-pattern structure, where each subset directly represents a complete and non-redundant form of normative force.
+The Imperative superset is a **subset-terminal, non-element-bearing superset** under the current REPAC vNext model.
 
-Imperatives manifest through sources and are expressed through communication. The Imperative layer defines only the degree of obligation or latitude and does not encode how the imperative is conveyed or realized.
+The frozen subsets:
 
-No `IMP-EL-*` artifacts are required at this stage.
+- `IMP-SUBSET-01-mandatory`
+- `IMP-SUBSET-02-discretionary`
+
+fully represent the Imperative construct.
+
+No `IMP-EL-*` artifacts exist or are permitted.
+
+Any future introduction of Imperative elements is considered invalid unless authorized through a formal REPAC governance decision.
