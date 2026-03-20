@@ -1,62 +1,39 @@
-# COMMUNICATION — Element Placement Freeze
+# PURPOSE — Element Placement Freeze
 
 ## Objective
 
-Formally close the Communication element layer and confirm that no element placement is authorized under the frozen L1 subset structure.
+Formally close the Purpose element layer and confirm that no element placement is authorized under the frozen L1 subset structure.
 
 ## Constraints
 
 - No conceptual expansion
 - No ontology drift
+- No OWL/TTL redesign
 - Treat subset freeze as authoritative
 - Treat cross-superset boundary rules as controlling
-- No OWL/TTL population
-- Do not introduce element-layer semantics into Communication
+- Do not introduce element-layer semantics into Purpose
 
-## Frozen Communication L1 Subsets
+## Frozen Purpose L1 Subsets
 
-1. `COMM-SUBSET-01-formal`
-2. `COMM-SUBSET-02-informal`
+1. `PUR-SUBSET-01-intent`
+2. `PUR-SUBSET-02-outcome`
 
 ## Element Placement Decision
 
-No Communication element placement is authorized.
+No Purpose element placement is authorized.
 
-Communication is a **subset-terminal reduced-pattern superset**.
+Purpose is a **subset-terminal, non-element-bearing superset**.
 
 ## Rationale
 
-The previously identified artifacts:
+The frozen subset structure fully represents Purpose.
 
-- `COMM-EL-01` — Formal Communication  
-- `COMM-EL-02` — Informal Communication  
-
-are semantically redundant with the frozen L1 subset structure.
-
-The subsets:
-
-- `COMM-SUBSET-01-formal`
-- `COMM-SUBSET-02-informal`
-
-fully express the Communication construct.
-
-No distinct element layer is required or permitted.
+No element layer is required or permitted.
 
 ## Boundary Enforcement (Authoritative)
 
-Communication defines:
-
-> The conveyance, expression, or transmission of information.
-
-Communication must not absorb semantics belonging to other supersets:
-
-- **Work** — execution or activity realization
-- **Governance** — authority, decision rights, control, accountability
-- **Collaboration** — coordination structures or participation patterns
-- **Value** — outcomes, benefits, or perceived worth
-
-Communication remains strictly a **transmission layer**, not a structural or governing layer.
+Purpose must not absorb semantics from other supersets.
 
 ## Placement Status
 
-LOCKED — No Communication element placement exists or is permitted under the current REPAC vNext model.
+LOCKED — No Purpose element placement exists or is permitted under the current REPAC vNext model.

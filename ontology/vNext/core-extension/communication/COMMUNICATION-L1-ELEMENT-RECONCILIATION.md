@@ -1,65 +1,67 @@
-# COMMUNICATION L1 — Element Reconciliation
+# PURPOSE L1 — Element Reconciliation
 
 ## Objective
 
-Reconcile Communication element artifacts against the frozen L1 subset structure.
-
-This phase validates whether a distinct Communication element layer is required.
+Confirm and explicitly lock the absence of an element layer for Purpose under the frozen L1 subset structure and the authoritative cross-superset boundary rules.
 
 ## Constraints
 
 - No conceptual expansion
 - No ontology drift
-- Treat subset freeze as authoritative
-- No OWL/TTL population
+- No OWL/TTL redesign
+- Treat the Purpose L1 subset freeze as authoritative
+- Treat cross-superset boundary rules as controlling
+- Do not introduce element-layer semantics into Purpose
 
-## Frozen Communication L1 Subsets
+## Authoritative Frozen Purpose L1 Subsets
 
-1. `COMM-SUBSET-01-formal`
-2. `COMM-SUBSET-02-informal`
+1. `PUR-SUBSET-01-intent`
+2. `PUR-SUBSET-02-outcome`
 
-These subsets are authoritative.
+## Integrity Check Summary
 
-## Repository Integrity Sweep
-
-A repository integrity sweep was performed for the Communication superset directory.
-
-## Result
-
+### Corruption / repository artifact check
 PASS
 
-No blocking repository artifacts were identified.
+### Canonical subset identifier check
+PASS
 
-## Element Inventory
+### Element layer eligibility check
+PASS
 
-A repository scan identified references to `COMM-EL-*` artifacts in diagrams and documentation:
+No `PUR-EL-*` artifacts exist or are permitted.
 
-- `COMM-EL-01` — Formal Communication  
-- `COMM-EL-02` — Informal Communication  
+## Element Layer Decision
 
-## Structural Assessment
+Purpose is a **subset-terminal, non-element-bearing superset**.
 
-The identified `COMM-EL-*` artifacts are semantically redundant with the frozen L1 subsets:
+## Rationale
 
-- `COMM-EL-01` duplicates `COMM-SUBSET-01-formal`
-- `COMM-EL-02` duplicates `COMM-SUBSET-02-informal`
+Purpose defines:
 
-No additional or distinct Communication element semantics are present.
+> The reason for action and the state being sought.
 
-## Structural Determination
+The frozen subset structure is sufficient:
 
-Communication is a **subset-terminal reduced-pattern superset**.
+- `intent` captures why something is undertaken  
+- `outcome` captures what is sought  
 
-The frozen L1 subsets fully represent the Communication construct.
+No further decomposition into elements is required or permitted.
 
-A distinct element layer is not required.
+## Boundary Enforcement (Authoritative)
 
-## Reconciliation Decision
+Purpose MUST NOT encode semantics belonging to other supersets:
 
-- `COMM-EL-*` artifacts are not retained as a distinct element layer
-- No Communication element files are to be created
-- Subsets remain the authoritative structural layer
+- **Work** — execution or realization of activity  
+- **Governance** — authority, decision rights, control, accountability  
+- **Communication** — transmission or messaging  
+- **Collaboration** — coordination or participation structure  
+- **Value** — benefit, worth, or perceived importance  
 
-## Result
+Purpose defines direction, not structure, action, transmission, coordination, or valuation.
 
-PASS — Communication reconciliation complete (subset-terminal structure confirmed)
+## Reconciliation Outcome
+
+PASS — No element layer exists or is permitted for Purpose.
+
+Any introduction of Purpose elements is invalid under the current REPAC vNext model.
