@@ -109,6 +109,32 @@ Retained elements:
 - `GOV-EL-06-oversight-construct`
 - `GOV-EL-08-informal-governance-overlay`
 
+## Boundary Enforcement (Authoritative)
+
+The Governance element layer is governed by the locked cross-superset boundary rules.
+
+Governance elements represent:
+
+> The structured allocation and conditioning of authority around action.
+
+Governance elements MUST NOT encode semantics belonging to other supersets:
+
+- **Work** — execution structure or realization of activity
+- **Communication** — transmission, messaging, or signaling
+- **Collaboration** — coordination structures or participation patterns
+- **Value** — outcomes, benefits, or perceived worth
+
+Each Governance element in the authoritative inventory has been evaluated against these constraints.
+
+No Governance element is permitted to:
+
+- describe how work is performed
+- describe how information is transmitted
+- describe how actors coordinate
+- describe the value produced
+
+Any element that exhibits cross-superset semantic leakage must be corrected through placement normalization or future controlled refactoring phases, not during this reconciliation pass. These artifacts are reconciled to the frozen Governance L1 subset layer and validated against the authoritative cross-superset boundary rules. They are not treated as provisional placeholders.
+
 ## Status Summary
 
 ### Retain
