@@ -2,83 +2,61 @@
 
 ## Objective
 
-Establish the element layer for Work and align it with the frozen L1 subset structure.
+Confirm and stabilize the Work element layer relative to the frozen L1 subset structure and the locked cross-superset boundary rules.
 
 ## Constraints
 
 - No conceptual expansion
 - No ontology drift
-- No OWL/TTL population
-- Treat L1 subsets as authoritative
+- Treat L1 subset freeze as authoritative
+- Treat cross-superset boundary rules as controlling
+- Do not introduce cross-superset semantics into Work
 
 ## Frozen Work L1 Subsets
 
 1. `WORK-SUBSET-01-defined`
 2. `WORK-SUBSET-02-emergent`
 
-## Element Layer Requirement
+## Element Layer Decision
 
-Work requires an element layer.
+Work is an **element-bearing superset**.
 
-Rationale:
-- Work represents executable activity
-- It must be decomposable into units
-- These units must be reusable and referenceable
+A shared element type is used across both subsets:
+
+- `WORK-EL` — Work Element
+
+Subset distinction reflects **mode of execution**, not element type.
 
 ## Element Definition
 
-### `WORK-EL` — Work Unit
+Work elements represent:
 
-Definition:
-A discrete unit of action that can be performed within a work context.
+> Units or structures of execution through which activity is realized.
 
-## Element Type Consistency
+They describe **what is being done**, not:
 
-All Work elements are instances of a single element type:
+- who is authorized to decide (Governance)
+- how information is transmitted (Communication)
+- how actors coordinate (Collaboration)
+- what outcomes are produced (Value)
 
-- `WORK-EL` — Work Unit
+## Boundary Enforcement
 
-This element type is shared across all subsets.
+Work elements MUST NOT encode:
 
-Subsets do not define different element types.
-They classify how Work Units arise:
+- authority, decision rights, control, or accountability (Governance)
+- messaging, signaling, or transmission (Communication)
+- coordination structures or interaction patterns (Collaboration)
+- outcomes, benefits, or worth (Value)
 
-- Defined → pre-specified Work Units
-- Emergent → context-arising Work Units
+These semantics are handled by their respective supersets.
 
-## Characteristics
+## Reconciliation Result
 
-- Action-oriented
-- Executable
-- Context-independent at definition level
-- Can be composed into larger work structures
+PASS — Work element layer is structurally aligned with:
 
-## Examples
+- frozen subset structure
+- shared element type model
+- cross-superset boundary rules
 
-- "Validate input data"
-- "Install component"
-- "Respond to customer inquiry"
-- "Analyse requirements"
-
-## Subset Alignment
-
-### Defined Work
-- Work Units are pre-specified
-- Work Units are organized into structured sequences, procedures, or plans
-
-### Emergent Work
-- Work Units arise dynamically during execution
-- Work Units may not be predefined before activity begins
-
-## Exclusions
-
-Work elements do not represent:
-- Roles
-- Tools
-- Outcomes
-- Value
-- Purpose
-
-## Result
-
-PASS — Work is confirmed as an element-bearing superset
+No reconciliation changes required.

@@ -8,32 +8,53 @@ Lock the placement of Work elements relative to the frozen L1 subset structure.
 
 - No conceptual expansion
 - No ontology drift
-- No OWL/TTL population
-- Treat subset structure as authoritative
+- Use shared element type across subsets
+- Respect cross-superset boundary rules
 
 ## Frozen Work L1 Subsets
 
 1. `WORK-SUBSET-01-defined`
 2. `WORK-SUBSET-02-emergent`
 
-## Element Placement
+## Element Type
 
-### `WORK-SUBSET-01-defined`
+- `WORK-EL` — Work Element
 
-- `WORK-EL-*` — Defined Work Units
+## Placement Rule
 
-### `WORK-SUBSET-02-emergent`
+Work elements may appear under both subsets.
 
-- `WORK-EL-*` — Emergent Work Units
+Subset placement reflects execution mode:
+
+### Defined Work
+
+- Pre-structured
+- Planned
+- Repeatable
+- Constrained execution
+
+### Emergent Work
+
+- Adaptive
+- Evolving
+- Context-responsive
+- Non-predefined execution
 
 ## Structural Rule
 
-- All Work elements are instances of `WORK-EL`
-- Subsets do not introduce different element types
-- Elements are classified by subset based on how they arise:
-  - Pre-specified → Defined
-  - Context-arising → Emergent
+- The same element type (`WORK-EL`) is used across both subsets
+- Subsets do not define different element categories
+- Subsets define execution context only
 
-## Result
+## Boundary Rule Enforcement
 
-LOCKED — Work element structure stabilized for vNext pre-ontology phase
+Work element placement MUST NOT:
+
+- encode governance allocation
+- encode communication behavior
+- encode collaboration structure
+- encode value outcomes
+
+## Placement Status
+
+LOCKED — Work element placement is stable and authoritative.
