@@ -1,39 +1,53 @@
-# COLLABORATION Element Placement Freeze
+# COLLABORATION — Element Placement Freeze
 
 ## Objective
 
-Record the element placement status of Collaboration relative to the frozen L1 subset structure.
-
-This file confirms whether any authoritative Collaboration elements are frozen for placement at the current modelling stage.
+Formally close the Collaboration element layer and confirm that no element placement is authorized under the frozen L1 subset structure.
 
 ## Constraints
 
 - No conceptual expansion
 - No ontology drift
 - Treat subset freeze as authoritative
-- No OWL/TTL population yet
+- Treat cross-superset boundary rules as controlling
+- No OWL/TTL population
+- Do not introduce element-layer semantics into Collaboration
 
 ## Frozen Collaboration L1 Subsets
 
 1. `COLLAB-SUBSET-01-coordinated`
 2. `COLLAB-SUBSET-02-emergent`
 
-## Element Placement
+## Element Placement Decision
 
-No authoritative Collaboration elements are recognized for placement in this phase.
+No Collaboration element placement is authorized.
 
-## Structural Status
+Collaboration is a **subset-terminal, non-element-bearing superset**.
 
-Collaboration remains a **null-element superset** at the current L1 → Element reconciliation stage.
+## Rationale
 
-Diagram-level `COLLAB-EL` labels, where present, are not authoritative and do not establish frozen element placement.
+The frozen L1 subset structure fully represents Collaboration:
 
-## Placement Rule
+- `COLLAB-SUBSET-01-coordinated`
+- `COLLAB-SUBSET-02-emergent`
 
-No Collaboration element placement is frozen in this phase.
+No additional element layer is required or permitted.
 
-Any future Collaboration element introduction must occur only through a later authorized modelling phase or formal REPAC governance decision.
+Any `COLLAB-EL` references are non-authoritative and originate from diagram-level artifacts.
 
-## Result
+## Boundary Enforcement (Authoritative)
 
-PASS — no Collaboration element placement frozen at this stage.
+Collaboration must not absorb semantics from other supersets.
+
+In particular, Collaboration must not encode:
+
+- execution structures (Work)
+- communication transmission (Communication)
+- authority or control structures (Governance)
+- value attribution (Value)
+
+Collaboration defines participation structure only.
+
+## Placement Status
+
+LOCKED — No Collaboration element placement exists or is permitted under the current REPAC vNext model.

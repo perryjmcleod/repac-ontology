@@ -60,7 +60,26 @@ Accordingly, the diagram-level `COLLAB-EL` labels are treated as non-authoritati
 
 ## Structural Determination
 
-Collaboration is a **null-element superset** for the current L1 → Element reconciliation phase.
+## Boundary Enforcement (Authoritative)
+
+The Collaboration subset structure is governed by the locked cross-superset boundary rules.
+
+Collaboration defines:
+
+> The structuring of participation among actors engaged together around activity.
+
+Collaboration MUST NOT encode semantics belonging to other supersets:
+
+- **Work** — execution or realization of activity
+- **Communication** — transmission, messaging, or signaling
+- **Governance** — authority, decision rights, control, accountability
+- **Value** — outcomes, benefits, or perceived worth
+
+Collaboration represents participation structure only, not action, transmission, control, or value attribution.
+
+Any diagram or artifact suggesting otherwise is considered non-authoritative and must be normalized in a controlled cleanup phase.
+
+Collaboration is a **subset-terminal, non-element-bearing superset** for the current REPAC vNext model.
 
 No authoritative Collaboration elements are frozen for placement in this phase.
 
@@ -70,4 +89,10 @@ The `COLLAB-EL` labels in the Collaboration L1 structure diagram should be remov
 
 ## Result
 
-PASS — Collaboration L1 to Element reconciliation complete as null-element reconciliation.
+PASS — Collaboration L1 to Element reconciliation complete.
+
+Collaboration is confirmed as a **subset-terminal, non-element-bearing superset**.
+
+No Collaboration element layer exists or is permitted under the current REPAC vNext model.
+
+Any existing `COLLAB-EL` references are non-authoritative and must be removed or normalized in a controlled cleanup phase.
