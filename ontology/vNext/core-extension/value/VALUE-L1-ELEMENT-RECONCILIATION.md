@@ -2,76 +2,75 @@
 
 ## Objective
 
-Reconcile Value against the corrected L1 subset structure and determine whether an element layer is required.
+Confirm and explicitly lock the absence of an element layer for Value under the frozen L1 subset structure and the authoritative cross-superset boundary rules.
 
 ## Constraints
 
 - No conceptual expansion
 - No ontology drift
-- No OWL/TTL population
-- Treat corrected L1 subset structure as authoritative
-- Maintain separation between ontology and measurement theory
+- No OWL/TTL redesign
+- Treat the Value L1 subset freeze as authoritative
+- Treat the locked cross-superset boundary rules as controlling
+- Do not introduce element-layer semantics into Value
 
-## Corrected Value L1 Subsets
+## Authoritative Frozen Value L1 Subsets
 
 1. `VAL-SUBSET-01-inherent`
 2. `VAL-SUBSET-02-instrumental`
 
-## Structural Assessment
+## Integrity Check Summary
 
-### Prior State (Invalid)
+### Corruption / repository artifact check
+PASS
 
-Previous subsets:
-- Tangible
-- Intangible
+No corruption or repository artifact files were detected in the Value path during the completion pass.
 
-Issue:
-These classify value based on perception and measurement modality rather than ontological role.
+### Canonical subset identifier check
+PASS
 
-This introduces:
-- Epistemic leakage into ontology
-- Inconsistent cross-superset alignment
-- Ambiguity in element definition
+All authoritative Value L1 subset identifiers are present and correctly named.
 
-### Corrected State (Valid)
+### Element layer eligibility check
+PASS
 
-New subsets:
-- Inherent Value
-- Instrumental Value
+Value is not element-bearing under the current REPAC vNext model.
 
-These define value based on:
-- Ontological role
-- Dependency structure
-- Relationship to Work and Purpose
+No authoritative `VAL-EL-*` inventory exists, and no Value element layer is permitted.
 
-## Element Layer Evaluation
+## Element Layer Decision
 
-Question:
-Does Value require an element layer (VAL-EL)?
+Value is a **reduced-pattern, subset-terminal superset**.
 
-### Assessment
+Value does **not** admit an element layer.
 
-No.
+## Rationale
 
-Rationale:
-- Value in REPAC is not composed of discrete, reusable entities in the same way as Source or Work
-- Value is classified by role (inherent vs instrumental), not by enumerated instances
-- Introducing elements would force artificial discretization of value
+Value defines:
 
-### Conclusion
+> The interpretation, attribution, or recognition of worth.
 
-Value is a **subset-terminal superset**
+The frozen Value subset structure is sufficient at L1:
 
-- No VAL-EL layer
-- No element artifacts required
-- Subsets fully define the structure
+- `VAL-SUBSET-01-inherent` captures value attributed by nature or intrinsic character
+- `VAL-SUBSET-02-instrumental` captures value attributed by use, function, or effect
 
-## Result
+No further Value decomposition into elements is authorized.
 
-PASS — Value is stabilized as a reduced-pattern superset
+## Boundary Enforcement (Authoritative)
 
-## Actions
+The Value subset structure is governed by the locked cross-superset boundary rules.
 
-- Replace tangible/intangible subsets with inherent/instrumental
-- Remove any VAL-EL artifacts if present
-- Proceed to placement freeze
+Value MUST NOT encode semantics belonging to other supersets:
+
+- **Work** — execution structure or realization of activity
+- **Governance** — authority, decision rights, control, or accountability
+- **Communication** — transmission, messaging, or signaling
+- **Collaboration** — coordination structures or participation patterns
+
+Value is an interpretive layer concerning worth, not a structural layer of action, authority, transmission, or coordination.
+
+## Reconciliation Outcome
+
+PASS — No element layer exists or is permitted for Value.
+
+Any prior or future introduction of Value elements is invalid under the current REPAC vNext model.

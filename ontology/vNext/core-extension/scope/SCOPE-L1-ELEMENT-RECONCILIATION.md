@@ -37,6 +37,19 @@ They are **structural qualifiers** applied to other supersets.
 
 As such, Scope does not produce elements.
 
+## Boundary Enforcement (Authoritative)
+
+The Communication subset structure is governed by the locked cross-superset boundary rules.
+
+Communication MUST NOT encode:
+
+- execution structures (Work)
+- authority or decision allocation (Governance)
+- coordination structures (Collaboration)
+- value attribution (Value)
+
+Communication represents transmission only, not action, control, coordination, or interpretation of worth.
+
 ## Boundary Enforcement
 
 Scope MUST NOT encode:

@@ -1,41 +1,62 @@
-# COMMUNICATION Element Placement Freeze
+# COMMUNICATION — Element Placement Freeze
 
 ## Objective
 
-Lock the placement of Communication elements relative to the frozen L1 subset structure.
-
-This freeze ensures structural stability prior to OWL/TTL population.
+Formally close the Communication element layer and confirm that no element placement is authorized under the frozen L1 subset structure.
 
 ## Constraints
 
 - No conceptual expansion
 - No ontology drift
 - Treat subset freeze as authoritative
-- No OWL/TTL population yet
+- Treat cross-superset boundary rules as controlling
+- No OWL/TTL population
+- Do not introduce element-layer semantics into Communication
 
 ## Frozen Communication L1 Subsets
 
 1. `COMM-SUBSET-01-formal`
 2. `COMM-SUBSET-02-informal`
 
-## Frozen Element Placement
+## Element Placement Decision
 
-### `COMM-SUBSET-01-formal`
+No Communication element placement is authorized.
 
-- `COMM-EL-01` — Formal Communication
+Communication is a **subset-terminal reduced-pattern superset**.
 
-### `COMM-SUBSET-02-informal`
+## Rationale
 
-- `COMM-EL-02` — Informal Communication
+The previously identified artifacts:
 
-## Placement Rule
+- `COMM-EL-01` — Formal Communication  
+- `COMM-EL-02` — Informal Communication  
 
-All currently recognized Communication elements must remain placed only within the subset assignments defined in this freeze unless changed through a formal REPAC governance decision.
+are semantically redundant with the frozen L1 subset structure.
 
-## Structural Status
+The subsets:
 
-Communication element placement is frozen for the current modelling phase.
+- `COMM-SUBSET-01-formal`
+- `COMM-SUBSET-02-informal`
 
-## Result
+fully express the Communication construct.
 
-PASS — Communication element placement frozen.
+No distinct element layer is required or permitted.
+
+## Boundary Enforcement (Authoritative)
+
+Communication defines:
+
+> The conveyance, expression, or transmission of information.
+
+Communication must not absorb semantics belonging to other supersets:
+
+- **Work** — execution or activity realization
+- **Governance** — authority, decision rights, control, accountability
+- **Collaboration** — coordination structures or participation patterns
+- **Value** — outcomes, benefits, or perceived worth
+
+Communication remains strictly a **transmission layer**, not a structural or governing layer.
+
+## Placement Status
+
+LOCKED — No Communication element placement exists or is permitted under the current REPAC vNext model.
