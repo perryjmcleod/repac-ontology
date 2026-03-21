@@ -1,34 +1,31 @@
-File: ontology/vNext/core-extension/<superset>/<SUPERSET>-L1-SEMANTIC-FREEZE-DECISION.md
+# COMMUNICATION L1 — Freeze Decision
 
-# <SUPERSET> L1 — Semantic Freeze Decision
+## Objective
 
-## Status
-FROZEN (structural placeholder)
+Formally freeze the L1 subset structure for the Communication superset.
 
-## Decision
-The Layer-1 semantic structure for the <SUPERSET> superset is frozen for REPAC vNext.
+## Constraints
 
-This freeze establishes a stable foundation for subsequent ontology modelling activities, including controlled element explosion and formal class definition.
+- No renaming after freeze
+- No structural expansion
+- Subset structure is authoritative
 
-## Scope of the Freeze
+## Frozen Communication L1 Subsets
 
-This decision freezes:
+1. COMM-SUBSET-01-formal
+2. COMM-SUBSET-02-informal
 
-- L1 subset names
-- subset boundaries
-- semantic meaning of each subset
-- terminology used in L1 documentation
+## Integrity Check
 
-## Implications
+- Subsets are stable and non-overlapping
+- Subsets fully represent Communication without requiring an element layer
 
-After this freeze:
+## Boundary Enforcement (Authoritative)
 
-- L1 subset structures should not change without a formal governance decision.
-- Controlled element explosion will derive elements from these subsets.
-- OWL class definitions and SHACL validation rules may reference these frozen constructs.
+Communication is a subset-terminal, non-element-bearing superset.
 
-## References
+No element constructs are permitted within Communication.
 
-- `<SUPERSET>-L1-CANDIDATE-SUBSETS.md`
-- `<SUPERSET>-L1-SEMANTIC-AUDIT.md`
-- `<SUPERSET>-L1-FREEZE-DECISION.md`
+## Outcome
+
+FROZEN

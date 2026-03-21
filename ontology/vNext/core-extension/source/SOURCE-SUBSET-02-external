@@ -1,0 +1,41 @@
+# SOURCE-SUBSET-02-external
+
+## Definition
+
+External Source refers to phenomena originating from outside the defined system boundary.
+
+## Scope
+
+Includes:
+
+- external actors
+- external systems
+- external artifacts
+- environmental conditions
+- external influences and constraints originating beyond the analysed system
+
+Excludes:
+
+- phenomena originating within the defined system boundary
+
+## Constraints
+
+- This subset functions as a classificatory distinction only
+- No element layer exists within this subset
+- No structural decomposition is permitted beyond the subset level
+
+## Integrity Check
+
+- The subset is distinct from Internal Source
+- The subset does not imply composition, structure, or elementhood
+- The subset remains aligned with authoritative cross-superset boundary rules
+
+## Boundary Enforcement (Authoritative)
+
+This subset exists within a subset-terminal, non-element-bearing superset.
+
+External Source is a classificatory distinction and must not be interpreted as a structural or element-bearing construct.
+
+## Outcome
+
+STABLE

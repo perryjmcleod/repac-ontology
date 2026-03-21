@@ -1,19 +1,32 @@
 # COMMUNICATION L1 — Candidate Subsets
 
 ## Objective
-Identify the controlled Layer 1 candidate subsets for Communication in vNext core-extension using the established REPAC structure already present in the Communication freeze decision.
 
-## Candidate Communication L1 Subsets
-
-1. `COMM-SUBSET-01-formal`
-2. `COMM-SUBSET-02-informal`
+Identify the controlled Layer 1 candidate subsets for Communication.
 
 ## Constraints
-- No conceptual expansion
-- No renaming
-- No ontology drift
-- No element-level modelling at L1
-- Element identifiers must not be used as subset names
 
-## Assessment
-These candidates are carried forward as the working Communication L1 subset set. The freeze decision contains mixed subset and element notation, so this candidate file normalizes L1 to subset names only.
+- No conceptual expansion
+- No introduction of element constructs
+- Subsets must fully represent Communication without further decomposition
+
+## Candidate Subsets
+
+1. COMM-SUBSET-01-formal
+2. COMM-SUBSET-02-informal
+
+## Integrity Check
+
+- Candidate subsets are mutually exclusive
+- Candidate subsets are collectively exhaustive
+- No implicit element structure exists
+
+## Boundary Enforcement (Authoritative)
+
+Communication is a subset-terminal, non-element-bearing superset.
+
+All Communication phenomena must be fully represented at the subset level.
+
+## Outcome
+
+CANDIDATES IDENTIFIED

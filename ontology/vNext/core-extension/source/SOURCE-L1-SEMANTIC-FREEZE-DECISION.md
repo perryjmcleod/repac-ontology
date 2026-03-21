@@ -1,25 +1,40 @@
 # SOURCE L1 — Semantic Freeze Decision
 
-## Status
-Source L1 Subsets are semantically frozen. This decision governs all subsequent Source L1 modelling and prohibits changes to the L1 subset set outside an explicit governance decision.
+## Objective
 
-## Frozen Source L1 Subsets
-1. Human
-2. System
-3. Documentary
-4. Environmental
-
-## What This Freeze Locks
-- The L1 subset set (membership, naming, meaning)
-- The boundary of Source at L1 (subset-only; no element explosion)
-
-## What This Freeze Does Not Lock
-- Element modelling within each subset (deferred to controlled explosion)
-- Axioms, SHACL shapes, and reasoning constraints (deferred to validation phases)
+Lock the semantic interpretation of the Source superset.
 
 ## Constraints
-- v1.0 is immutable.
-- vNext is additive only.
-- No new Supersets unless justified.
-- L1 Subsets freeze before any element explosion.
-- Maintain packaging scaffold consistency across all supersets.
+
+- No reinterpretation after freeze
+- No element-level constructs may be introduced
+- No legacy Source semantic scheme may be reactivated
+- Frozen semantics are authoritative
+
+## Frozen Subsets
+
+1. `SOURCE-SUBSET-01-internal`
+2. `SOURCE-SUBSET-02-external`
+
+## Frozen Semantics
+
+- Source distinguishes origin relative to the defined system boundary
+- Internal Source refers to phenomena originating within the system boundary
+- External Source refers to phenomena originating outside the system boundary
+- Source does not define elements, composition, or decomposition
+
+## Integrity Check
+
+- Semantic boundaries are clear and stable
+- No residual conflict exists with legacy Human / System / Documentary / Environmental categorization
+- Source remains subset-terminal and non-element-bearing
+
+## Boundary Enforcement (Authoritative)
+
+Source is a subset-terminal, non-element-bearing superset.
+
+Source operates exclusively as a classificatory distinction and does not support an element layer.
+
+## Outcome
+
+SEMANTICS FROZEN

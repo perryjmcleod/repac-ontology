@@ -1,29 +1,34 @@
 # SOURCE L1 — Freeze Decision
 
-## Status
+## Objective
 
-Source Layer 1 Subsets are frozen.  
-This decision governs all subsequent Source Layer 1 diagramming and formalization work.
-
-## Frozen Source L1 Subsets
-
-A complete Source assertion requires the following Subsets:
-
-1. `SOURCE-SUBSET-01-human`
-2. `SOURCE-SUBSET-02-system`
-3. `SOURCE-SUBSET-03-documentary`
-4. `SOURCE-SUBSET-04-environmental`
+Formally freeze the L1 subset structure for the Source superset.
 
 ## Constraints
 
-- v1.0 is immutable.
-- vNext is additive only.
-- No new Supersets unless justified.
-- L1 Subsets freeze before any element explosion.
-- Packaging scaffold consistency must be maintained across all supersets.
+- No renaming after freeze
+- No structural expansion
+- No element layer is permitted
+- Frozen subset structure is authoritative
 
-## Scope of Freeze
+## Frozen Subsets
 
-This freeze applies only to **Layer 1 subset selection and naming** for Source.
+1. `SOURCE-SUBSET-01-internal`
+2. `SOURCE-SUBSET-02-external`
 
-Elements, relationships, and axioms are not expanded until the controlled explosion phase.
+## Integrity Check
+
+- The frozen subsets are stable and non-overlapping
+- The frozen subsets exhaust the Source superset
+- No legacy Source subset partition remains authoritative
+- No element-bearing interpretation is permitted
+
+## Boundary Enforcement (Authoritative)
+
+Source is a subset-terminal, non-element-bearing superset.
+
+Source must not be treated as a structural carrier, compositional layer, or element-bearing superset.
+
+## Outcome
+
+FROZEN

@@ -1,20 +1,43 @@
 # SOURCE L1 — Packaging Audit
 
-## Result
-PASS — Packaging scaffold present.
+## Objective
 
-## Evidence
-The following required scaffold artifacts exist in `ontology/vNext/core-extension/source/`:
+Validate that the Source superset conforms to the REPAC L1 packaging scaffold and repository normalization requirements.
 
-- `diagrams/` directory present
-- `repac-source.owl` present (stub; currently 0 bytes)
-- `repac-source.ttl` present (stub; currently 0 bytes)
-- `SOURCE-L1-FREEZE-DECISION.md` present
-- L1 Subset definition files present:
-- `SOURCE-SUBSET-01-human.md`
-- `SOURCE-SUBSET-02-system.md`
-- `SOURCE-SUBSET-03-documentary.md`
-- `SOURCE-SUBSET-04-environmental.md`
+## Constraints
 
-## Notes
-- OWL/TTL stubs are currently empty. This does not fail the packaging scaffold check, but a minimal structural stub will be required prior to validation and integration steps.
+- No conceptual expansion
+- No ontology drift
+- No element layer is permitted within Source
+- Source must remain subset-terminal and classification-oriented
+
+## Required Artifacts
+
+- L1 Candidate Subsets
+- L1 Freeze Decision
+- L1 Semantic Audit
+- L1 Semantic Freeze Decision
+- Subset definition files
+
+## Frozen Subsets
+
+1. `SOURCE-SUBSET-01-internal`
+2. `SOURCE-SUBSET-02-external`
+
+## Integrity Check
+
+- All required L1 artifacts are present
+- Subset definition files exist and are correctly named
+- No element-layer artifacts remain in the Source directory
+- No stale legacy subset partition remains in the Source directory
+- File structure aligns with repository-wide normalization rules
+
+## Boundary Enforcement (Authoritative)
+
+Source is a subset-terminal, non-element-bearing superset.
+
+Source operates as a classificatory distinction and does not contain an element layer.
+
+## Outcome
+
+PASS

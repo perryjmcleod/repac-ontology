@@ -2,22 +2,33 @@
 
 ## Objective
 
-Identify the controlled Layer 1 candidate subsets for Source in vNext core-extension using the established REPAC structure already present in the Source freeze decision.
-
-## Candidate Source L1 Subsets
-
-1. `SOURCE-SUBSET-01-human`
-2. `SOURCE-SUBSET-02-system`
-3. `SOURCE-SUBSET-03-documentary`
-4. `SOURCE-SUBSET-04-environmental`
+Identify the controlled Layer 1 candidate subsets for Source.
 
 ## Constraints
 
 - No conceptual expansion
-- No renaming
-- No ontology drift
-- No element-level modelling at L1
+- No introduction of element constructs
+- No structural interpretation of Source
+- Candidate subsets must terminate at the subset level
 
-## Assessment
+## Candidate Subsets
 
-These candidates are carried forward as the working Source L1 subset set and are aligned to the existing freeze decision for this superset.
+1. `SOURCE-SUBSET-01-internal`
+2. `SOURCE-SUBSET-02-external`
+
+## Integrity Check
+
+- Candidate subsets are mutually exclusive
+- Candidate subsets are collectively exhaustive
+- Candidate subsets function as classificatory distinctions rather than structural components
+- No residual legacy Source partition is retained
+
+## Boundary Enforcement (Authoritative)
+
+Source is a subset-terminal, non-element-bearing superset.
+
+All Source distinctions are classificatory and must not be interpreted as an element-bearing or structurally decomposable layer.
+
+## Outcome
+
+CANDIDATES IDENTIFIED

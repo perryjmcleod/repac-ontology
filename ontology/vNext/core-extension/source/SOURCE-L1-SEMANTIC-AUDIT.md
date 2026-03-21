@@ -1,21 +1,41 @@
 # SOURCE L1 — Semantic Audit
 
-## Result
-PASS — L1 Subsets are defined, bounded, and stable.
+## Objective
 
-## Evidence
-The following L1 Subset definition files exist and provide descriptive definitions and scope boundaries aligned to the Source L1 freeze list:
+Validate the semantic integrity of the Source L1 subset structure.
 
-- `SOURCE-SUBSET-01-human.md`
-- `SOURCE-SUBSET-02-system.md`
-- `SOURCE-SUBSET-03-documentary.md`
-- `SOURCE-SUBSET-04-environmental.md`
+## Constraints
 
-## Conformance Checks
-- Subset naming aligns to the frozen subset list (Human Source, System Source, Documentary Source, Environmental Source).
-- Definitions are descriptive and non-prescriptive.
-- L1 content remains subset-only (no element explosion).
-- Each subset includes a scope boundary plus inclusion/exclusion cues to prevent implicit subset drift.
+- No conceptual expansion
+- No ontology drift
+- Source must remain classification-only
+- No legacy semantic pattern may override the normalized Source model
 
-## Notes
-v1.0 identifiers are retained in each subset file to preserve lineage while allowing vNext packaging normalization.
+## Frozen Subsets
+
+1. `SOURCE-SUBSET-01-internal`
+2. `SOURCE-SUBSET-02-external`
+
+## Audit Findings
+
+- Source is appropriately modelled as a classificatory distinction
+- Internal and External operate as source-origin distinctions rather than structural components
+- No valid justification exists for an element layer within Source
+- The prior Human / System / Documentary / Environmental partition is superseded and no longer authoritative
+
+## Integrity Check
+
+- No `SOURCE-EL-*` artifacts remain valid
+- No structural decomposition language remains
+- No stale subset partition remains in semantic conflict with the frozen model
+- Source remains aligned with authoritative cross-superset boundary rules
+
+## Boundary Enforcement (Authoritative)
+
+Source is a subset-terminal, non-element-bearing superset.
+
+All Source distinctions terminate at the subset level and remain classificatory in function.
+
+## Outcome
+
+PASS
