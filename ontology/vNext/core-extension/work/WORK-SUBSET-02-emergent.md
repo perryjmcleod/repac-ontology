@@ -1,30 +1,40 @@
-# WORK-SUBSET-02—emergent
-
-## Identifier
-`WORK-SUBSET-02-emergent`
-
-## Name
-Emergent Work
+# WORK-SUBSET-02-emergent
 
 ## Definition
-Work that arises during execution and is not fully specified in advance.
 
-## Explanation
-Emergent Work occurs in response to conditions, events, or information encountered during execution. It is adaptive and may not follow a predefined structure.
+Emergent Work refers to work that arises adaptively, situationally, or dynamically during execution.
 
-This form of work is essential in complex, uncertain, or dynamic environments.
+## Scope
 
-## Characteristics
-- Not fully predefined
-- Context-dependent
-- Adaptive and responsive
-- Often informal or undocumented
+Includes:
 
-## Examples
-- Troubleshooting an unexpected issue
-- Adjusting a plan based on new information
-- Real-time decision-making during operations
-- Informal coordination between team members
+- adaptive execution
+- situational response
+- improvisation
+- dynamic adjustment of activity
 
-## Usage Notes
-Use Emergent Work when the work cannot be fully described prior to execution and evolves during activity.
+Excludes:
+
+- strictly predefined or fully prescribed work
+
+## Constraints
+
+- This subset supports element placement
+- No duplication of element types within the subset
+- No structural decomposition beyond element layer
+
+## Integrity Check
+
+- Distinct from Defined Work
+- Does not redefine element types
+- Aligns with Work element model
+
+## Boundary Enforcement (Authoritative)
+
+This subset exists within an element-bearing superset.
+
+Elements are shared across subsets and must not be subset-specific.
+
+## Outcome
+
+STABLE

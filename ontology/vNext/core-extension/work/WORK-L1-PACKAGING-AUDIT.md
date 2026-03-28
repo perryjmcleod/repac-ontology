@@ -1,19 +1,44 @@
 # WORK L1 — Packaging Audit
 
-## Result
-PASS — Packaging scaffold present.
+## Objective
 
-## Evidence
-Directory `ontology/vNext/core-extension/work/` contains:
+Validate that the Work superset conforms to the REPAC L1 packaging scaffold and element-bearing structural requirements.
 
-- `diagrams/` directory present
-- `repac-work.owl` present (stub)
-- `repac-work.ttl` present (stub)
-- `WORK-L1-FREEZE-DECISION.md` present
-- L1 subset definition files will be created for Work (Task Work, Process Work, Outcome Work)
+## Constraints
 
-## v1.0 Lineage Note
-`ontology/v1.0/owl/repac-work.owl` is a module stub in v1.0 and does not contain Work classes or subset structure. vNext therefore defines Work L1 subsets additively and records the rationale here to preserve traceability.
+- No conceptual expansion
+- No ontology drift
+- Element layer is permitted only within Work and Governance
+- File structure must align with repository-wide normalization rules
 
-## Status
-Work L1 may proceed to semantic audit and semantic freeze after subset MD files are created.
+## Required Artifacts
+
+- L1 Candidate Subsets
+- L1 Freeze Decision
+- L1 Semantic Audit
+- L1 Semantic Freeze Decision
+- L1 Element Reconciliation
+- Element Placement Freeze
+- Subset definition files
+
+## Frozen Subsets
+
+1. `WORK-SUBSET-01-defined`
+2. `WORK-SUBSET-02-emergent`
+
+## Integrity Check
+
+- All required L1 artifacts are present
+- Element artifacts exist only within Work
+- No element leakage into other supersets
+- Subset structure aligns with element layer
+
+## Boundary Enforcement (Authoritative)
+
+Work is an element-bearing superset.
+
+Element constructs are permitted only within Work and Governance.
+
+## Outcome
+
+PASS

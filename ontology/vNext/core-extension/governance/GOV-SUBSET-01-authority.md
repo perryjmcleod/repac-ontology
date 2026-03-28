@@ -1,20 +1,42 @@
 # GOV-SUBSET-01-authority
 
-## Label
-Authority
-
-## Parent
-Governance
-
-## Level
-L1
-
 ## Definition
-Authority identifies the recognized basis by which governance power is held, accepted, or exercised within the analytical frame.
 
-## Boundary
-This subset captures the basis of governance authority at Layer 1 and does not expand into element-level mechanisms or secondary governance constructs.
+Authority defines the basis and structure through which legitimate governance standing, direction, and governance power are constituted.
 
-## Notes
-- Canonical L1 subset identifier applied during structural repair pass.
-- Derived from the authoritative Governance L1 diagram.
+## Scope
+
+Includes:
+
+- formal and informal bases of governance standing
+- recognized structures of authority
+- legitimacy-bearing arrangements
+- authorization conditions for governance direction
+
+Excludes:
+
+- operational execution of work
+- communication channels as such
+- collaborative interaction as such
+
+## Constraints
+
+- This subset supports element placement
+- No element assigned here may be reinterpreted as execution or communication structure
+- No structural decomposition is permitted beyond the authorized element layer
+
+## Integrity Check
+
+- The subset is distinct from Decision Rights, Control, and Accountability
+- The subset does not collapse into collaboration or communication
+- The subset remains aligned with authoritative cross-superset boundary rules
+
+## Boundary Enforcement (Authoritative)
+
+This subset exists within an element-bearing superset.
+
+Authority elements must remain governance-specific and must not be reclassified as Work, Communication, or Collaboration constructs.
+
+## Outcome
+
+STABLE

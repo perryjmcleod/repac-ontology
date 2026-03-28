@@ -1,20 +1,25 @@
-# GOV-EL-05 — Escalation Logic
+# GOV-EL-05-escalation-logic
 
 ## Definition
-The structured pathway through which contested, blocked, or ambiguous decisions are elevated for resolution.
 
-## Analytical Role
-Prevents analytical collapse into communication failure by distinguishing structural elevation pathways from interpersonal breakdown.
+Escalation Logic defines the conditions and pathways through which decisions or unresolved governance matters move to higher or alternative decisional authority.
 
-## Distinguishing Boundary
-Escalation Logic concerns formalized decision elevation structures, not informal bypassing or ad hoc influence networks.
+## Parent Subset
 
-## Exclusions
-- Personal conflict resolution
-- Informal persuasion
-- Cultural avoidance behaviour
+`GOV-SUBSET-02-decision-rights`
 
-## Failure Patterns Revealed
-- Decision paralysis
-- Authority inversion
-- Informal escalation replacing formal channels
+## Constraints
+
+- This element exists only within Governance
+- This element must not be reduced to communication routing
+- This element remains bounded by the Decision Rights subset
+
+## Integrity Check
+
+- Placement is authoritative
+- Definition aligns with Governance semantics
+- No cross-superset leakage is present
+
+## Outcome
+
+STABLE

@@ -1,21 +1,25 @@
-# GOV-EL-02 — Decision Rights Allocation
+# GOV-EL-02-decision-rights-allocation
 
 ## Definition
-The explicit or implicit assignment of entitlement to make defined categories of decisions under stated or assumed constraints.
 
-## Analytical Role
-Separates structural authority from operational decision entitlement and clarifies who is entitled to decide what.
+Decision Rights Allocation defines how decisional power is assigned to governance actors, roles, or structures.
 
-## Distinguishing Boundary
-Decision Rights Allocation concerns entitlement, not competence, agreement, or outcome quality.
+## Parent Subset
 
-## Exclusions
-- Decision performance
-- Timeliness of decisions
-- Stakeholder satisfaction
-- Work execution
+`GOV-SUBSET-02-decision-rights`
 
-## Failure Patterns Revealed
-- Decisions exercised without entitlement
-- Entitlement granted without structural backing
-- Conflicts between formal and exercised decision control
+## Constraints
+
+- This element exists only within Governance
+- This element must not be reclassified as execution or communication
+- This element remains bounded by the Decision Rights subset
+
+## Integrity Check
+
+- Placement is authoritative
+- Definition aligns with Governance semantics
+- No cross-superset leakage is present
+
+## Outcome
+
+STABLE

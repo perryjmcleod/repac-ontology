@@ -2,59 +2,34 @@
 
 ## Objective
 
-Lock the placement of Work elements relative to the frozen L1 subset structure.
+Lock the placement of Work elements relative to frozen subsets.
 
 ## Constraints
 
-- No conceptual expansion
-- No ontology drift
-- Use shared element type across subsets
-- Respect cross-superset boundary rules
+- No structural change beyond placement
+- Subset structure is authoritative
 
-## Frozen Work L1 Subsets
+## Frozen Subsets
 
 1. `WORK-SUBSET-01-defined`
 2. `WORK-SUBSET-02-emergent`
 
-## Element Type
+## Element Placement
 
-- `WORK-EL` — Work Element
+- Elements are not exclusive to subsets
+- Elements may manifest under both Defined and Emergent conditions
+- Subsets define context of execution, not element type
 
-## Placement Rule
+## Integrity Check
 
-Work elements may appear under both subsets.
+- No duplication of element types
+- No subset-specific element definitions
+- Element placement is consistent across contexts
 
-Subset placement reflects execution mode:
+## Boundary Enforcement (Authoritative)
 
-### Defined Work
+Element constructs must remain within element-bearing supersets.
 
-- Pre-structured
-- Planned
-- Repeatable
-- Constrained execution
+## Outcome
 
-### Emergent Work
-
-- Adaptive
-- Evolving
-- Context-responsive
-- Non-predefined execution
-
-## Structural Rule
-
-- The same element type (`WORK-EL`) is used across both subsets
-- Subsets do not define different element categories
-- Subsets define execution context only
-
-## Boundary Rule Enforcement
-
-Work element placement MUST NOT:
-
-- encode governance allocation
-- encode communication behavior
-- encode collaboration structure
-- encode value outcomes
-
-## Placement Status
-
-LOCKED — Work element placement is stable and authoritative.
+PLACEMENT FROZEN

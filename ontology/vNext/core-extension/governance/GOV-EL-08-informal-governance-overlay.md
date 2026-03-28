@@ -1,20 +1,25 @@
-# GOV-EL-08 — Informal Governance Overlay
+# GOV-EL-08-informal-governance-overlay
 
 ## Definition
-The emergent or culturally embedded structures of influence and decision control that operate parallel to, or in tension with, formal governance constructs.
 
-## Analytical Role
-Explains divergence between documented governance and operational reality.
+Informal Governance Overlay defines the informal patterns, norms, or influence structures that shape governance standing alongside or beneath formal authority arrangements.
 
-## Distinguishing Boundary
-Informal Governance Overlay concerns patterned influence structures, not isolated interpersonal dynamics.
+## Parent Subset
 
-## Exclusions
-- One-off deviations
-- Accidental process drift
-- Temporary exception handling
+`GOV-SUBSET-01-authority`
 
-## Failure Patterns Revealed
-- Dual authority systems
-- High-performing shadow structures
-- Systematic bypass of formal governance
+## Constraints
+
+- This element exists only within Governance
+- This element must not be reduced to informal communication or collaboration alone
+- This element remains bounded by the Authority subset
+
+## Integrity Check
+
+- Placement is authoritative
+- Definition aligns with Governance semantics
+- No cross-superset leakage is present
+
+## Outcome
+
+STABLE

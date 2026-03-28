@@ -1,30 +1,40 @@
-# WORK-SUBSET-01—defined
-
-## Identifier
-`WORK-SUBSET-01-defined`
-
-## Name
-Defined Work
+# WORK-SUBSET-01-defined
 
 ## Definition
-Work that is specified, structured, and intended prior to execution.
 
-## Explanation
-Defined Work consists of activities that are planned, designed, or prescribed before they are performed. It includes processes, procedures, and tasks that follow an expected structure.
+Defined Work refers to work executed under structured, prescribed, or predetermined conditions.
 
-This form of work is typically documented, repeatable, and aligned with predefined objectives.
+## Scope
 
-## Characteristics
-- Predefined structure
-- Repeatable or standardized
-- Predictable execution path
-- Often governed or controlled
+Includes:
 
-## Examples
-- A documented business process
-- A scheduled maintenance procedure
-- A training program delivery plan
-- A project plan with defined tasks
+- planned execution
+- procedure-driven activity
+- rule-based or standardized work
+- predictable execution patterns
 
-## Usage Notes
-Use Defined Work when the work exists prior to execution and can be described independently of a specific instance.
+Excludes:
+
+- adaptive or situational work arising during execution
+
+## Constraints
+
+- This subset supports element placement
+- No duplication of element types within the subset
+- No structural decomposition beyond element layer
+
+## Integrity Check
+
+- Distinct from Emergent Work
+- Does not redefine element types
+- Aligns with Work element model
+
+## Boundary Enforcement (Authoritative)
+
+This subset exists within an element-bearing superset.
+
+Elements are shared across subsets and must not be subset-specific.
+
+## Outcome
+
+STABLE

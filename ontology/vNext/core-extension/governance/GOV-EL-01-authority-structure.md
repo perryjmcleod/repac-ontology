@@ -1,21 +1,25 @@
-# GOV-EL-01 — Authority Structure
+# GOV-EL-01-authority-structure
 
 ## Definition
-The formally or informally recognized structural arrangement through which decision-making power is distributed and recognized within a defined Scope.
 
-## Analytical Role
-Identifies where decision power is positioned, independent of whether it is exercised competently, efficiently, or consistently.
+Authority Structure defines the arrangement through which governance authority is formally or informally organized.
 
-## Distinguishing Boundary
-Authority Structure concerns positional power recognition. It does not describe how decisions are made, whether they are effective, or whether they produce Value.
+## Parent Subset
 
-## Exclusions
-- Individual skill or expertise
-- Communication effectiveness
-- Operational execution quality
-- Cultural preference unless structurally embedded
+`GOV-SUBSET-01-authority`
 
-## Failure Patterns Revealed
-- Fragmented or duplicated authority
-- Ambiguous ownership of power
-- Competing structural power centres
+## Constraints
+
+- This element exists only within Governance
+- This element must not be reclassified as organizational communication or collaboration
+- This element remains bounded by the Authority subset
+
+## Integrity Check
+
+- Placement is authoritative
+- Definition aligns with Governance semantics
+- No cross-superset leakage is present
+
+## Outcome
+
+STABLE

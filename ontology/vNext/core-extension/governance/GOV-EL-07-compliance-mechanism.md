@@ -1,20 +1,25 @@
-# GOV-EL-07 — Compliance Mechanism
+# GOV-EL-07-compliance-mechanism
 
 ## Definition
-The formalized system through which adherence to governance constructs is measured, recorded, reported, or verified.
 
-## Analytical Role
-Distinguishes visibility of adherence from enforcement consequence.
+Compliance Mechanism defines how adherence to governance conditions, standards, or directives is assessed or maintained.
 
-## Distinguishing Boundary
-Compliance Mechanism concerns measurement and traceability, not punishment or authority recognition.
+## Parent Subset
 
-## Exclusions
-- Cultural conformity
-- Informal observation without record
-- Moral expectation absent measurement structure
+`GOV-SUBSET-03-control`
 
-## Failure Patterns Revealed
-- Compliance theatre
-- Reporting without behavioural impact
-- Metrics disconnected from enforcement
+## Constraints
+
+- This element exists only within Governance
+- This element must not be reduced to routine work validation
+- This element remains bounded by the Control subset
+
+## Integrity Check
+
+- Placement is authoritative
+- Definition aligns with Governance semantics
+- No cross-superset leakage is present
+
+## Outcome
+
+STABLE

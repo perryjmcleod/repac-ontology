@@ -1,19 +1,25 @@
-# GOV-EL-04 — Enforcement Mechanism
+# GOV-EL-04-enforcement-mechanism
 
 ## Definition
-The structural means through which adherence to governance constructs is compelled, incentivized, corrected, or sanctioned.
 
-## Analytical Role
-Distinguishes governance existence from governance consequence.
+Enforcement Mechanism defines how governance rules, conditions, or directives are enforced.
 
-## Distinguishing Boundary
-Enforcement concerns structural consequence pathways, not informal persuasion or interpersonal influence unless structurally embedded.
+## Parent Subset
 
-## Exclusions
-- Cultural norms without consequence structure
-- Informal influence lacking formalized corrective capacity
+`GOV-SUBSET-03-control`
 
-## Failure Patterns Revealed
-- Governance without consequence
-- Sanctions inconsistently applied
-- Incentive misalignment undermining authority
+## Constraints
+
+- This element exists only within Governance
+- This element must not be reclassified as routine operational work
+- This element remains bounded by the Control subset
+
+## Integrity Check
+
+- Placement is authoritative
+- Definition aligns with Governance semantics
+- No cross-superset leakage is present
+
+## Outcome
+
+STABLE

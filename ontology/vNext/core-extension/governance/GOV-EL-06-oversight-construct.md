@@ -1,20 +1,25 @@
-# GOV-EL-06 — Oversight Construct
+# GOV-EL-06-oversight-construct
 
 ## Definition
-The structural arrangement responsible for monitoring, reviewing, auditing, or evaluating governance performance relative to Purpose and Value.
 
-## Analytical Role
-Separates operational authority from evaluative authority.
+Oversight Construct defines the arrangement through which governance review, answerability, and supervisory assessment are carried out.
 
-## Distinguishing Boundary
-Oversight concerns structural review capacity, not execution control.
+## Parent Subset
 
-## Exclusions
-- Performance management at individual task level
-- Informal feedback mechanisms
-- Work supervision
+`GOV-SUBSET-04-accountability`
 
-## Failure Patterns Revealed
-- Governance drift without detection
-- Self-regulating authority without external review
-- Oversight captured by operational actors
+## Constraints
+
+- This element exists only within Governance
+- This element must not be reclassified as collaboration or communication practice
+- This element remains bounded by the Accountability subset
+
+## Integrity Check
+
+- Placement is authoritative
+- Definition aligns with Governance semantics
+- No cross-superset leakage is present
+
+## Outcome
+
+STABLE

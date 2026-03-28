@@ -1,20 +1,42 @@
 # GOV-SUBSET-04-accountability
 
-## Label
-Accountability
-
-## Parent
-Governance
-
-## Level
-L1
-
 ## Definition
-Accountability identifies how answerability for governance conduct, decisions, or outcomes is assigned, traced, or assessed within the analytical frame.
 
-## Boundary
-This subset captures accountability at Layer 1 and does not expand into element-level oversight, reporting, or review constructs.
+Accountability defines the arrangements through which answerability, responsibility, oversight, and governance review are established and assessed.
 
-## Notes
-- Canonical L1 subset identifier applied during structural repair pass.
-- Derived from the authoritative Governance L1 diagram.
+## Scope
+
+Includes:
+
+- oversight arrangements
+- answerability conditions
+- governance review structures
+- responsibility assessment within governance
+
+Excludes:
+
+- authority standing itself
+- decision allocation itself
+- control enforcement mechanisms themselves
+
+## Constraints
+
+- This subset supports element placement
+- No structural decomposition is permitted beyond the authorized element layer
+- Accountability must remain distinct from collaboration and communication practices
+
+## Integrity Check
+
+- The subset is distinct from Authority, Decision Rights, and Control
+- The subset does not collapse into Communication or Collaboration
+- The subset remains aligned with authoritative cross-superset boundary rules
+
+## Boundary Enforcement (Authoritative)
+
+This subset exists within an element-bearing superset.
+
+Accountability elements must remain governance-specific and must not be reclassified as Communication, Collaboration, or Work constructs.
+
+## Outcome
+
+STABLE
