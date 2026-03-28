@@ -1,23 +1,45 @@
-File: ontology/vNext/core-extension/scope/SCOPE-L1-PACKAGING-AUDIT.md
-
 # SCOPE L1 — Packaging Audit
 
 ## Objective
-Confirm that the Scope L1 artifacts follow the REPAC vNext packaging scaffold.
 
-## Checks Performed
+Validate that the Scope superset conforms to the REPAC L1 packaging scaffold and repository normalization requirements.
 
-The audit verifies that the following artifacts exist:
+## Constraints
 
-- `SCOPE-L1-FREEZE-DECISION.md`
-- `SCOPE-L1-CANDIDATE-SUBSETS.md`
-- semantic audit documentation
-- semantic freeze decision
-- OWL/TTL structural stubs
-- diagrams directory
+- No conceptual expansion
+- No ontology drift
+- No element layer is permitted within Scope
+- File structure must align with repository-wide normalization rules
 
-## Result
-PASS — Scope L1 packaging scaffold is present.
+## Required Artifacts
 
-## Notes
-Additional analytical artifacts (collision audits, validation cases, and negative examples) remain valid supporting documentation but are not required for canonical scaffold validation.
+- L1 Candidate Subsets
+- L1 Freeze Decision
+- L1 Semantic Audit
+- L1 Semantic Freeze Decision
+- Subset definition files
+
+## Frozen Subsets
+
+1. `SCOPE-SUBSET-01-perspective`
+2. `SCOPE-SUBSET-02-boundary`
+3. `SCOPE-SUBSET-03-granularity`
+4. `SCOPE-SUBSET-04-interval`
+
+## Integrity Check
+
+- All required L1 artifacts are present
+- Subset definition files exist and are correctly named
+- No element-layer artifacts remain in the Scope directory
+- No semantic overlap with Source, Purpose, or Work is present
+- File structure aligns with the other normalized supersets
+
+## Boundary Enforcement (Authoritative)
+
+Scope is a subset-terminal, non-element-bearing superset.
+
+No element layer exists within Scope.
+
+## Outcome
+
+PASS

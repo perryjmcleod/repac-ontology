@@ -1,26 +1,34 @@
 # COLLABORATION L1 — Freeze Decision
 
-## Status
-Collaboration L1 Subsets are frozen. This decision governs all subsequent Collaboration L1 diagramming and formalization work.
+## Objective
 
-## Frozen Structure (Verbatim from v1.0)
-
-Superset:
-- Collaboration
-
-Subsets:
-1. COLLAB-SUBSET-01 CoordinatedCollaboration
-2. COLLAB-SUBSET-02 EmergentCollaboration
+Formally freeze the L1 subset structure for the Collaboration superset.
 
 ## Constraints
-- No conceptual expansion
-- No renaming
-- No ontology drift
-- No additional subsets without cross-case justification and governance approval
-- Structural stub must reflect this frozen structure only
 
-## Authority
-Source of truth:
-`ontology/v1.0/owl/repac-collaboration.owl`
+- No renaming after freeze
+- No structural expansion
+- No element layer is permitted
+- Frozen subset structure is authoritative
 
-Freeze Status: LOCKED
+## Frozen Subsets
+
+1. `COLLAB-SUBSET-01-coordinated`
+2. `COLLAB-SUBSET-02-emergent`
+
+## Integrity Check
+
+- The frozen subsets are stable and non-overlapping
+- The frozen subsets exhaust the Collaboration superset
+- No element-bearing interpretation is permitted
+- No legacy structural arrangement remains authoritative
+
+## Boundary Enforcement (Authoritative)
+
+Collaboration is a subset-terminal, non-element-bearing superset.
+
+Collaboration must not be treated as an element-bearing or structurally decomposable layer.
+
+## Outcome
+
+FROZEN

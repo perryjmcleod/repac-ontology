@@ -1,27 +1,34 @@
 # PURPOSE L1 — Freeze Decision
 
-## Status
+## Objective
 
-Purpose Layer 1 Subsets are frozen.  
-This decision governs all subsequent Purpose Layer 1 diagramming and formalization work.
+Formally freeze the L1 subset structure for the Purpose superset.
 
-## Frozen Purpose L1 Subsets
+## Constraints
 
-A complete Purpose assertion requires the following Subsets:
+- No renaming after freeze
+- No structural expansion
+- No element layer is permitted
+- Frozen subset structure is authoritative
+
+## Frozen Subsets
 
 1. `PUR-SUBSET-01-intentional`
 2. `PUR-SUBSET-02-declarative`
 
-## Constraints
+## Integrity Check
 
-- v1.0 is immutable.
-- vNext is additive only.
-- No new Supersets unless justified.
-- L1 Subsets freeze before any element explosion.
-- Packaging scaffold consistency must be maintained across all supersets.
+- The frozen subsets are stable and non-overlapping
+- The frozen subsets exhaust the Purpose superset
+- No element-bearing interpretation is permitted
+- No superseded Purpose partition remains authoritative
 
-## Scope of Freeze
+## Boundary Enforcement (Authoritative)
 
-This freeze applies only to **Layer 1 subset selection and naming** for Purpose.
+Purpose is a subset-terminal, non-element-bearing superset.
 
-Elements, relationships, and axioms are not expanded until the controlled explosion phase.
+Purpose must not be treated as an element-bearing or structurally decomposable layer.
+
+## Outcome
+
+FROZEN

@@ -1,40 +1,40 @@
 # PURPOSE L1 — Semantic Freeze Decision
 
-## Status
+## Objective
 
-FROZEN
+Lock the semantic interpretation of the Purpose superset.
 
-## Decision
+## Constraints
 
-Purpose L1 semantic structure is frozen for REPAC vNext at the current subset level.
+- No reinterpretation after freeze
+- No element-level constructs may be introduced
+- No semantic drift into motivation, value, or execution
+- Frozen semantics are authoritative
 
-## Frozen Purpose L1 Subsets
+## Frozen Subsets
 
 1. `PUR-SUBSET-01-intentional`
 2. `PUR-SUBSET-02-declarative`
 
-## Scope of the Freeze
+## Frozen Semantics
 
-This freeze locks:
+- Purpose identifies how intendedness is associated with a phenomenon
+- Intentional Purpose refers to purpose that is intrinsic or inherent to the phenomenon itself
+- Declarative Purpose refers to purpose that is assigned, expressed, or articulated externally
+- Purpose does not define value, obligation, origin, or execution
 
-- the current Purpose L1 subset set
-- the canonical identifiers for those subsets
-- the semantic distinction between the two subsets
+## Integrity Check
 
-This freeze does not yet lock:
+- Semantic boundaries are clear and stable
+- No residual overlap exists with Value, Imperative, Source, or Work
+- Purpose remains subset-terminal and non-element-bearing
 
-- Purpose element-layer population
-- OWL/TTL class or property population
-- deeper decomposition below the current subset layer
+## Boundary Enforcement (Authoritative)
 
-## Implications
+Purpose is a subset-terminal, non-element-bearing superset.
 
-- The frozen subset layer is authoritative for all subsequent Purpose reconciliation work
-- No new Purpose L1 subsets may be introduced without explicit controlled revision
-- Future element placement must conform to this subset freeze
+Purpose operates exclusively through subset-level distinctions and does not support an element layer.
 
-## References
+## Outcome
 
-- `PURPOSE-L1-CANDIDATE-SUBSETS.md`
-- `PURPOSE-L1-SEMANTIC-AUDIT.md`
-- `PURPOSE-L1-FREEZE-DECISION.md`
+SEMANTICS FROZEN

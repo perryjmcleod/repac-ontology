@@ -1,40 +1,40 @@
 # VALUE L1 — Semantic Freeze Decision
 
-## Status
+## Objective
 
-FROZEN
+Lock the semantic interpretation of the Value superset.
 
-## Decision
+## Constraints
 
-Value L1 semantic structure is frozen for REPAC vNext at the current subset level.
+- No reinterpretation after freeze
+- No element-level constructs may be introduced
+- No superseded Value semantic scheme may be reactivated
+- Frozen semantics are authoritative
 
-## Frozen Value L1 Subsets
+## Frozen Subsets
 
-1. `VAL-SUBSET-01-tangible`
-2. `VAL-SUBSET-02-intangible`
+1. `VAL-SUBSET-01-inherent`
+2. `VAL-SUBSET-02-instrumental`
 
-## Scope of the Freeze
+## Frozen Semantics
 
-This freeze locks:
+- Value identifies how worth, significance, or benefit is analytically characterized within the REPAC model
+- Inherent Value refers to value attributed as intrinsic to the phenomenon itself
+- Instrumental Value refers to value attributed in relation to consequence, utility, effect, or use
+- Value does not define elements, composition, or decomposition
 
-- the current Value L1 subset set
-- the canonical identifiers for those subsets
-- the semantic distinction between the two subsets
+## Integrity Check
 
-This freeze does not yet lock:
+- Semantic boundaries are clear and stable
+- No residual conflict exists with the prior Tangible / Intangible categorization
+- Value remains subset-terminal and non-element-bearing
 
-- Value element-layer population
-- OWL/TTL class or property population
-- deeper decomposition below the current subset layer
+## Boundary Enforcement (Authoritative)
 
-## Implications
+Value is a subset-terminal, non-element-bearing superset.
 
-- The frozen subset layer is authoritative for all subsequent Value reconciliation work
-- No new Value L1 subsets may be introduced without explicit controlled revision
-- Future element placement must conform to this subset freeze
+Value operates exclusively through subset-level distinctions and does not support an element layer.
 
-## References
+## Outcome
 
-- `VALUE-L1-CANDIDATE-SUBSETS.md`
-- `VALUE-L1-SEMANTIC-AUDIT.md`
-- `VALUE-L1-FREEZE-DECISION.md`
+SEMANTICS FROZEN

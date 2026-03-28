@@ -1,26 +1,41 @@
-# IMP-SUBSET-01 — mandatory
-
-## Subset ID
-`IMP-SUBSET-01-mandatory`
-
-## Label
-Mandatory
+# IMP-SUBSET-01-mandatory
 
 ## Definition
-An imperative that requires a specific action or condition to be satisfied.
 
-## Description
-Represents a form of normative force where a defined expectation must be fulfilled. A mandatory imperative establishes that something is required, without specifying how that requirement is expressed or enforced.
+Mandatory refers to conditions in which a phenomenon is required and not subject to optional execution or omission.
 
-Imperatives manifest through sources and are expressed through communication. This subset defines the degree of obligation, not the mechanism by which the imperative appears in the system.
+## Scope
+
+Includes:
+
+- required actions or conditions
+- non-optional requirements
+- obligations that must be satisfied
+- conditions where omission constitutes non-compliance or failure
+
+Excludes:
+
+- optional or elective actions
+- conditions subject to choice or discretion
 
 ## Constraints
-- Represents obligation only
-- Does not encode enforcement, compliance, or outcome
-- Does not specify how the imperative is communicated (explicit or implicit)
 
-## Usage Examples
+- This subset functions at the subset level only
+- No element layer exists within this subset
+- No decomposition into action units or decision structures is permitted
 
-- A procedure states that a safety check must be completed before operation
-- A system requires a mandatory field to be completed before submission
-- A policy specifies that approval is required prior to execution
+## Integrity Check
+
+- The subset is distinct from Discretionary
+- The subset does not imply composition, structure, or elementhood
+- The subset remains aligned with authoritative cross-superset boundary rules
+
+## Boundary Enforcement (Authoritative)
+
+This subset exists within a subset-terminal, non-element-bearing superset.
+
+Mandatory must not be interpreted as an element-bearing or structurally decomposable construct.
+
+## Outcome
+
+STABLE

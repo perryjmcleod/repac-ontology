@@ -1,19 +1,41 @@
 # SCOPE-SUBSET-04-interval
 
 ## Definition
-Interval is the temporal span within which the asserted Scope is considered analytically valid. It specifies the beginning, end, or snapshot conditions under which the boundary applies.
 
-## Role in Scope L1
-Interval constrains the temporal applicability of the asserted Boundary, prevents hidden temporal assumptions, and enables comparison across time.
+Interval defines the temporal span over which a phenomenon is considered.
 
-## Analytical Tests
-- What time window is the analysis asserting (start, end, or snapshot)?
-- Would the same Perspective, Boundary, and Granularity yield a different interpretation under a different Interval?
+## Scope
 
-## Non-Equivalences
-Interval is not:
-- a schedule, milestone plan, deadline, risk window, or governance duration
-- planning artefacts used to manage work
+Includes:
 
-## Formal Anchor
-Ontology class: `repac:Interval`
+- timeframes
+- durations
+- temporal boundaries
+- periods of observation or analysis
+
+Excludes:
+
+- sequencing of actions (Work)
+- origin of phenomena (Source)
+
+## Constraints
+
+- This subset functions at the subset level only
+- No element layer exists within this subset
+- No structural decomposition is permitted
+
+## Integrity Check
+
+- The subset is distinct from Perspective, Boundary, and Granularity
+- The subset does not imply composition or elementhood
+- The subset remains aligned with authoritative cross-superset boundary rules
+
+## Boundary Enforcement (Authoritative)
+
+This subset exists within a subset-terminal, non-element-bearing superset.
+
+Interval must not be interpreted as a structural or element-bearing construct.
+
+## Outcome
+
+STABLE

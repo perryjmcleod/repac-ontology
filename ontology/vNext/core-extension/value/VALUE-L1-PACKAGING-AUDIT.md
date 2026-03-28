@@ -2,33 +2,42 @@
 
 ## Objective
 
-Stabilize Value L1 using the controlled REPAC vNext packaging method.
+Validate that the Value superset conforms to the REPAC L1 packaging scaffold and repository normalization requirements.
 
 ## Constraints
 
 - No conceptual expansion
-- No renaming beyond canonical identifier normalization
 - No ontology drift
-- No OWL/TTL population at this phase
+- No element layer is permitted within Value
+- File structure must align with repository-wide normalization rules
 
-## Result
+## Required Artifacts
+
+- L1 Candidate Subsets
+- L1 Freeze Decision
+- L1 Semantic Audit
+- L1 Semantic Freeze Decision
+- Subset definition files
+
+## Frozen Subsets
+
+1. `VAL-SUBSET-01-inherent`
+2. `VAL-SUBSET-02-instrumental`
+
+## Integrity Check
+
+- All required L1 artifacts are present
+- Subset definition files exist and are correctly named
+- No element-layer artifacts remain in the Value directory
+- No superseded Value partition remains in semantic conflict with the frozen model
+- File structure aligns with the other normalized supersets
+
+## Boundary Enforcement (Authoritative)
+
+Value is a subset-terminal, non-element-bearing superset.
+
+No element layer exists within Value.
+
+## Outcome
 
 PASS
-
-## Evidence (v1.0)
-
-The Value superset carries forward a two-subset L1 structure from v1.0:
-
-- `VAL-SUBSET-01-tangible`
-- `VAL-SUBSET-02-intangible`
-
-The following packaging artifacts are present in the vNext Value path:
-
-- `VALUE-L1-CANDIDATE-SUBSETS.md`
-- `VALUE-L1-FREEZE-DECISION.md`
-- `VAL-SUBSET-01-tangible.md`
-- `VAL-SUBSET-02-intangible.md`
-
-## Notes
-
-Value L1 packaging is structurally present, but semantic and markup normalization is still required before formal reconciliation can be considered complete.

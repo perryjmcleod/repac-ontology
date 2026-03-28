@@ -1,34 +1,40 @@
-File: ontology/vNext/core-extension/<superset>/<SUPERSET>-L1-SEMANTIC-FREEZE-DECISION.md
+# COLLABORATION L1 — Semantic Freeze Decision
 
-# <SUPERSET> L1 — Semantic Freeze Decision
+## Objective
 
-## Status
-FROZEN (structural placeholder)
+Lock the semantic interpretation of the Collaboration superset.
 
-## Decision
-The Layer-1 semantic structure for the <SUPERSET> superset is frozen for REPAC vNext.
+## Constraints
 
-This freeze establishes a stable foundation for subsequent ontology modelling activities, including controlled element explosion and formal class definition.
+- No reinterpretation after freeze
+- No element-level constructs may be introduced
+- No structural rearrangement may override frozen semantics
+- Frozen semantics are authoritative
 
-## Scope of the Freeze
+## Frozen Subsets
 
-This decision freezes:
+1. `COLLAB-SUBSET-01-coordinated`
+2. `COLLAB-SUBSET-02-emergent`
 
-- L1 subset names
-- subset boundaries
-- semantic meaning of each subset
-- terminology used in L1 documentation
+## Frozen Semantics
 
-## Implications
+- Collaboration identifies the mode through which joint or interdependent activity is enacted
+- Coordinated Collaboration refers to collaboration shaped by deliberate alignment, explicit structure, or intentional orchestration
+- Emergent Collaboration refers to collaboration arising through adaptive, situational, or spontaneously developing interaction
+- Collaboration does not define elements, composition, or decomposition
 
-After this freeze:
+## Integrity Check
 
-- L1 subset structures should not change without a formal governance decision.
-- Controlled element explosion will derive elements from these subsets.
-- OWL class definitions and SHACL validation rules may reference these frozen constructs.
+- Semantic boundaries are clear and stable
+- No residual conflict exists with prior structural irregularities
+- Collaboration remains subset-terminal and non-element-bearing
 
-## References
+## Boundary Enforcement (Authoritative)
 
-- `<SUPERSET>-L1-CANDIDATE-SUBSETS.md`
-- `<SUPERSET>-L1-SEMANTIC-AUDIT.md`
-- `<SUPERSET>-L1-FREEZE-DECISION.md`
+Collaboration is a subset-terminal, non-element-bearing superset.
+
+Collaboration operates exclusively through subset-level distinctions and does not support an element layer.
+
+## Outcome
+
+SEMANTICS FROZEN

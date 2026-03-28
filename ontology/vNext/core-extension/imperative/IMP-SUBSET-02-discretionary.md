@@ -1,26 +1,41 @@
-# IMP-SUBSET-02 — discretionary
-
-## Subset ID
-`IMP-SUBSET-02-discretionary`
-
-## Label
-Discretionary
+# IMP-SUBSET-02-discretionary
 
 ## Definition
-An imperative that permits variation in action or condition.
 
-## Description
-Represents a form of normative latitude where multiple acceptable actions or conditions may be selected. A discretionary imperative allows choice without prescribing a single required path.
+Discretionary refers to conditions in which a phenomenon is optional and subject to choice, judgment, or contextual determination.
 
-Imperatives manifest through sources and are expressed through communication. This subset defines the degree of flexibility, not the mechanism by which the imperative appears in the system.
+## Scope
+
+Includes:
+
+- optional actions or conditions
+- elective or situational decisions
+- context-dependent execution
+- actions that may be performed but are not required
+
+Excludes:
+
+- required or non-optional actions
+- conditions where omission is not permitted
 
 ## Constraints
-- Represents allowed variation or optionality
-- Does not encode preference, effectiveness, or outcome
-- Does not specify how the imperative is communicated (explicit or implicit)
 
-## Usage Examples
+- This subset functions at the subset level only
+- No element layer exists within this subset
+- No decomposition into decision units or execution structures is permitted
 
-- A guideline suggests that additional validation may be performed if needed
-- A process allows different sequences of steps depending on context
-- A user may choose between multiple methods to complete a task
+## Integrity Check
+
+- The subset is distinct from Mandatory
+- The subset does not imply composition, structure, or elementhood
+- The subset remains aligned with authoritative cross-superset boundary rules
+
+## Boundary Enforcement (Authoritative)
+
+This subset exists within a subset-terminal, non-element-bearing superset.
+
+Discretionary must not be interpreted as an element-bearing or structurally decomposable construct.
+
+## Outcome
+
+STABLE

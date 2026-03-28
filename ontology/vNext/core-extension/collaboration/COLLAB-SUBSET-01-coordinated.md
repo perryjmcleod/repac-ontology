@@ -1,35 +1,41 @@
-# COLLAB-SUBSET-01—coordinated
-
-## Canonical Identifier
-`COLLAB-SUBSET-01-coordinated`
-
-## Superset
-Collaboration
-
-## Layer
-Layer 1 Subset
+# COLLAB-SUBSET-01-coordinated
 
 ## Definition
-Coordinated identifies collaboration that is intentionally structured through explicit alignment mechanisms such as roles, responsibilities, sequencing, or planned interaction.
 
-## Analytical Role
-This subset captures collaboration that is deliberately organized to ensure actors operate in a mutually intelligible and ordered way when contributing to shared or interdependent work.
+Coordinated Collaboration refers to collaboration shaped by deliberate alignment, explicit structure, or intentional orchestration among participants.
 
-## Typical Characteristics
-- Explicit coordination structures
-- Defined roles or responsibilities
-- Planned interaction patterns
-- Deliberate synchronization of effort
+## Scope
 
-## Boundary
-Coordinated collaboration does not imply that collaboration emerges spontaneously through informal interaction. It reflects collaboration supported by intentional organizational alignment.
+Includes:
+
+- planned collaboration
+- role-aligned coordination
+- scheduled or structured joint activity
+- collaboration governed by explicit expectations, procedures, or arrangements
+
+Excludes:
+
+- spontaneously arising collaboration without prior alignment
+- adaptive interaction that forms without deliberate coordination
 
 ## Constraints
-- No conceptual expansion
-- No renaming
-- No ontology drift
-- No element-level modelling at L1
-- No prescriptive method language
 
-## Status
-Normalized during the REPAC vNext core-extension structural repair pass.
+- This subset functions at the subset level only
+- No element layer exists within this subset
+- No structural decomposition is permitted beyond the subset level
+
+## Integrity Check
+
+- The subset is distinct from Emergent Collaboration
+- The subset does not imply composition, structure, or elementhood beyond the frozen subset boundary
+- The subset remains aligned with authoritative cross-superset boundary rules
+
+## Boundary Enforcement (Authoritative)
+
+This subset exists within a subset-terminal, non-element-bearing superset.
+
+Coordinated Collaboration must not be interpreted as an element-bearing or structurally decomposable construct.
+
+## Outcome
+
+STABLE

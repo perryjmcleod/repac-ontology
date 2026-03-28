@@ -1,20 +1,41 @@
 # SCOPE-SUBSET-01-perspective
 
 ## Definition
-Perspective is the analytical vantage that determines the class of entities eligible to be bounded and examined. It specifies what type of entity is under consideration prior to boundary assertion.
 
-## Role in Scope L1
-Perspective conditions analysis by constraining what counts as eligible and relevant, without partitioning entities by itself.
+Perspective defines the viewpoint or lens through which a phenomenon is observed or analyzed.
 
-## Analytical Tests
-- What category of entity is being examined (for example, process, organizational unit, output, event, defect)?
-- What would be structurally invalid to include because it does not match the selected category?
+## Scope
 
-## Non-Equivalences
-Perspective is not:
-- a value judgement or goal statement
-- governance authority, stakeholder preference, or ownership
-- “context” treated as a first-class construct
+Includes:
 
-## Formal Anchor
-Ontology class: `repac:Perspective`
+- analytical viewpoint
+- stakeholder viewpoint
+- conceptual framing of observation
+- orientation from which interpretation is made
+
+Excludes:
+
+- origin of the phenomenon (Source)
+- intent behind the phenomenon (Purpose)
+
+## Constraints
+
+- This subset functions at the subset level only
+- No element layer exists within this subset
+- No structural decomposition is permitted
+
+## Integrity Check
+
+- The subset is distinct from Boundary, Granularity, and Interval
+- The subset does not imply composition or structure
+- The subset remains aligned with authoritative cross-superset boundary rules
+
+## Boundary Enforcement (Authoritative)
+
+This subset exists within a subset-terminal, non-element-bearing superset.
+
+Perspective must not be interpreted as an element-bearing or structural construct.
+
+## Outcome
+
+STABLE

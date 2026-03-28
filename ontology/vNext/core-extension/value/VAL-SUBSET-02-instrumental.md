@@ -1,38 +1,41 @@
-# VAL-SUBSET-02—Instrumental
-
-## Identifier
-`VAL-SUBSET-02-instrumental`
-
-## Name
-Instrumental Value
+# VAL-SUBSET-02-instrumental
 
 ## Definition
-Value that is realized through use, application, or as a means to achieve an outcome.
 
-## Explanation
-Instrumental Value arises when an entity contributes to an effect, outcome, or purpose. It is contingent on action, execution, or context of use.
+Instrumental Value refers to value attributed in relation to utility, consequence, function, effect, or use.
 
-This form of value does not exist in isolation; it is activated through Work and evaluated relative to Purpose.
+## Scope
 
-Instrumental Value is ontologically dependent on Inherent Value but is not reducible to it.
+Includes:
 
-## Characteristics
-- Outcome-dependent
-- Realized through use or execution
-- Context-sensitive
-- Often evaluated relative to goals or objectives
+- value derived from practical usefulness
+- value attributed through consequence or effect
+- value linked to function, performance, or application
+- worth assessed in relation to enabling or producing something else
 
-## Examples
-- Revenue generated from a product
-- Efficiency gained from a process improvement
-- Risk reduction achieved through mitigation actions
-- Customer satisfaction resulting from service delivery
+Excludes:
 
-## Usage Notes
-Use Instrumental Value when value emerges from doing, using, or achieving.
+- value treated as intrinsic to the phenomenon itself
+- worth attributed independently of use, consequence, or utility
 
-Do not confuse with:
-- Tangible vs intangible
-- Quantitative vs qualitative
+## Constraints
 
-Those describe how value is measured or perceived, not what it is.
+- This subset functions at the subset level only
+- No element layer exists within this subset
+- No structural decomposition is permitted beyond the subset level
+
+## Integrity Check
+
+- The subset is distinct from Inherent Value
+- The subset does not imply composition, structure, or elementhood beyond the frozen subset boundary
+- The subset remains aligned with authoritative cross-superset boundary rules
+
+## Boundary Enforcement (Authoritative)
+
+This subset exists within a subset-terminal, non-element-bearing superset.
+
+Instrumental Value must not be interpreted as an element-bearing or structurally decomposable construct.
+
+## Outcome
+
+STABLE

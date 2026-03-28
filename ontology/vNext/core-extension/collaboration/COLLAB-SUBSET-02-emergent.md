@@ -1,35 +1,41 @@
-# COLLAB-SUBSET-02—emergent
-
-## Canonical Identifier
-`COLLAB-SUBSET-02-emergent`
-
-## Superset
-Collaboration
-
-## Layer
-Layer 1 Subset
+# COLLAB-SUBSET-02-emergent
 
 ## Definition
-Emergent identifies collaboration that arises organically through interaction among actors without prior formal coordination or explicit structural design.
 
-## Analytical Role
-This subset captures collaboration that develops through spontaneous engagement, informal networks, or adaptive interaction among participants responding to shared circumstances or opportunities.
+Emergent Collaboration refers to collaboration that arises adaptively, situationally, or spontaneously through unfolding interaction among participants.
 
-## Typical Characteristics
-- Informal interaction
-- Organic collaboration patterns
-- Network-driven engagement
-- Adaptive actor interaction
+## Scope
 
-## Boundary
-Emergent collaboration does not depend on predefined coordination structures. It reflects collaboration that develops dynamically through the interaction of participants.
+Includes:
+
+- unplanned collaboration
+- situational alignment
+- adaptive coordination formed during action
+- spontaneously developing joint effort
+
+Excludes:
+
+- collaboration established through prior formal alignment
+- explicitly orchestrated or procedurally structured coordination
 
 ## Constraints
-- No conceptual expansion
-- No renaming
-- No ontology drift
-- No element-level modelling at L1
-- No prescriptive method language
 
-## Status
-Normalized during the REPAC vNext core-extension structural repair pass.
+- This subset functions at the subset level only
+- No element layer exists within this subset
+- No structural decomposition is permitted beyond the subset level
+
+## Integrity Check
+
+- The subset is distinct from Coordinated Collaboration
+- The subset does not imply composition, structure, or elementhood beyond the frozen subset boundary
+- The subset remains aligned with authoritative cross-superset boundary rules
+
+## Boundary Enforcement (Authoritative)
+
+This subset exists within a subset-terminal, non-element-bearing superset.
+
+Emergent Collaboration must not be interpreted as an element-bearing or structurally decomposable construct.
+
+## Outcome
+
+STABLE

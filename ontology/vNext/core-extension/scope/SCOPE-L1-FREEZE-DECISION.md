@@ -1,29 +1,36 @@
 # SCOPE L1 — Freeze Decision
 
-## Status
+## Objective
 
-Scope Layer 1 Subsets are frozen.  
-This decision governs all subsequent Scope Layer 1 diagramming and formalization work.
+Formally freeze the L1 subset structure for the Scope superset.
 
-## Frozen Scope L1 Subsets
+## Constraints
 
-A complete Scope assertion requires the following Subsets:
+- No renaming after freeze
+- No structural expansion
+- No element layer is permitted
+- Frozen subset structure is authoritative
+
+## Frozen Subsets
 
 1. `SCOPE-SUBSET-01-perspective`
 2. `SCOPE-SUBSET-02-boundary`
 3. `SCOPE-SUBSET-03-granularity`
 4. `SCOPE-SUBSET-04-interval`
 
-## Constraints
+## Integrity Check
 
-- v1.0 is immutable.
-- vNext is additive only.
-- No new Supersets unless justified.
-- L1 Subsets freeze before any element explosion.
-- Packaging scaffold consistency must be maintained across all supersets.
+- The frozen subsets are stable and non-overlapping
+- The frozen subsets exhaust the Scope superset
+- No element-bearing interpretation is permitted
+- No semantic overlap with adjacent supersets exists
 
-## Scope of Freeze
+## Boundary Enforcement (Authoritative)
 
-This freeze applies only to **Layer 1 subset selection and naming** for Scope.
+Scope is a subset-terminal, non-element-bearing superset.
 
-Elements, relationships, and axioms are not expanded until the controlled explosion phase.
+Scope must not be treated as a structural, compositional, or element-bearing layer.
+
+## Outcome
+
+FROZEN

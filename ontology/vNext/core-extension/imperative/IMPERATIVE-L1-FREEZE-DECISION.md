@@ -1,31 +1,34 @@
 # IMPERATIVE L1 — Freeze Decision
 
-## Status
+## Objective
 
-FROZEN
+Formally freeze the L1 subset structure for the Imperative superset.
 
-## Frozen Imperative L1 Subsets
+## Constraints
+
+- No renaming after freeze
+- No structural expansion
+- No element layer is permitted
+- Frozen subset structure is authoritative
+
+## Frozen Subsets
 
 1. `IMP-SUBSET-01-mandatory`
 2. `IMP-SUBSET-02-discretionary`
 
-## Constraints
+## Integrity Check
 
-- No conceptual expansion
-- No ontology drift
-- No OWL/TTL population yet
-- This freeze governs subset-layer reconciliation only
+- The frozen subsets are stable and non-overlapping
+- The frozen subsets exhaust the Imperative superset
+- No element-bearing interpretation is permitted
+- No superseded subset naming or structural variants remain authoritative
 
-## Scope of Freeze
+## Boundary Enforcement (Authoritative)
 
-This freeze locks:
+Imperative is a subset-terminal, non-element-bearing superset.
 
-- the current Imperative L1 subset set
-- the canonical identifiers for those subsets
-- the structural distinction between mandatory and discretionary imperative forms
+Imperative must not be treated as an element-bearing or structurally decomposable layer.
 
-This freeze does not yet lock:
+## Outcome
 
-- Imperative element-layer population
-- OWL/TTL class or property population
-- deeper decomposition below the current subset layer
+FROZEN

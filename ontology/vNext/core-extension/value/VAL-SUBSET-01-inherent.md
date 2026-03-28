@@ -1,38 +1,41 @@
-# VAL-SUBSET-01—Inherent
-
-## Identifier
-`VAL-SUBSET-01-inherent`
-
-## Name
-Inherent Value
+# VAL-SUBSET-01-inherent
 
 ## Definition
-Value that exists as an intrinsic property of an entity, independent of its use, application, or downstream effect.
 
-## Explanation
-Inherent Value refers to value that is not contingent on outcomes, utility, or external systems. It is attributed to the nature, existence, or essential characteristics of something.
+Inherent Value refers to value attributed as intrinsic to the phenomenon itself rather than to its downstream use, consequence, or utility.
 
-This form of value does not require activation through work or transformation. It exists regardless of whether it is leveraged or realized.
+## Scope
 
-Inherent Value is ontologically prior to Instrumental Value.
+Includes:
 
-## Characteristics
-- Exists independent of use
-- Not outcome-dependent
-- Not contingent on transformation
-- Often associated with identity, ethics, or intrinsic worth
+- value regarded as intrinsic
+- value attributed to what something is in itself
+- worth not dependent on subsequent use or effect
+- significance treated as internal to the phenomenon under analysis
 
-## Examples
-- The inherent worth of a human life
-- The structural integrity of a material
-- The credibility of a trusted source
-- Knowledge as an intellectual asset (prior to application)
+Excludes:
 
-## Usage Notes
-Use Inherent Value when the value being described does not depend on execution, application, or outcome.
+- value attributed primarily through utility, consequence, function, or outcome
+- value dependent on external use or instrumental effect
 
-Do not confuse with:
-- Quantitative value (measurable)
-- Qualitative value (perceived)
+## Constraints
 
-Those are epistemic descriptions, not ontological categories.
+- This subset functions at the subset level only
+- No element layer exists within this subset
+- No structural decomposition is permitted beyond the subset level
+
+## Integrity Check
+
+- The subset is distinct from Instrumental Value
+- The subset does not imply composition, structure, or elementhood beyond the frozen subset boundary
+- The subset remains aligned with authoritative cross-superset boundary rules
+
+## Boundary Enforcement (Authoritative)
+
+This subset exists within a subset-terminal, non-element-bearing superset.
+
+Inherent Value must not be interpreted as an element-bearing or structurally decomposable construct.
+
+## Outcome
+
+STABLE

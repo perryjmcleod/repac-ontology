@@ -2,33 +2,42 @@
 
 ## Objective
 
-Stabilize Imperative L1 using the controlled REPAC vNext packaging method.
+Validate that the Imperative superset conforms to the REPAC L1 packaging scaffold and repository normalization requirements.
 
 ## Constraints
 
 - No conceptual expansion
-- No renaming beyond canonical identifier normalization
 - No ontology drift
-- No OWL/TTL population at this phase
+- No element layer is permitted within Imperative
+- File structure must align with repository-wide normalization rules
 
-## Result
+## Required Artifacts
+
+- L1 Candidate Subsets
+- L1 Freeze Decision
+- L1 Semantic Audit
+- L1 Semantic Freeze Decision
+- Subset definition files
+
+## Frozen Subsets
+
+1. `IMP-SUBSET-01-mandatory`
+2. `IMP-SUBSET-02-discretionary`
+
+## Integrity Check
+
+- All required L1 artifacts are present
+- Subset definition files exist and are correctly named
+- No element-layer artifacts remain in the Imperative directory
+- No superseded subset naming variants remain
+- File structure aligns with the other normalized supersets
+
+## Boundary Enforcement (Authoritative)
+
+Imperative is a subset-terminal, non-element-bearing superset.
+
+No element layer exists within Imperative.
+
+## Outcome
 
 PASS
-
-## Evidence
-
-The Imperative superset carries a two-subset L1 structure in vNext:
-
-- `IMP-SUBSET-01-mandatory`
-- `IMP-SUBSET-02-discretionary`
-
-The following packaging artifacts are present in the vNext Imperative path:
-
-- `IMPERATIVE-L1-CANDIDATE-SUBSETS.md`
-- `IMPERATIVE-L1-FREEZE-DECISION.md`
-- `IMP-SUBSET-01-mandatory.md`
-- `IMP-SUBSET-02-discretionary.md`
-
-## Notes
-
-Imperative L1 packaging is structurally present, but semantic and markup normalization is required before formal reconciliation can be considered complete.

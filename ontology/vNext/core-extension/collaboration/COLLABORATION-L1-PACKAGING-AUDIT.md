@@ -1,21 +1,43 @@
-# COLLABORATION L1 — Packaging Scaffold
+# COLLABORATION L1 — Packaging Audit
 
 ## Objective
-Stabilize Collaboration L1 using the same controlled pattern as Communication L1.
+
+Validate that the Collaboration superset conforms to the REPAC L1 packaging scaffold and repository normalization requirements.
 
 ## Constraints
+
 - No conceptual expansion
-- No renaming
 - No ontology drift
-- Follow packaging scaffold → audit → semantic freeze → structural stub
-- Migrate subset structure from v1.0 verbatim if present
+- No element layer is permitted within Collaboration
+- File structure must align with repository-wide normalization rules
 
-## Scaffold Outputs
-- `subsets/` directory created for verbatim v1.0 subset artifacts (if present)
-- `diagrams/` directory created for the L1 structure diagram
-- `docs/` directory created for subset inventory and audit artifacts
-- `formalization/` directory created for the structural stub (to be completed after semantic freeze)
-- `validation/` directory created for validation-case tracking
+## Required Artifacts
 
-## Notes
-This file asserts no subset names and introduces no new constructs.
+- L1 Candidate Subsets
+- L1 Freeze Decision
+- L1 Semantic Audit
+- L1 Semantic Freeze Decision
+- Subset definition files
+
+## Frozen Subsets
+
+1. `COLLAB-SUBSET-01-coordinated`
+2. `COLLAB-SUBSET-02-emergent`
+
+## Integrity Check
+
+- All required L1 artifacts are present
+- Subset definition files exist and are correctly named
+- No element-layer artifacts remain in the Collaboration directory
+- No non-standard structural arrangement governs semantic interpretation
+- File structure aligns with the other normalized supersets
+
+## Boundary Enforcement (Authoritative)
+
+Collaboration is a subset-terminal, non-element-bearing superset.
+
+No element layer exists within Collaboration.
+
+## Outcome
+
+PASS

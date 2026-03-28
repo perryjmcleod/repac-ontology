@@ -1,59 +1,41 @@
 # PURPOSE L1 — Semantic Audit
 
-## Status
-
-PASS
-
 ## Objective
 
-Confirm that the Purpose L1 subset structure is semantically distinct, minimally sufficient, and aligned with the controlled REPAC vNext stabilization method.
+Validate the semantic integrity of the Purpose L1 subset structure.
 
-## Audit Checks
+## Constraints
 
-1. Distinctness of L1 subsets
-2. Sufficiency of L1 coverage for Purpose
-3. Non-redundancy between subsets
-4. Alignment with v1.0 structural intent
-5. No conceptual expansion beyond current freeze scope
+- No conceptual expansion
+- No ontology drift
+- Purpose must remain subset-terminal and non-element-bearing
+- No semantic drift into motivation, value, or execution modelling
 
-## Evidence Sources
-
-- `PURPOSE-L1-CANDIDATE-SUBSETS.md`
-- `PURPOSE-L1-FREEZE-DECISION.md`
-- `PUR-SUBSET-01-intentional.md`
-- `PUR-SUBSET-02-declarative.md`
-
-## Result
-
-The Purpose L1 subset layer is semantically stable at the current level of abstraction.
-
-The following Purpose L1 subsets are confirmed:
+## Frozen Subsets
 
 1. `PUR-SUBSET-01-intentional`
 2. `PUR-SUBSET-02-declarative`
 
-## Findings
+## Audit Findings
 
-### Distinctness
+- Purpose is appropriately modelled at the subset level
+- Intentional and Declarative distinguish how purpose is associated with a phenomenon without requiring an element layer
+- No valid justification exists for element-level constructs within Purpose
+- No semantic drift into behavioural, motivational, or value modelling remains
+
+## Integrity Check
+
+- No `PUR-EL-*` artifacts remain valid
+- No decomposition into goals, actions, or outcomes exists
+- No overlap with Value (worth), Imperative (obligation), or Work (execution)
+- Purpose remains aligned with authoritative cross-superset boundary rules
+
+## Boundary Enforcement (Authoritative)
+
+Purpose is a subset-terminal, non-element-bearing superset.
+
+All Purpose distinctions terminate at the subset level and remain non-element-bearing in function.
+
+## Outcome
+
 PASS
-
-`Intentional` and `Declarative` are analytically distinguishable and do not collapse into one another.
-
-### Sufficiency
-PASS
-
-At the current L1 stabilization level, the two-subset structure is sufficient for controlled structural progression.
-
-### Redundancy Check
-PASS
-
-No redundant L1 subset was identified.
-
-### L1 Fit
-PASS
-
-Both subsets remain appropriate for the Purpose superset at Layer 1.
-
-## Decision
-
-Purpose L1 semantic stabilization remains valid and may proceed to controlled reconciliation activity, subject to document normalization and repository integrity.
