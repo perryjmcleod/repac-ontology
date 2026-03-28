@@ -2,21 +2,21 @@
 
 ## Definition
 
-Declarative Purpose refers to purpose that is assigned, expressed, or articulated externally to the phenomenon.
+Declarative Purpose refers to purpose expressed, stated, or designated in relation to a phenomenon.
 
 ## Scope
 
 Includes:
 
 - stated purpose
-- assigned objectives
-- externally defined intent
-- declared or documented purpose
+- documented purpose
+- explicitly expressed intent
+- purpose designated through description, policy, or articulation
 
 Excludes:
 
-- intrinsic or inherent purpose
-- purpose arising from the nature of the phenomenon itself
+- purpose arising from the phenomenon itself
+- internal intendedness not dependent on declaration
 
 ## Constraints
 

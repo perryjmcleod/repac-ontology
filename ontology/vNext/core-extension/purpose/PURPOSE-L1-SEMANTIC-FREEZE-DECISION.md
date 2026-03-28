@@ -19,8 +19,8 @@ Lock the semantic interpretation of the Purpose superset.
 ## Frozen Semantics
 
 - Purpose identifies how intendedness is associated with a phenomenon
-- Intentional Purpose refers to purpose that is intrinsic or inherent to the phenomenon itself
-- Declarative Purpose refers to purpose that is assigned, expressed, or articulated externally
+- Intentional Purpose refers to purpose arising from the phenomenon itself
+- Declarative Purpose refers to purpose expressed, stated, or designated in relation to the phenomenon
 - Purpose does not define value, obligation, origin, or execution
 
 ## Integrity Check

@@ -2,20 +2,21 @@
 
 ## Definition
 
-Intentional Purpose refers to purpose that is intrinsic to the phenomenon itself rather than externally assigned or articulated.
+Intentional Purpose refers to purpose arising from the phenomenon itself rather than from external statement or designation.
 
 ## Scope
 
 Includes:
 
-- inherent intendedness
-- purpose intrinsic to the phenomenon
-- purpose arising from the nature or design of the phenomenon itself
+- purpose arising from the phenomenon itself
+- internal intendedness
+- purpose present without external declaration
 
 Excludes:
 
-- purpose assigned or declared externally
-- purpose articulated through explicit statements or external designation
+- stated purpose
+- documented purpose
+- externally designated purpose
 
 ## Constraints
 
