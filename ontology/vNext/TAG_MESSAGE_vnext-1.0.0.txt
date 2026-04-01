@@ -1,0 +1,39 @@
+vNext 1.0.0 — REPAC Ontology Core Stabilization Release
+
+This release marks the first fully stabilized version of the REPAC vNext ontology.
+
+Scope of Release:
+- All 9 supersets formally modeled:
+  Source, Collaboration, Governance, Purpose, Value, Communication, Imperative, Scope, Work
+- Canonical L1 subset structures normalized and frozen
+- Governance and Work established as element-bearing supersets
+- All subset-terminal supersets explicitly constrained as non-element-bearing
+- OWL and TTL representations implemented across all supersets using a consistent class hierarchy pattern
+
+Key Modeling Characteristics:
+- Strict adherence to the REPAC vNext canonical modeling pattern
+- Minimal ontology annotation (rdfs:label, rdfs:comment only)
+- Explicit cross-superset boundary enforcement
+- Separation of analytical lenses without reification of context
+
+Documented Modeling Exceptions:
+- Work elements are modeled at the superset level as shared constructs, not subset-specific elements
+- Source subsets (internal/external) are scope-relative and dependent on boundary definition
+
+Repository Integrity:
+- All placeholder artifacts removed
+- All TBD content eliminated or neutralized
+- Structural and semantic consistency verified across markdown, OWL, and TTL layers
+
+Release Boundary:
+- Core ontology is defined within core-extension and associated OWL/TTL files
+- Case studies, applications, and pilot materials are non-authoritative and excluded from formal ontology semantics
+
+Known Limitations:
+- No object properties, data properties, or reasoning constraints included (by design)
+- Case and application layers remain illustrative and non-binding
+- Formal reasoning extensions (e.g., SHACL) deferred to future phases
+
+This release establishes REPAC as a structured analytical ontology for examining complex organizational systems through distinct, non-overlapping semantic lenses.
+
+Tag: vnext-1.0.0
