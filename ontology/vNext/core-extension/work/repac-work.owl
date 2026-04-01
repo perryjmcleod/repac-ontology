@@ -1,13 +1,56 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://raw.githubusercontent.com/perryjmcleod/repac-ontology/vNext/ontology/vNext/core-extension/work#"
-     xml:base="https://raw.githubusercontent.com/perryjmcleod/repac-ontology/vNext/ontology/vNext/core-extension/work"
+<rdf:RDF xmlns="https://w3id.org/repac/ontology/vNext/core-extension/work#"
+     xml:base="https://w3id.org/repac/ontology/vNext/core-extension/work"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="https://raw.githubusercontent.com/perryjmcleod/repac-ontology/vNext/ontology/vNext/core-extension/work">
-        <rdfs:label>REPAC vNext Work ontology</rdfs:label>
-        <rdfs:comment>Scaffold ontology file for the REPAC vNext work superset. Class population pending.</rdfs:comment>
+
+    <owl:Ontology rdf:about="https://w3id.org/repac/ontology/vNext/core-extension/work">
+        <rdfs:label>REPAC vNext Work Ontology</rdfs:label>
+        <rdfs:comment>REPAC vNext Work superset ontology. Models the Work superset, its frozen L1 subsets, and shared Work element constructs. Work elements are not subset-specific and are modeled at the superset level.</rdfs:comment>
     </owl:Ontology>
+
+    <owl:Class rdf:about="https://w3id.org/repac/ontology/vNext/core-extension/work#Work">
+        <rdfs:label>Work</rdfs:label>
+        <rdfs:comment>The REPAC superset concerned with action, activity, execution, and the performance of effort within an analytical or organizational setting.</rdfs:comment>
+    </owl:Class>
+
+    <owl:Class rdf:about="https://w3id.org/repac/ontology/vNext/core-extension/work#WORK-SUBSET-01-defined">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/repac/ontology/vNext/core-extension/work#Work"/>
+        <rdfs:label>Defined</rdfs:label>
+        <rdfs:comment>The Work subset concerned with work that is specified, structured, planned, or otherwise established in advance.</rdfs:comment>
+    </owl:Class>
+
+    <owl:Class rdf:about="https://w3id.org/repac/ontology/vNext/core-extension/work#WORK-SUBSET-02-emergent">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/repac/ontology/vNext/core-extension/work#Work"/>
+        <rdfs:label>Emergent</rdfs:label>
+        <rdfs:comment>The Work subset concerned with work that arises dynamically in response to conditions, discovery, change, or unfolding circumstances.</rdfs:comment>
+    </owl:Class>
+
+    <owl:Class rdf:about="https://w3id.org/repac/ontology/vNext/core-extension/work#WORK-EL-01-execution">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/repac/ontology/vNext/core-extension/work#Work"/>
+        <rdfs:label>Execution Construct</rdfs:label>
+        <rdfs:comment>A Work element representing the performance of actions to produce outcomes or advance activity.</rdfs:comment>
+    </owl:Class>
+
+    <owl:Class rdf:about="https://w3id.org/repac/ontology/vNext/core-extension/work#WORK-EL-02-validation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/repac/ontology/vNext/core-extension/work#Work"/>
+        <rdfs:label>Validation Construct</rdfs:label>
+        <rdfs:comment>A Work element representing the checking, confirming, or verifying of conditions, outputs, or correctness.</rdfs:comment>
+    </owl:Class>
+
+    <owl:Class rdf:about="https://w3id.org/repac/ontology/vNext/core-extension/work#WORK-EL-03-inquiry">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/repac/ontology/vNext/core-extension/work#Work"/>
+        <rdfs:label>Inquiry Construct</rdfs:label>
+        <rdfs:comment>A Work element representing the act of seeking information, understanding, or clarification.</rdfs:comment>
+    </owl:Class>
+
+    <owl:Class rdf:about="https://w3id.org/repac/ontology/vNext/core-extension/work#WORK-EL-04-configuration">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/repac/ontology/vNext/core-extension/work#Work"/>
+        <rdfs:label>Configuration Construct</rdfs:label>
+        <rdfs:comment>A Work element representing the arrangement, setup, or structuring of components to enable function.</rdfs:comment>
+    </owl:Class>
+
 </rdf:RDF>

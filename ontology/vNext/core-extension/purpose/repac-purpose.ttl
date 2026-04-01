@@ -1,10 +1,28 @@
-@prefix : <https://raw.githubusercontent.com/perryjmcleod/repac-ontology/vNext/ontology/vNext/core-extension/purpose#> .
+@prefix : <https://w3id.org/repac/ontology/vNext/core-extension/purpose#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://raw.githubusercontent.com/perryjmcleod/repac-ontology/vNext/ontology/vNext/core-extension/purpose> a owl:Ontology ;
-    rdfs:label "REPAC vNext Purpose ontology" ;
-    rdfs:comment "Scaffold ontology file for the REPAC vNext purpose superset. Class population pending." .
+<https://w3id.org/repac/ontology/vNext/core-extension/purpose>
+    rdf:type owl:Ontology ;
+    rdfs:label "REPAC vNext Purpose Ontology" ;
+    rdfs:comment "REPAC vNext Purpose superset ontology. Models the Purpose superset and its frozen L1 subsets using the canonical vNext class hierarchy pattern. Purpose is treated as subset-terminal and non-element-bearing in the normalized vNext repository state." .
+
+:Purpose
+    rdf:type owl:Class ;
+    rdfs:label "Purpose" ;
+    rdfs:comment "The REPAC superset concerned with why something exists, is undertaken, or is oriented in a particular way within an analytical or organizational setting." .
+
+:PUR-SUBSET-01-intentional
+    rdf:type owl:Class ;
+    rdfs:subClassOf :Purpose ;
+    rdfs:label "Intentional" ;
+    rdfs:comment "The Purpose subset concerned with purpose arising from the phenomenon itself rather than from external statement or designation." .
+
+:PUR-SUBSET-02-declarative
+    rdf:type owl:Class ;
+    rdfs:subClassOf :Purpose ;
+    rdfs:label "Declarative" ;
+    rdfs:comment "The Purpose subset concerned with purpose expressed through statement, designation, or external declaration rather than arising from the phenomenon itself." .

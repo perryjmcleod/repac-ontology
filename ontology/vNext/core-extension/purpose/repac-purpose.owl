@@ -1,13 +1,32 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://raw.githubusercontent.com/perryjmcleod/repac-ontology/vNext/ontology/vNext/core-extension/purpose#"
-     xml:base="https://raw.githubusercontent.com/perryjmcleod/repac-ontology/vNext/ontology/vNext/core-extension/purpose"
+<rdf:RDF xmlns="https://w3id.org/repac/ontology/vNext/core-extension/purpose#"
+     xml:base="https://w3id.org/repac/ontology/vNext/core-extension/purpose"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="https://raw.githubusercontent.com/perryjmcleod/repac-ontology/vNext/ontology/vNext/core-extension/purpose">
-        <rdfs:label>REPAC vNext Purpose ontology</rdfs:label>
-        <rdfs:comment>Scaffold ontology file for the REPAC vNext purpose superset. Class population pending.</rdfs:comment>
+
+    <owl:Ontology rdf:about="https://w3id.org/repac/ontology/vNext/core-extension/purpose">
+        <rdfs:label>REPAC vNext Purpose Ontology</rdfs:label>
+        <rdfs:comment>REPAC vNext Purpose superset ontology. Models the Purpose superset and its frozen L1 subsets using the canonical vNext class hierarchy pattern. Purpose is treated as subset-terminal and non-element-bearing in the normalized vNext repository state.</rdfs:comment>
     </owl:Ontology>
+
+    <owl:Class rdf:about="https://w3id.org/repac/ontology/vNext/core-extension/purpose#Purpose">
+        <rdfs:label>Purpose</rdfs:label>
+        <rdfs:comment>The REPAC superset concerned with why something exists, is undertaken, or is oriented in a particular way within an analytical or organizational setting.</rdfs:comment>
+    </owl:Class>
+
+    <owl:Class rdf:about="https://w3id.org/repac/ontology/vNext/core-extension/purpose#PUR-SUBSET-01-intentional">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/repac/ontology/vNext/core-extension/purpose#Purpose"/>
+        <rdfs:label>Intentional</rdfs:label>
+        <rdfs:comment>The Purpose subset concerned with purpose arising from the phenomenon itself rather than from external statement or designation.</rdfs:comment>
+    </owl:Class>
+
+    <owl:Class rdf:about="https://w3id.org/repac/ontology/vNext/core-extension/purpose#PUR-SUBSET-02-declarative">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/repac/ontology/vNext/core-extension/purpose#Purpose"/>
+        <rdfs:label>Declarative</rdfs:label>
+        <rdfs:comment>The Purpose subset concerned with purpose expressed through statement, designation, or external declaration rather than arising from the phenomenon itself.</rdfs:comment>
+    </owl:Class>
+
 </rdf:RDF>

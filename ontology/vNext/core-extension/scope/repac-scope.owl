@@ -1,13 +1,44 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://raw.githubusercontent.com/perryjmcleod/repac-ontology/vNext/ontology/vNext/core-extension/scope#"
-     xml:base="https://raw.githubusercontent.com/perryjmcleod/repac-ontology/vNext/ontology/vNext/core-extension/scope"
+<rdf:RDF xmlns="https://w3id.org/repac/ontology/vNext/core-extension/scope#"
+     xml:base="https://w3id.org/repac/ontology/vNext/core-extension/scope"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="https://raw.githubusercontent.com/perryjmcleod/repac-ontology/vNext/ontology/vNext/core-extension/scope">
-        <rdfs:label>REPAC vNext Scope ontology</rdfs:label>
-        <rdfs:comment>Scaffold ontology file for the REPAC vNext scope superset. Class population pending.</rdfs:comment>
+
+    <owl:Ontology rdf:about="https://w3id.org/repac/ontology/vNext/core-extension/scope">
+        <rdfs:label>REPAC vNext Scope Ontology</rdfs:label>
+        <rdfs:comment>REPAC vNext Scope superset ontology. Models the Scope superset and its frozen L1 subsets using the canonical vNext class hierarchy pattern. Scope is treated as subset-terminal and non-element-bearing in the normalized vNext repository state.</rdfs:comment>
     </owl:Ontology>
+
+    <owl:Class rdf:about="https://w3id.org/repac/ontology/vNext/core-extension/scope#Scope">
+        <rdfs:label>Scope</rdfs:label>
+        <rdfs:comment>The REPAC superset concerned with how the analytical frame is bounded, situated, and delimited for interpretation, examination, or action.</rdfs:comment>
+    </owl:Class>
+
+    <owl:Class rdf:about="https://w3id.org/repac/ontology/vNext/core-extension/scope#SCOPE-SUBSET-01-perspective">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/repac/ontology/vNext/core-extension/scope#Scope"/>
+        <rdfs:label>Perspective</rdfs:label>
+        <rdfs:comment>The Scope subset concerned with the standpoint, vantage, or interpretive position from which the phenomenon is viewed.</rdfs:comment>
+    </owl:Class>
+
+    <owl:Class rdf:about="https://w3id.org/repac/ontology/vNext/core-extension/scope#SCOPE-SUBSET-02-boundary">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/repac/ontology/vNext/core-extension/scope#Scope"/>
+        <rdfs:label>Boundary</rdfs:label>
+        <rdfs:comment>The Scope subset concerned with what is inside, outside, included, or excluded within the analytical frame.</rdfs:comment>
+    </owl:Class>
+
+    <owl:Class rdf:about="https://w3id.org/repac/ontology/vNext/core-extension/scope#SCOPE-SUBSET-03-granularity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/repac/ontology/vNext/core-extension/scope#Scope"/>
+        <rdfs:label>Granularity</rdfs:label>
+        <rdfs:comment>The Scope subset concerned with the level of detail, resolution, or scale at which the phenomenon is examined.</rdfs:comment>
+    </owl:Class>
+
+    <owl:Class rdf:about="https://w3id.org/repac/ontology/vNext/core-extension/scope#SCOPE-SUBSET-04-interval">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/repac/ontology/vNext/core-extension/scope#Scope"/>
+        <rdfs:label>Interval</rdfs:label>
+        <rdfs:comment>The Scope subset concerned with the temporal extent, duration, or time-bounded frame within which the phenomenon is considered.</rdfs:comment>
+    </owl:Class>
+
 </rdf:RDF>

@@ -1,10 +1,28 @@
-@prefix : <https://raw.githubusercontent.com/perryjmcleod/repac-ontology/vNext/ontology/vNext/core-extension/imperative#> .
+@prefix : <https://w3id.org/repac/ontology/vNext/core-extension/imperative#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://raw.githubusercontent.com/perryjmcleod/repac-ontology/vNext/ontology/vNext/core-extension/imperative> a owl:Ontology ;
-    rdfs:label "REPAC vNext Imperative ontology" ;
-    rdfs:comment "Scaffold ontology file for the REPAC vNext imperative superset. Class population pending." .
+<https://w3id.org/repac/ontology/vNext/core-extension/imperative>
+    rdf:type owl:Ontology ;
+    rdfs:label "REPAC vNext Imperative Ontology" ;
+    rdfs:comment "REPAC vNext Imperative superset ontology. Models the Imperative superset and its frozen L1 subsets using the canonical vNext class hierarchy pattern. Imperative is treated as subset-terminal and non-element-bearing in the normalized vNext repository state." .
+
+:Imperative
+    rdf:type owl:Class ;
+    rdfs:label "Imperative" ;
+    rdfs:comment "The REPAC superset concerned with what is required, compelled, or treated as necessary within an analytical or organizational setting." .
+
+:IMP-SUBSET-01-mandatory
+    rdf:type owl:Class ;
+    rdfs:subClassOf :Imperative ;
+    rdfs:label "Mandatory" ;
+    rdfs:comment "The Imperative subset concerned with imperatives that are required, non-optional, or binding." .
+
+:IMP-SUBSET-02-discretionary
+    rdf:type owl:Class ;
+    rdfs:subClassOf :Imperative ;
+    rdfs:label "Discretionary" ;
+    rdfs:comment "The Imperative subset concerned with imperatives that permit judgment, latitude, or optionality in how or whether they are acted upon." .

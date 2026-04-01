@@ -1,1 +1,0 @@
-REPAC vNext Structural Integrity Audit has passed. Proceed with Controlled Element Explosion Governance Rules for all nine supersets.

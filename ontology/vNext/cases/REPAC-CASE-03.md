@@ -15,13 +15,13 @@
 - Communication
 
 ## Problem Statement (To Be Populated)
-[TBD — bounded description only]
+(intentionally not specified in this version)
 
 ## Salient Facts (To Be Populated)
-[TBD — observable facts only]
+(intentionally not specified in this version)
 
 ## Explicit Exclusions and Unknowns
-[TBD]
+(intentionally not specified in this version)
 
 ## Notes
 Outcome labels are not treated as explanations.

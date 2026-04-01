@@ -1,10 +1,40 @@
-@prefix : <https://raw.githubusercontent.com/perryjmcleod/repac-ontology/vNext/ontology/vNext/core-extension/scope#> .
+@prefix : <https://w3id.org/repac/ontology/vNext/core-extension/scope#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://raw.githubusercontent.com/perryjmcleod/repac-ontology/vNext/ontology/vNext/core-extension/scope> a owl:Ontology ;
-    rdfs:label "REPAC vNext Scope ontology" ;
-    rdfs:comment "Scaffold ontology file for the REPAC vNext scope superset. Class population pending." .
+<https://w3id.org/repac/ontology/vNext/core-extension/scope>
+    rdf:type owl:Ontology ;
+    rdfs:label "REPAC vNext Scope Ontology" ;
+    rdfs:comment "REPAC vNext Scope superset ontology. Models the Scope superset and its frozen L1 subsets using the canonical vNext class hierarchy pattern. Scope is treated as subset-terminal and non-element-bearing in the normalized vNext repository state." .
+
+:Scope
+    rdf:type owl:Class ;
+    rdfs:label "Scope" ;
+    rdfs:comment "The REPAC superset concerned with how the analytical frame is bounded, situated, and delimited for interpretation, examination, or action." .
+
+:SCOPE-SUBSET-01-perspective
+    rdf:type owl:Class ;
+    rdfs:subClassOf :Scope ;
+    rdfs:label "Perspective" ;
+    rdfs:comment "The Scope subset concerned with the standpoint, vantage, or interpretive position from which the phenomenon is viewed." .
+
+:SCOPE-SUBSET-02-boundary
+    rdf:type owl:Class ;
+    rdfs:subClassOf :Scope ;
+    rdfs:label "Boundary" ;
+    rdfs:comment "The Scope subset concerned with what is inside, outside, included, or excluded within the analytical frame." .
+
+:SCOPE-SUBSET-03-granularity
+    rdf:type owl:Class ;
+    rdfs:subClassOf :Scope ;
+    rdfs:label "Granularity" ;
+    rdfs:comment "The Scope subset concerned with the level of detail, resolution, or scale at which the phenomenon is examined." .
+
+:SCOPE-SUBSET-04-interval
+    rdf:type owl:Class ;
+    rdfs:subClassOf :Scope ;
+    rdfs:label "Interval" ;
+    rdfs:comment "The Scope subset concerned with the temporal extent, duration, or time-bounded frame within which the phenomenon is considered." .

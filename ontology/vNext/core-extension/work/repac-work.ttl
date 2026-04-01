@@ -1,10 +1,52 @@
-@prefix : <https://raw.githubusercontent.com/perryjmcleod/repac-ontology/vNext/ontology/vNext/core-extension/work#> .
+@prefix : <https://w3id.org/repac/ontology/vNext/core-extension/work#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://raw.githubusercontent.com/perryjmcleod/repac-ontology/vNext/ontology/vNext/core-extension/work> a owl:Ontology ;
-    rdfs:label "REPAC vNext Work ontology" ;
-    rdfs:comment "Scaffold ontology file for the REPAC vNext work superset. Class population pending." .
+<https://w3id.org/repac/ontology/vNext/core-extension/work>
+    rdf:type owl:Ontology ;
+    rdfs:label "REPAC vNext Work Ontology" ;
+    rdfs:comment "REPAC vNext Work superset ontology. Models the Work superset, its frozen L1 subsets, and shared Work element constructs. Work elements are not subset-specific and are modeled at the superset level." .
+
+:Work
+    rdf:type owl:Class ;
+    rdfs:label "Work" ;
+    rdfs:comment "The REPAC superset concerned with action, activity, execution, and the performance of effort within an analytical or organizational setting." .
+
+:WORK-SUBSET-01-defined
+    rdf:type owl:Class ;
+    rdfs:subClassOf :Work ;
+    rdfs:label "Defined" ;
+    rdfs:comment "The Work subset concerned with work that is specified, structured, planned, or otherwise established in advance." .
+
+:WORK-SUBSET-02-emergent
+    rdf:type owl:Class ;
+    rdfs:subClassOf :Work ;
+    rdfs:label "Emergent" ;
+    rdfs:comment "The Work subset concerned with work that arises dynamically in response to conditions, discovery, change, or unfolding circumstances." .
+
+:WORK-EL-01-execution
+    rdf:type owl:Class ;
+    rdfs:subClassOf :Work ;
+    rdfs:label "Execution Construct" ;
+    rdfs:comment "A Work element representing the performance of actions to produce outcomes or advance activity." .
+
+:WORK-EL-02-validation
+    rdf:type owl:Class ;
+    rdfs:subClassOf :Work ;
+    rdfs:label "Validation Construct" ;
+    rdfs:comment "A Work element representing the checking, confirming, or verifying of conditions, outputs, or correctness." .
+
+:WORK-EL-03-inquiry
+    rdf:type owl:Class ;
+    rdfs:subClassOf :Work ;
+    rdfs:label "Inquiry Construct" ;
+    rdfs:comment "A Work element representing the act of seeking information, understanding, or clarification." .
+
+:WORK-EL-04-configuration
+    rdf:type owl:Class ;
+    rdfs:subClassOf :Work ;
+    rdfs:label "Configuration Construct" ;
+    rdfs:comment "A Work element representing the arrangement, setup, or structuring of components to enable function." .

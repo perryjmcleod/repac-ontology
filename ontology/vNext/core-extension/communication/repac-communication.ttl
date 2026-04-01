@@ -1,10 +1,28 @@
-@prefix : <https://raw.githubusercontent.com/perryjmcleod/repac-ontology/vNext/ontology/vNext/core-extension/communication#> .
+@prefix : <https://w3id.org/repac/ontology/vNext/core-extension/communication#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://raw.githubusercontent.com/perryjmcleod/repac-ontology/vNext/ontology/vNext/core-extension/communication> a owl:Ontology ;
-    rdfs:label "REPAC vNext Communication ontology" ;
-    rdfs:comment "Scaffold ontology file for the REPAC vNext communication superset. Class population pending." .
+<https://w3id.org/repac/ontology/vNext/core-extension/communication>
+    rdf:type owl:Ontology ;
+    rdfs:label "REPAC vNext Communication Ontology" ;
+    rdfs:comment "REPAC vNext Communication superset ontology. Models the Communication superset and its frozen L1 subsets using the canonical vNext class hierarchy pattern. Communication is treated as subset-terminal and non-element-bearing in the normalized vNext repository state." .
+
+:Communication
+    rdf:type owl:Class ;
+    rdfs:label "Communication" ;
+    rdfs:comment "The REPAC superset concerned with how meaning, information, signals, or messages are conveyed, expressed, or exchanged within an analytical or organizational setting." .
+
+:COMM-SUBSET-01-formal
+    rdf:type owl:Class ;
+    rdfs:subClassOf :Communication ;
+    rdfs:label "Formal" ;
+    rdfs:comment "The Communication subset concerned with communication that is structured, recognized, documented, or governed through explicit channels, rules, or conventions." .
+
+:COMM-SUBSET-02-informal
+    rdf:type owl:Class ;
+    rdfs:subClassOf :Communication ;
+    rdfs:label "Informal" ;
+    rdfs:comment "The Communication subset concerned with communication that arises outside formal channels or structures through spontaneous, social, or unofficial exchange." .

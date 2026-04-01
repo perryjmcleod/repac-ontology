@@ -1,13 +1,32 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://raw.githubusercontent.com/perryjmcleod/repac-ontology/vNext/ontology/vNext/core-extension/value#"
-     xml:base="https://raw.githubusercontent.com/perryjmcleod/repac-ontology/vNext/ontology/vNext/core-extension/value"
+<rdf:RDF xmlns="https://w3id.org/repac/ontology/vNext/core-extension/value#"
+     xml:base="https://w3id.org/repac/ontology/vNext/core-extension/value"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="https://raw.githubusercontent.com/perryjmcleod/repac-ontology/vNext/ontology/vNext/core-extension/value">
-        <rdfs:label>REPAC vNext Value ontology</rdfs:label>
-        <rdfs:comment>Scaffold ontology file for the REPAC vNext value superset. Class population pending.</rdfs:comment>
+
+    <owl:Ontology rdf:about="https://w3id.org/repac/ontology/vNext/core-extension/value">
+        <rdfs:label>REPAC vNext Value Ontology</rdfs:label>
+        <rdfs:comment>REPAC vNext Value superset ontology. Models the Value superset and its frozen L1 subsets using the canonical vNext class hierarchy pattern. Value is treated as subset-terminal and non-element-bearing in the normalized vNext repository state.</rdfs:comment>
     </owl:Ontology>
+
+    <owl:Class rdf:about="https://w3id.org/repac/ontology/vNext/core-extension/value#Value">
+        <rdfs:label>Value</rdfs:label>
+        <rdfs:comment>The REPAC superset concerned with what is regarded as worth, significance, or importance within an analytical or organizational setting.</rdfs:comment>
+    </owl:Class>
+
+    <owl:Class rdf:about="https://w3id.org/repac/ontology/vNext/core-extension/value#VAL-SUBSET-01-inherent">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/repac/ontology/vNext/core-extension/value#Value"/>
+        <rdfs:label>Inherent</rdfs:label>
+        <rdfs:comment>The Value subset concerned with value residing in the thing itself rather than being assigned through use, application, or external utility.</rdfs:comment>
+    </owl:Class>
+
+    <owl:Class rdf:about="https://w3id.org/repac/ontology/vNext/core-extension/value#VAL-SUBSET-02-instrumental">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/repac/ontology/vNext/core-extension/value#Value"/>
+        <rdfs:label>Instrumental</rdfs:label>
+        <rdfs:comment>The Value subset concerned with value arising from use, function, effect, or utility relative to some end.</rdfs:comment>
+    </owl:Class>
+
 </rdf:RDF>

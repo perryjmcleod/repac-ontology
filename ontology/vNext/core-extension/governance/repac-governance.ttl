@@ -1,10 +1,88 @@
-@prefix : <https://raw.githubusercontent.com/perryjmcleod/repac-ontology/vNext/ontology/vNext/core-extension/governance#> .
+@prefix : <https://w3id.org/repac/ontology/vNext/core-extension/governance#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://raw.githubusercontent.com/perryjmcleod/repac-ontology/vNext/ontology/vNext/core-extension/governance> a owl:Ontology ;
-    rdfs:label "REPAC vNext Governance ontology" ;
-    rdfs:comment "Scaffold ontology file for the REPAC vNext governance superset. Class population pending." .
+<https://w3id.org/repac/ontology/vNext/core-extension/governance>
+    rdf:type owl:Ontology ;
+    rdfs:label "REPAC vNext Governance Ontology" ;
+    rdfs:comment "REPAC vNext Governance superset ontology. Models the Governance superset, its frozen L1 subsets, and the locked Governance element layer using the canonical vNext class hierarchy pattern." .
+
+:Governance
+    rdf:type owl:Class ;
+    rdfs:label "Governance" ;
+    rdfs:comment "The REPAC superset concerned with the structures, rights, controls, and accountability arrangements through which direction, oversight, and decision legitimacy are organized." .
+
+:GOV-SUBSET-01-authority
+    rdf:type owl:Class ;
+    rdfs:subClassOf :Governance ;
+    rdfs:label "Authority" ;
+    rdfs:comment "The Governance subset concerned with recognized power, legitimacy, and the basis on which direction or command is accepted as valid." .
+
+:GOV-SUBSET-02-decision-rights
+    rdf:type owl:Class ;
+    rdfs:subClassOf :Governance ;
+    rdfs:label "Decision Rights" ;
+    rdfs:comment "The Governance subset concerned with who is entitled to decide, approve, escalate, or authorize action within a structured arrangement." .
+
+:GOV-SUBSET-03-control
+    rdf:type owl:Class ;
+    rdfs:subClassOf :Governance ;
+    rdfs:label "Control" ;
+    rdfs:comment "The Governance subset concerned with the mechanisms used to direct behaviour, enforce expectations, and maintain conformance." .
+
+:GOV-SUBSET-04-accountability
+    rdf:type owl:Class ;
+    rdfs:subClassOf :Governance ;
+    rdfs:label "Accountability" ;
+    rdfs:comment "The Governance subset concerned with answerability, oversight, and the attribution of responsibility for actions, outcomes, and compliance." .
+
+:GOV-EL-01-authority-structure
+    rdf:type owl:Class ;
+    rdfs:subClassOf :GOV-SUBSET-01-authority ;
+    rdfs:label "Authority Structure" ;
+    rdfs:comment "A Governance element that models the formal or recognized arrangement through which authority is organized and distributed." .
+
+:GOV-EL-02-decision-rights-allocation
+    rdf:type owl:Class ;
+    rdfs:subClassOf :GOV-SUBSET-02-decision-rights ;
+    rdfs:label "Decision Rights Allocation" ;
+    rdfs:comment "A Governance element that models how decision authority is assigned across roles, levels, or actors." .
+
+:GOV-EL-03-legitimacy-basis
+    rdf:type owl:Class ;
+    rdfs:subClassOf :GOV-SUBSET-01-authority ;
+    rdfs:label "Legitimacy Basis" ;
+    rdfs:comment "A Governance element that models the basis on which authority is regarded as valid, accepted, or justified." .
+
+:GOV-EL-04-enforcement-mechanism
+    rdf:type owl:Class ;
+    rdfs:subClassOf :GOV-SUBSET-03-control ;
+    rdfs:label "Enforcement Mechanism" ;
+    rdfs:comment "A Governance element that models the means by which rules, directives, or expected behaviours are reinforced or compelled." .
+
+:GOV-EL-05-escalation-logic
+    rdf:type owl:Class ;
+    rdfs:subClassOf :GOV-SUBSET-02-decision-rights ;
+    rdfs:label "Escalation Logic" ;
+    rdfs:comment "A Governance element that models the conditions and pathways through which unresolved issues or higher-order decisions are elevated." .
+
+:GOV-EL-06-oversight-construct
+    rdf:type owl:Class ;
+    rdfs:subClassOf :GOV-SUBSET-04-accountability ;
+    rdfs:label "Oversight Construct" ;
+    rdfs:comment "A Governance element that models the structure through which monitoring, review, scrutiny, or supervision is performed." .
+
+:GOV-EL-07-compliance-mechanism
+    rdf:type owl:Class ;
+    rdfs:subClassOf :GOV-SUBSET-03-control ;
+    rdfs:label "Compliance Mechanism" ;
+    rdfs:comment "A Governance element that models the means by which adherence to rules, obligations, standards, or controls is checked and maintained." .
+
+:GOV-EL-08-informal-governance-overlay
+    rdf:type owl:Class ;
+    rdfs:subClassOf :GOV-SUBSET-01-authority ;
+    rdfs:label "Informal Governance Overlay" ;
+    rdfs:comment "A Governance element that models informal authority patterns that supplement, reshape, or operate alongside formal governance arrangements." .

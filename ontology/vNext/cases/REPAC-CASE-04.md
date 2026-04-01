@@ -15,13 +15,13 @@
 - Collaboration
 
 ## Problem Statement (To Be Populated)
-[TBD — bounded description only]
+(intentionally not specified in this version)
 
 ## Salient Facts (To Be Populated)
-[TBD — observable facts only]
+(intentionally not specified in this version)
 
 ## Explicit Exclusions and Unknowns
-[TBD]
+(intentionally not specified in this version)
 
 ## Notes
 Shadow processes are not assumed to be failures.

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/repac/ontology/vNext/core-extension/collaboration#"
+     xml:base="https://w3id.org/repac/ontology/vNext/core-extension/collaboration"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+    <owl:Ontology rdf:about="https://w3id.org/repac/ontology/vNext/core-extension/collaboration">
+        <rdfs:label>REPAC vNext Collaboration Ontology</rdfs:label>
+        <rdfs:comment>REPAC vNext Collaboration superset ontology. Models the Collaboration superset and its frozen L1 subsets using the canonical vNext class hierarchy pattern. Collaboration is treated as subset-terminal and non-element-bearing in the normalized vNext repository state.</rdfs:comment>
+    </owl:Ontology>
+
+    <owl:Class rdf:about="https://w3id.org/repac/ontology/vNext/core-extension/collaboration#Collaboration">
+        <rdfs:label>Collaboration</rdfs:label>
+        <rdfs:comment>The REPAC superset concerned with how actors work together, align effort, and participate jointly within an organizational or analytical setting.</rdfs:comment>
+    </owl:Class>
+
+    <owl:Class rdf:about="https://w3id.org/repac/ontology/vNext/core-extension/collaboration#COLLAB-SUBSET-01-coordinated">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/repac/ontology/vNext/core-extension/collaboration#Collaboration"/>
+        <rdfs:label>Coordinated</rdfs:label>
+        <rdfs:comment>The Collaboration subset concerned with collaboration that is structured, organized, or intentionally aligned through explicit coordination.</rdfs:comment>
+    </owl:Class>
+
+    <owl:Class rdf:about="https://w3id.org/repac/ontology/vNext/core-extension/collaboration#COLLAB-SUBSET-02-emergent">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/repac/ontology/vNext/core-extension/collaboration#Collaboration"/>
+        <rdfs:label>Emergent</rdfs:label>
+        <rdfs:comment>The Collaboration subset concerned with collaboration that arises dynamically through unfolding interaction, adaptation, or situational response rather than prior formal coordination.</rdfs:comment>
+    </owl:Class>
+
+</rdf:RDF>
