@@ -1,0 +1,17 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://w3id.org/repac/ontology/vNext/aggregate>
+    a owl:Ontology ;
+    rdfs:label "REPAC vNext Aggregate Ontology" ;
+    rdfs:comment "Aggregate ontology importing all REPAC vNext supersets for unified inspection and validation." ;
+
+    owl:imports <https://w3id.org/repac/ontology/vNext/core-extension/source> ,
+                <https://w3id.org/repac/ontology/vNext/core-extension/collaboration> ,
+                <https://w3id.org/repac/ontology/vNext/core-extension/governance> ,
+                <https://w3id.org/repac/ontology/vNext/core-extension/purpose> ,
+                <https://w3id.org/repac/ontology/vNext/core-extension/value> ,
+                <https://w3id.org/repac/ontology/vNext/core-extension/communication> ,
+                <https://w3id.org/repac/ontology/vNext/core-extension/imperative> ,
+                <https://w3id.org/repac/ontology/vNext/core-extension/scope> ,
+                <https://w3id.org/repac/ontology/vNext/core-extension/work> .

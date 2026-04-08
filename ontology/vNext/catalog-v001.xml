@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1775008121504" name="https://example.org/repac/vnext#" uri="core-extension/scope/datagraph/SCOPE-L1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1775008121504" name="https://w3id.org/repac/ontology/vNext/core-extension/collaboration" uri="core-extension/collaboration/repac-collaboration.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1775008121504" name="https://w3id.org/repac/ontology/vNext/core-extension/communication" uri="core-extension/communication/repac-communication.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1775008121504" name="https://w3id.org/repac/ontology/vNext/core-extension/governance" uri="core-extension/governance/repac-governance.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1775008121504" name="https://w3id.org/repac/ontology/vNext/core-extension/imperative" uri="core-extension/imperative/repac-imperative.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1775008121504" name="https://w3id.org/repac/ontology/vNext/core-extension/purpose" uri="core-extension/purpose/repac-purpose.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1775008121504" name="https://w3id.org/repac/ontology/vNext/core-extension/scope" uri="core-extension/scope/repac-scope.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1775008121504" name="https://w3id.org/repac/ontology/vNext/core-extension/source" uri="core-extension/source/repac-source.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1775008121504" name="https://w3id.org/repac/ontology/vNext/core-extension/value" uri="core-extension/value/repac-value.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1775008121504" name="https://w3id.org/repac/ontology/vNext/core-extension/work" uri="core-extension/work/repac-work.owl"/>
+    </group>
+</catalog>
