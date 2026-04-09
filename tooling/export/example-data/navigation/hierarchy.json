@@ -1,0 +1,42 @@
+{
+  "artifactType": "derived_navigation",
+  "id": "REPAC-HIERARCHY",
+  "slug": "repac-hierarchy",
+  "label": "REPAC Hierarchy",
+  "comment": "Derived hierarchy used for viewer navigation.",
+  "authoritative": false,
+  "status": "validated",
+  "nodes": [
+    {
+      "id": "REPAC-VNEXT-ONTOLOGY-INDEX",
+      "parent": null,
+      "kind": "aggregate"
+    },
+    {
+      "id": "GOVERNANCE",
+      "parent": "REPAC-VNEXT-ONTOLOGY-INDEX",
+      "kind": "superset"
+    },
+    {
+      "id": "GOV-SUBSET-01-authority",
+      "parent": "GOVERNANCE",
+      "kind": "subset"
+    },
+    {
+      "id": "GOV-EL-01-authority-structure",
+      "parent": "GOV-SUBSET-01-authority",
+      "kind": "element"
+    },
+    {
+      "id": "ONTOLOGY-MODELING-EXCEPTIONS",
+      "parent": "REPAC-VNEXT-ONTOLOGY-INDEX",
+      "kind": "document"
+    }
+  ],
+  "entityCounts": {
+    "supersets": 1,
+    "subsets": 1,
+    "elements": 1,
+    "entries": 5
+  }
+}

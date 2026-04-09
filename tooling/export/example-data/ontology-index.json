@@ -1,0 +1,27 @@
+{
+  "artifactType": "ontology_aggregate",
+  "id": "REPAC-VNEXT-ONTOLOGY-INDEX",
+  "slug": "repac-vnext-ontology-index",
+  "label": "REPAC vNext Ontology Index",
+  "comment": "Aggregate index for exported REPAC vNext ontology viewer artifacts.",
+  "authoritative": true,
+  "status": "validated",
+  "ontologyRelease": "vnext-1.0.0",
+  "parent": null,
+  "children": [
+    "SOURCE",
+    "COLLABORATION",
+    "GOVERNANCE",
+    "PURPOSE",
+    "VALUE",
+    "COMMUNICATION",
+    "IMPERATIVE",
+    "SCOPE",
+    "WORK"
+  ],
+  "entityCounts": {
+    "supersets": 9,
+    "subsets": 20,
+    "elements": 10
+  }
+}

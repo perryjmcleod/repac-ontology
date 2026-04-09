@@ -1,0 +1,29 @@
+{
+  "exportContractVersion": "1.0.0",
+  "viewerDataVersion": "1.0.0",
+  "ontologyRelease": "vnext-1.0.0",
+  "ontologyLayerPath": "ontology/vNext/core-extension",
+  "aggregateOntologyPath": "ontology/vNext/aggregate/repac-vnext-aggregate.owl",
+  "generatedAt": "2026-04-09T12:00:00Z",
+  "sourceOfTruth": [
+    "ontology/vNext/core-extension",
+    "ontology/vNext/docs/VIEWER-EXPORT-CONTRACT.md",
+    "ontology/vNext/docs/INTERROGATIVE-DERIVATION-RULES.md",
+    "ontology/vNext/docs/ONTOLOGY-MODELING-EXCEPTIONS.md",
+    "ontology/vNext/docs/RELEASE-BOUNDARY.md"
+  ],
+  "supersets": [
+    "source",
+    "collaboration",
+    "governance",
+    "purpose",
+    "value",
+    "communication",
+    "imperative",
+    "scope",
+    "work"
+  ],
+  "notes": [
+    "Example manifest for schema validation."
+  ]
+}

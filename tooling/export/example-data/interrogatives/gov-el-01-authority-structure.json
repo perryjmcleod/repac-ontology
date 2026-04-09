@@ -1,0 +1,113 @@
+{
+  "artifactType": "interrogative_view",
+  "id": "INTERROGATIVE-GOV-EL-01-authority-structure",
+  "slug": "interrogative-gov-el-01-authority-structure",
+  "label": "Interrogative View — Authority Structure",
+  "comment": "Derived interrogative view for GOV-EL-01-authority-structure.",
+  "authoritative": false,
+  "status": "validated",
+  "sourceEntityId": "GOV-EL-01-authority-structure",
+  "sourceSuperset": "governance",
+  "interrogatives": {
+    "who": {
+      "label": "Who",
+      "relatedSupersets": [
+        "governance",
+        "collaboration"
+      ],
+      "items": [
+        {
+          "entityId": "GOV-SUBSET-01-authority",
+          "label": "Authority",
+          "artifactType": "ontology_subset",
+          "sourceSuperset": "governance",
+          "sourcePath": "ontology/vNext/core-extension/governance/GOV-SUBSET-01-authority.md",
+          "comment": "Subset governing authority structure and legitimacy."
+        }
+      ]
+    },
+    "what": {
+      "label": "What",
+      "relatedSupersets": [
+        "work",
+        "value"
+      ],
+      "items": [
+        {
+          "entityId": "WORK",
+          "label": "Work",
+          "artifactType": "ontology_superset",
+          "sourceSuperset": "work",
+          "sourcePath": "ontology/vNext/core-extension/work/repac-work.owl",
+          "comment": "Execution domain affected by governance structure."
+        }
+      ]
+    },
+    "when": {
+      "label": "When",
+      "relatedSupersets": [
+        "scope"
+      ],
+      "items": [
+        {
+          "entityId": "SCOPE-SUBSET-04-interval",
+          "label": "Interval",
+          "artifactType": "ontology_subset",
+          "sourceSuperset": "scope",
+          "sourcePath": "ontology/vNext/core-extension/scope/SCOPE-SUBSET-04-interval.md",
+          "comment": "Temporal interval within which authority applies."
+        }
+      ]
+    },
+    "where": {
+      "label": "Where",
+      "relatedSupersets": [
+        "scope"
+      ],
+      "items": [
+        {
+          "entityId": "SCOPE-SUBSET-02-boundary",
+          "label": "Boundary",
+          "artifactType": "ontology_subset",
+          "sourceSuperset": "scope",
+          "sourcePath": "ontology/vNext/core-extension/scope/SCOPE-SUBSET-02-boundary.md",
+          "comment": "Boundary conditions within which authority is recognized."
+        }
+      ]
+    },
+    "why": {
+      "label": "Why",
+      "relatedSupersets": [
+        "purpose",
+        "value"
+      ],
+      "items": [
+        {
+          "entityId": "PUR-SUBSET-01-intentional",
+          "label": "Intentional",
+          "artifactType": "ontology_subset",
+          "sourceSuperset": "purpose",
+          "sourcePath": "ontology/vNext/core-extension/purpose/PUR-SUBSET-01-intentional.md",
+          "comment": "Purpose structure motivating formal authority."
+        }
+      ]
+    },
+    "how": {
+      "label": "How",
+      "relatedSupersets": [
+        "work",
+        "communication"
+      ],
+      "items": [
+        {
+          "entityId": "COMM-SUBSET-01-formal",
+          "label": "Formal",
+          "artifactType": "ontology_subset",
+          "sourceSuperset": "communication",
+          "sourcePath": "ontology/vNext/core-extension/communication/COMM-SUBSET-01-formal.md",
+          "comment": "Formal communication channels through which authority is expressed."
+        }
+      ]
+    }
+  }
+}

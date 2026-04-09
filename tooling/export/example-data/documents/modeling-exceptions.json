@@ -1,0 +1,29 @@
+{
+  "artifactType": "governance_document",
+  "id": "ONTOLOGY-MODELING-EXCEPTIONS",
+  "slug": "ontology-modeling-exceptions",
+  "label": "Ontology Modeling Exceptions",
+  "comment": "Authoritative record of approved modeling exceptions.",
+  "sourcePath": "ontology/vNext/docs/ONTOLOGY-MODELING-EXCEPTIONS.md",
+  "authoritative": true,
+  "status": "validated",
+  "documentClass": "modeling-exceptions",
+  "summary": "Authoritative record of modeling exceptions governing REPAC vNext ontology implementation.",
+  "sections": [
+    {
+      "id": "exceptions-overview",
+      "label": "Overview",
+      "anchor": "overview"
+    },
+    {
+      "id": "exceptions-register",
+      "label": "Exceptions Register",
+      "anchor": "exceptions-register"
+    }
+  ],
+  "relatedEntityIds": [
+    "SOURCE",
+    "GOVERNANCE",
+    "SCOPE"
+  ]
+}

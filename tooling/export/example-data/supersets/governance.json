@@ -1,0 +1,57 @@
+{
+  "artifactType": "ontology_superset",
+  "id": "GOVERNANCE",
+  "slug": "governance",
+  "label": "Governance",
+  "comment": "REPAC Governance superset.",
+  "authoritative": true,
+  "status": "validated",
+  "ontologyRelease": "vnext-1.0.0",
+  "ontologyFile": "ontology/vNext/core-extension/governance/repac-governance.owl",
+  "ttlFile": "ontology/vNext/core-extension/governance/repac-governance.ttl",
+  "parent": null,
+  "children": [
+    "GOV-SUBSET-01-authority",
+    "GOV-SUBSET-02-decision-rights",
+    "GOV-SUBSET-03-control",
+    "GOV-SUBSET-04-accountability"
+  ],
+  "subsets": [
+    {
+      "id": "GOV-SUBSET-01-authority",
+      "label": "Authority",
+      "slug": "gov-subset-01-authority"
+    },
+    {
+      "id": "GOV-SUBSET-02-decision-rights",
+      "label": "Decision Rights",
+      "slug": "gov-subset-02-decision-rights"
+    },
+    {
+      "id": "GOV-SUBSET-03-control",
+      "label": "Control",
+      "slug": "gov-subset-03-control"
+    },
+    {
+      "id": "GOV-SUBSET-04-accountability",
+      "label": "Accountability",
+      "slug": "gov-subset-04-accountability"
+    }
+  ],
+  "documents": {
+    "freezeDecision": "ontology/vNext/core-extension/governance/GOVERNANCE-L1-FREEZE-DECISION.md",
+    "semanticAudit": "ontology/vNext/core-extension/governance/GOVERNANCE-L1-SEMANTIC-AUDIT.md",
+    "elementPlacementFreeze": "ontology/vNext/core-extension/governance/GOVERNANCE-ELEMENT-PLACEMENT-FREEZE.md",
+    "elementReconciliation": "ontology/vNext/core-extension/governance/GOVERNANCE-L1-ELEMENT-RECONCILIATION.md"
+  },
+  "boundaryLinks": [
+    "WORK-GOVERNANCE-CROSS-SUPERSET-INTEGRITY-AUDIT",
+    "VALUE-GOVERNANCE-CROSS-SUPERSET-INTEGRITY-AUDIT",
+    "GOVERNANCE-COMMUNICATION-CROSS-SUPERSET-INTEGRITY-AUDIT"
+  ],
+  "modelingNotes": [],
+  "viewerHints": {
+    "defaultTab": "structure",
+    "showElements": true
+  }
+}
