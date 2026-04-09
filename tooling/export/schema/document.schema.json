@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://repac.org/schema/viewer/document.schema.json",
+  "title": "REPAC Viewer Document",
+  "description": "Schema for exported governance and release documents exposed in the viewer.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "artifactType",
+    "id",
+    "slug",
+    "label",
+    "sourcePath",
+    "authoritative",
+    "documentClass"
+  ],
+  "properties": {
+    "artifactType": {
+      "type": "string",
+      "enum": [
+        "governance_document",
+        "release_document",
+        "case_artifact"
+      ]
+    },
+    "id": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "label": {
+      "type": "string"
+    },
+    "comment": {
+      "type": "string"
+    },
+    "sourcePath": {
+      "type": "string"
+    },
+    "authoritative": {
+      "type": "boolean"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "frozen",
+        "validated",
+        "released",
+        "deprecated"
+      ]
+    },
+    "documentClass": {
+      "type": "string",
+      "enum": [
+        "boundary-rules",
+        "modeling-exceptions",
+        "release-boundary",
+        "release-notes",
+        "verification-record",
+        "case-navigation"
+      ]
+    },
+    "summary": {
+      "type": "string"
+    },
+    "sections": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/section"
+      }
+    },
+    "relatedEntityIds": {
+      "type": "array",
+      "description": "Optional canonical ontology IDs referenced by or associated with the document.",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    }
+  },
+  "$defs": {
+    "section": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "label"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "label": {
+          "type": "string"
+        },
+        "anchor": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

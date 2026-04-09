@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://repac.org/schema/viewer/manifest.schema.json",
+  "title": "REPAC Viewer Manifest",
+  "description": "Schema for the root manifest governing a generated REPAC viewer export package.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "exportContractVersion",
+    "viewerDataVersion",
+    "ontologyRelease",
+    "ontologyLayerPath",
+    "generatedAt",
+    "sourceOfTruth",
+    "supersets"
+  ],
+  "properties": {
+    "exportContractVersion": {
+      "type": "string",
+      "description": "Version of VIEWER-EXPORT-CONTRACT.md governing this export."
+    },
+    "viewerDataVersion": {
+      "type": "string",
+      "description": "Version of the generated viewer data package."
+    },
+    "ontologyRelease": {
+      "type": "string",
+      "description": "Ontology release identifier associated with the export."
+    },
+    "ontologyLayerPath": {
+      "type": "string",
+      "description": "Repository path to the ontology layer used as source."
+    },
+    "aggregateOntologyPath": {
+      "type": "string",
+      "description": "Optional repository path to the aggregate ontology used for validation."
+    },
+    "generatedAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "UTC timestamp indicating when the export package was generated."
+    },
+    "sourceOfTruth": {
+      "type": "array",
+      "description": "Authoritative files and directories used to generate the viewer data.",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "supersets": {
+      "type": "array",
+      "description": "Canonical REPAC superset slugs included in the export.",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "enum": [
+          "source",
+          "collaboration",
+          "governance",
+          "purpose",
+          "value",
+          "communication",
+          "imperative",
+          "scope",
+          "work"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "notes": {
+      "type": "array",
+      "description": "Optional build notes for human inspection.",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

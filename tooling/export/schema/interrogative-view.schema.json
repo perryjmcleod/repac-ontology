@@ -1,0 +1,191 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://repac.org/schema/viewer/interrogative-view.schema.json",
+  "title": "REPAC Interrogative View",
+  "description": "Schema for derived non-authoritative interrogative outputs answering who, what, when, where, why, and how.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "artifactType",
+    "id",
+    "slug",
+    "label",
+    "authoritative",
+    "sourceEntityId",
+    "interrogatives"
+  ],
+  "properties": {
+    "artifactType": {
+      "type": "string",
+      "enum": [
+        "interrogative_view",
+        "derived_navigation"
+      ]
+    },
+    "id": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "label": {
+      "type": "string"
+    },
+    "comment": {
+      "type": "string"
+    },
+    "authoritative": {
+      "type": "boolean",
+      "const": false
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "frozen",
+        "validated",
+        "released",
+        "deprecated"
+      ]
+    },
+    "sourceEntityId": {
+      "type": "string",
+      "description": "Canonical entity ID from which the interrogative view was derived."
+    },
+    "sourceSuperset": {
+      "type": "string",
+      "enum": [
+        "source",
+        "collaboration",
+        "governance",
+        "purpose",
+        "value",
+        "communication",
+        "imperative",
+        "scope",
+        "work"
+      ]
+    },
+    "interrogatives": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "who",
+        "what",
+        "when",
+        "where",
+        "why",
+        "how"
+      ],
+      "properties": {
+        "who": {
+          "$ref": "#/$defs/interrogativeBucket"
+        },
+        "what": {
+          "$ref": "#/$defs/interrogativeBucket"
+        },
+        "when": {
+          "$ref": "#/$defs/interrogativeBucket"
+        },
+        "where": {
+          "$ref": "#/$defs/interrogativeBucket"
+        },
+        "why": {
+          "$ref": "#/$defs/interrogativeBucket"
+        },
+        "how": {
+          "$ref": "#/$defs/interrogativeBucket"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "interrogativeBucket": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "label",
+        "relatedSupersets",
+        "items"
+      ],
+      "properties": {
+        "label": {
+          "type": "string"
+        },
+        "relatedSupersets": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "source",
+              "collaboration",
+              "governance",
+              "purpose",
+              "value",
+              "communication",
+              "imperative",
+              "scope",
+              "work"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/interrogativeItem"
+          }
+        }
+      }
+    },
+    "interrogativeItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "entityId",
+        "label",
+        "artifactType",
+        "sourceSuperset"
+      ],
+      "properties": {
+        "entityId": {
+          "type": "string"
+        },
+        "label": {
+          "type": "string"
+        },
+        "artifactType": {
+          "type": "string",
+          "enum": [
+            "ontology_superset",
+            "ontology_subset",
+            "ontology_element",
+            "governance_document",
+            "release_document"
+          ]
+        },
+        "sourceSuperset": {
+          "type": "string",
+          "enum": [
+            "source",
+            "collaboration",
+            "governance",
+            "purpose",
+            "value",
+            "communication",
+            "imperative",
+            "scope",
+            "work"
+          ]
+        },
+        "sourcePath": {
+          "type": "string"
+        },
+        "comment": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

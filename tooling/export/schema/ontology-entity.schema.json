@@ -1,0 +1,269 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://repac.org/schema/viewer/ontology-entity.schema.json",
+  "title": "REPAC Ontology Entity",
+  "description": "Schema for ontology aggregate, superset, subset, and element exports.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "artifactType",
+    "id",
+    "slug",
+    "label",
+    "authoritative"
+  ],
+  "properties": {
+    "artifactType": {
+      "type": "string",
+      "enum": [
+        "ontology_superset",
+        "ontology_subset",
+        "ontology_element",
+        "ontology_aggregate"
+      ]
+    },
+    "id": {
+      "type": "string",
+      "description": "Canonical REPAC identifier."
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "description": "Viewer routing slug. Non-authoritative."
+    },
+    "label": {
+      "type": "string"
+    },
+    "comment": {
+      "type": "string"
+    },
+    "authoritative": {
+      "type": "boolean",
+      "const": true
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "frozen",
+        "validated",
+        "released",
+        "deprecated"
+      ]
+    },
+    "ontologyRelease": {
+      "type": "string"
+    },
+    "ontologyFile": {
+      "type": "string"
+    },
+    "ttlFile": {
+      "type": "string"
+    },
+    "sourcePath": {
+      "type": "string"
+    },
+    "sourceFiles": {
+      "type": "object",
+      "description": "Optional mapping of logical source roles to repository paths.",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "parent": {
+      "description": "Canonical parent ID or null for root aggregate/superset objects.",
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "children": {
+      "type": "array",
+      "description": "Canonical child IDs.",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "subsets": {
+      "type": "array",
+      "description": "Optional lightweight subset summaries for superset exports.",
+      "items": {
+        "$ref": "#/$defs/entitySummary"
+      }
+    },
+    "documents": {
+      "type": "object",
+      "description": "Optional mapping of related document roles to repository paths.",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "boundaryLinks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "modelingNotes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "boundaryNotes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "modelingExceptions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "viewerHints": {
+      "type": "object",
+      "description": "Optional derived viewer conveniences.",
+      "additionalProperties": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "hasElements": {
+      "type": "boolean",
+      "description": "Required for subset objects when used."
+    },
+    "entityCounts": {
+      "type": "object",
+      "description": "Optional counts used for aggregate or superset summaries.",
+      "additionalProperties": false,
+      "properties": {
+        "supersets": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "subsets": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "elements": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "artifactType": {
+            "const": "ontology_aggregate"
+          }
+        },
+        "required": [
+          "artifactType"
+        ]
+      },
+      "then": {
+        "required": [
+          "ontologyRelease",
+          "children",
+          "entityCounts"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "artifactType": {
+            "const": "ontology_superset"
+          }
+        },
+        "required": [
+          "artifactType"
+        ]
+      },
+      "then": {
+        "required": [
+          "comment",
+          "children",
+          "subsets"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "artifactType": {
+            "const": "ontology_subset"
+          }
+        },
+        "required": [
+          "artifactType"
+        ]
+      },
+      "then": {
+        "required": [
+          "comment",
+          "parent",
+          "children",
+          "hasElements"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "artifactType": {
+            "const": "ontology_element"
+          }
+        },
+        "required": [
+          "artifactType"
+        ]
+      },
+      "then": {
+        "required": [
+          "comment",
+          "parent",
+          "children"
+        ]
+      }
+    }
+  ],
+  "$defs": {
+    "entitySummary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "label",
+        "slug"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "label": {
+          "type": "string"
+        },
+        "slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        }
+      }
+    }
+  }
+}

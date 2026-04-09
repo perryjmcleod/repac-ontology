@@ -1,0 +1,168 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://repac.org/schema/viewer/navigation.schema.json",
+  "title": "REPAC Derived Navigation",
+  "description": "Schema for derived non-authoritative navigation artifacts such as hierarchy and search indexes.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "artifactType",
+    "id",
+    "slug",
+    "label",
+    "authoritative"
+  ],
+  "properties": {
+    "artifactType": {
+      "type": "string",
+      "const": "derived_navigation"
+    },
+    "id": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "label": {
+      "type": "string"
+    },
+    "comment": {
+      "type": "string"
+    },
+    "authoritative": {
+      "type": "boolean",
+      "const": false
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "frozen",
+        "validated",
+        "released",
+        "deprecated"
+      ]
+    },
+    "nodes": {
+      "type": "array",
+      "description": "Hierarchy nodes for tree-style navigation artifacts.",
+      "items": {
+        "$ref": "#/$defs/node"
+      }
+    },
+    "entries": {
+      "type": "array",
+      "description": "Search or navigation entries.",
+      "items": {
+        "$ref": "#/$defs/entry"
+      }
+    },
+    "mapping": {
+      "type": "object",
+      "description": "Optional named lists used for derived index mapping.",
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    },
+    "entityCounts": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "supersets": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "subsets": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "elements": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "entries": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    }
+  },
+  "$defs": {
+    "node": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "kind"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "parent": {
+          "oneOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "aggregate",
+            "superset",
+            "subset",
+            "element",
+            "document"
+          ]
+        }
+      }
+    },
+    "entry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "label",
+        "artifactType",
+        "path"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "label": {
+          "type": "string"
+        },
+        "artifactType": {
+          "type": "string",
+          "enum": [
+            "ontology_superset",
+            "ontology_subset",
+            "ontology_element",
+            "ontology_aggregate",
+            "governance_document",
+            "release_document",
+            "case_artifact"
+          ]
+        },
+        "path": {
+          "type": "string"
+        },
+        "tokens": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
